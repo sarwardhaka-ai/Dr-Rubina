@@ -8,6 +8,10 @@
         "destination": "/sitemap.xml"
       },
       {
+        "source": "/bn",
+        "destination": "/bn.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
