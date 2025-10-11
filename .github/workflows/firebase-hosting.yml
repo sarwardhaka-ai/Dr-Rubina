@@ -24,6 +24,7 @@ jobs:
       - name: Write service account key
         run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_DRRUBINASULTANASITE }}" > serviceAccount.json
 
-      - name: Authenticate and deploy
-        run: |
-          firebase deploy --project drrubinasultanasite --only hosting --token "$(firebase login:ci --no-localhost --json < serviceAccount.json)"
+      - name: Deploy to Firebase Hosting
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: serviceAccount.json
+        run: firebase deploy --project drrubinasultanasite --only hosting
