@@ -13,18 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-
-      - name: Install Firebase CLI
-        run: npm install -g firebase-tools
-
-      - name: Write service account key
-        run: echo "${{ secrets.FIREBASE_SERVICE_ACCOUNT_DRRUBINASULTANASITE }}" > serviceAccount.json
-
       - name: Deploy to Firebase Hosting
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: serviceAccount.json
-        run: firebase deploy --project drrubinasultanasite --only hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_DRRUBINASULTANASITE }}"
+          channelId: live
+          projectId: drrubinasultanasite
