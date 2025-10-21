@@ -1,0 +1,3 @@
+firebase.json
+**/.*     # hidden files
+**/node_modules/**
