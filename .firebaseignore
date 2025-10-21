@@ -1,3 +1,11 @@
-firebase.json
-**/.*     # hidden files
-**/node_modules/**
+# Firebase ignore file
+# These files and folders will NOT be uploaded when deploying to Firebase Hosting
+
+firebase-debug.log
+.firebaserc
+.firebase/
+.github/
+.git/
+node_modules/
+.gitignore
+README.md
