@@ -129,7 +129,7 @@ firebase deploy --only hosting:drrubinasultanasite2025
 
 **Md. Golam Sarwar**  
 ICT Professional • Ethical Outreach Strategist  
-Focused on inclusive benchmarking across healthcare, travel, and wellness sectors.
+Focused on inclusive benchmarking across healthcare, travel, and wellness sectors. 
 
 ---
 
