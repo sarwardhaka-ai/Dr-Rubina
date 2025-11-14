@@ -1,0 +1,19 @@
+name: JavaScript Lint
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install ESLint
+        run: npm install -g eslint
+
+      - name: Run ESLint
+        run: eslint "public/**/*.js" || true

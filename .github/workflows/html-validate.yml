@@ -1,0 +1,20 @@
+name: HTML Validation
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  html-validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install html-validate
+        run: npm install -g html-validate
+
+      - name: Validate HTML in public/
+        run: html-validate "public/**/*.html"
