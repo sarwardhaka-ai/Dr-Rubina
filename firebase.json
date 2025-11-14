@@ -1,47 +1,106 @@
 {
   "hosting": {
+    "site": "drrubinasultanasite2025",
     "public": "public",
+
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
+
     "cleanUrls": true,
+    "trailingSlash": false,
+
     "headers": [
       {
-        "source": "**/*.html",
+        "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|ico|woff|woff2|ttf|eot)",
         "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
+          { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+          { "key": "Permissions-Policy", "value": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()" },
+          { "key": "Cross-Origin-Resource-Policy", "value": "cross-origin" }
+        ]
+      },
+      {
+        "source": "**/*.@(html|htm)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" },
+          { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+          { "key": "X-XSS-Protection", "value": "1; mode=block" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+          { "key": "Permissions-Policy", "value": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()" },
+          { "key": "Cross-Origin-Opener-Policy", "value": "same-origin-allow-popups" },
           {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600"
-          }
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; object-src 'none'; frame-ancestors 'self'; frame-src 'self' https://www.youtube.com https://*.youtube.com https://www.youtube-nocookie.com https://www.facebook.com https://*.facebook.com; img-src 'self' data: https://drrubinasultana.com https://www.drrubinasultana.com https://i.ytimg.com https://*.ytimg.com https://bat.bing.com https://www.google-analytics.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://www.facebook.com https://*.facebook.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net https://www.youtube.com https://*.youtube.com https://www.clarity.ms https://*.clarity.ms https://bat.bing.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://*.google-analytics.com https://connect.facebook.net https://www.facebook.com https://www.youtube.com https://*.youtube.com https://www.clarity.ms https://*.clarity.ms https://bat.bing.com; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;"
+          },
+          { "key": "Cross-Origin-Resource-Policy", "value": "cross-origin" }
+        ]
+      },
+      {
+        "source": "**/*.@(js|css|json)",
+        "headers": [
+          { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" },
+          { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+          { "key": "Cross-Origin-Resource-Policy", "value": "cross-origin" }
         ]
       },
       {
         "source": "/sitemap.xml",
         "headers": [
-          {
-            "key": "Content-Type",
-            "value": "application/xml"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate"
-          }
+          { "key": "Content-Type", "value": "application/xml; charset=UTF-8" },
+          { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
         ]
       },
       {
         "source": "/robots.txt",
         "headers": [
-          {
-            "key": "Content-Type",
-            "value": "text/plain"
-          },
-          {
-            "key": "Cache-Control",
-            "value": "no-cache, no-store, must-revalidate"
-          }
+          { "key": "Content-Type", "value": "text/plain; charset=UTF-8" },
+          { "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
         ]
+      },
+      {
+        "source": "**",
+        "headers": [
+          { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+          { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+          { "key": "Permissions-Policy", "value": "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(), display-capture=(), document-domain=(), encrypted-media=(), execution-while-not-rendered=(), execution-while-out-of-viewport=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), navigation-override=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=(), usb=(), web-share=(), xr-spatial-tracking=()" }
+        ]
+      }
+    ],
+
+    "redirects": [
+      {
+        "source": "/bn.html",
+        "destination": "/bn",
+        "type": 301
+      },
+      {
+        "source": "**",
+        "destination": "https://drrubinasultana.com/:splat",
+        "type": 301
+      }
+    ],
+
+    "rewrites": [
+      {
+        "source": "/bn",
+        "destination": "/bn.html"
       }
     ]
   }
