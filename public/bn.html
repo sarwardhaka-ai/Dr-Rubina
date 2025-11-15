@@ -27,7 +27,6 @@
 
   <!-- ✅ Preload LCP Image for Faster Loading -->
   <link rel="preload" href="/assets/Dr-Mosammat-Rubina-Sultana.webp" as="image" fetchpriority="high">
-
   
 
 <!-- ✅ Security Headers (CSP moved to firebase.json for better control) -->
@@ -1200,7 +1199,6 @@ h4[id] {
   display: flex;
   align-items: center;
   margin-right: 12px;
-  pointer-events: none;
   user-select: none;
   color: transparent;
   line-height: 0;
@@ -2165,6 +2163,33 @@ h4[id] {
   margin-bottom: 6px;
 }
 
+/* FORCE mobile-only title to appear ONLY on mobile */
+.mobile-only { 
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .mobile-only { 
+    display: flex !important;
+  }
+}
+
+/* 🔥 Mobile title hover glow effect */
+@media (max-width: 768px) {
+  .site-title:hover {
+    /* override the transparent text */
+    -webkit-text-fill-color: #ffeb3b !important;
+    color: #ffeb3b !important;
+
+    /* glowing effect like active menu items */
+    text-shadow: 0 0 10px rgba(255, 235, 59, 0.8),
+                 0 0 16px rgba(255, 235, 59, 0.5);
+
+    /* optional slight lift */
+    transform: translateY(-2px);
+  }
+}
+
   </style>
 
 
@@ -2177,19 +2202,23 @@ h4[id] {
 <header class="top-header">
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <!-- Logo -->
-    <div class="logo" aria-hidden="true">
-     <img 
-  src="/assets/logo.webp" 
-  width="120" 
-  height="36" 
-  loading="lazy" 
-  alt="Dr. Rubina Sultana Website Logo" 
-  class="favicon-logo" />
-    </div>
+    <div class="logo">
+<a href="/bn" class="logo">
+  <img 
+    src="./assets/logo.webp" 
+    width="120" 
+    height="36" 
+    loading="lazy" 
+    alt="ডাঃ রুবিনা সুলতানা ওয়েবসাইট লোগো" 
+    class="favicon-logo"
+  />
+</a>
+
+</div>
 
     <!-- Mobile-Only Title -->
     <div class="navbar-center mobile-only">
-      <span class="site-title">ডাঃ রুবিনা সুলতানা</span>
+      <a href="/bn" class="site-title">ডাঃ রুবিনা সুলতানা</a>
     </div>
 
     <!-- Mobile Menu Toggle -->
@@ -2197,7 +2226,7 @@ h4[id] {
 
     <!-- Desktop Navigation Links (11 items translated to Bangla) -->
     <ul class="nav-links">
-      <li><a href="#top">হোম</a></li>
+      <li><a href="/bn" hreflang="bn">হোম</a></li>
       <li><a href="#about">ডাঃ সম্পর্কে</a></li>
       <li><a href="#credentials">যোগ্যতা</a></li>
       <li><a href="#specializations">ক্যান্সার বিশেষত্ব</a></li>
@@ -2212,7 +2241,7 @@ h4[id] {
 
     <!-- Mobile-only menu (same 11 items; translated) -->
     <ul class="nav-links mobile-only-menu">
-      <li><a href="#top">হোম</a></li>
+      <li><a href="/bn" hreflang="bn">হোম</a></li>
       <li><a href="#about">পরিচিতি</a></li>
       <li><a href="#credentials">যোগ্যতা</a></li>
       <li><a href="#specializations">বিশেষত্ব</a></li>
@@ -2267,7 +2296,7 @@ h4[id] {
   <section id="about">
     <figure class="figure-centered">
 <img 
-  src="/assets/Dr-Mosammat-Rubina-Sultana.webp"
+  src="./assets/Dr-Mosammat-Rubina-Sultana.webp"
   width="400"
   height="400"
   
@@ -2682,7 +2711,21 @@ window.addEventListener('load', () => {
     header.classList.toggle('scrolled', window.pageYOffset > 50);
   });
 
-  // Active section link
+  /* ⭐⭐⭐ ADD THIS BLOCK — HOME ACTIVE LOGIC FOR BANGLA VERSION ⭐⭐⭐ */
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+
+    // Activate HOME when near top (0–200px)
+    const homeLinks = document.querySelectorAll('a[href="/bn"]');
+    if (scrollPosition < 200) {
+      homeLinks.forEach(l => l.classList.add('active'));
+    } else {
+      homeLinks.forEach(l => l.classList.remove('active'));
+    }
+  });
+  /* ⭐⭐⭐ END OF HOME ACTIVE BLOCK ⭐⭐⭐ */
+
+  // Active section link (same as English version)
   const sections = document.querySelectorAll('section[id], div[id]');
   const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
   window.addEventListener('scroll', () => {
@@ -2691,7 +2734,10 @@ window.addEventListener('load', () => {
       if (pageYOffset >= section.offsetTop - 200) current = section.id;
     });
     navLinks.forEach(link => {
-      link.classList.toggle('active', link.getAttribute('href').substring(1) === current);
+      link.classList.toggle(
+        'active',
+        link.getAttribute('href').substring(1) === current
+      );
     });
   });
 
@@ -2729,8 +2775,6 @@ window.addEventListener('load', () => {
   });
 });
 </script>
-
-
 
 </body>
 </html>
