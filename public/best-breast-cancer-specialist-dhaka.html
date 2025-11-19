@@ -150,6 +150,17 @@ body {
   background: linear-gradient(90deg,#007b3a,#009e5a);
 }
 
+@media (max-width:1024px){
+  body {
+    padding-top: 64px;
+  }
+  .top-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -296,7 +307,7 @@ div[id] {
 /* ===== PAGE CONTENT CSS UNTOUCHED ===== */
 
 .intro-header {
-  padding: 28px 16px;
+  padding: 28px 16px 8px;
   text-align: center;
   background: linear-gradient(180deg,#fff,#f6fff6);
 }
@@ -304,14 +315,39 @@ div[id] {
 .intro-header h2 { color:#005a9c; font-size:21px; font-weight:600; margin-top:14px; }
 .tagline { font-size:1.25em; font-weight:600; color:#006a4e; margin-top:8px; }
 
+.designation-block p {
+  margin: 2px 0;
+  line-height: 1.4;
+}
+
+.designation-block a {
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.designation-block p:last-child {
+  margin-bottom: 18px;
+}
+
 .block-container {
   background:#fff;
   border:1.5px solid #DAA520;
   border-radius:12px;
   padding:16px 20px;
-  margin:16px auto;
+	margin:16px auto;
   max-width:980px;
   text-align:center;
+}
+
+/* Slightly tighter gap right after the intro section */
+.intro-header + .block-container {
+	margin-top: 8px;
+}
+
+/* Remove extra gap only between the first two blocks */
+.block-container + .block-container {
+	margin-top: 0;
 }
 
 .box-narrow { max-width:720px; }
