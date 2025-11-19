@@ -158,6 +158,24 @@
         border-radius: 6px;
       }
 
+      .navbar-center {
+        flex: 1;
+        text-align: center;
+      }
+
+      .navbar-center .site-title {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        font-weight: 700;
+        background: linear-gradient(120deg,#fff6d4 0,#ffe082 40%,#f4b400 70%,#d6b46e 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none;
+        letter-spacing: .3px;
+      }
+
       .nav-links {
         list-style: none;
         display: flex;
@@ -225,7 +243,7 @@
       }
 
       @media (max-width:1024px){
-        .menu-toggle { display:block; }
+        .menu-toggle { display:block; margin-left:auto; }
         .nav-links:not(.mobile-only-menu){ display:none; }
       }
       @media (min-width:1025px){
@@ -332,6 +350,13 @@
         text-align:left;
       }
       #credentials li, #specializations li { margin:4px 0; }
+
+      /* Credentials block: links are navy blue but scoped to this block only */
+      #credentials a {
+        color: #003366;
+        text-decoration: none;
+        font-weight: inherit;
+      }
 
       /* QUICK LINKS → blue hyperlinks */
       .quick-links a { color:#0000EE; text-decoration:underline; }
