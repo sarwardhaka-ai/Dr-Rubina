@@ -142,43 +142,79 @@ body {
   color: #222;
 }
 
+/* Top green menubar to match public/index.html */
 .top-header {
-  background: #fff;
-  border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
-  z-index: 90;
+  z-index: 999;
+  background: linear-gradient(90deg,#007b3a,#009e5a);
 }
 
 .navbar {
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 10px 14px;
+  padding: 6px 18px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.logo img {
+  height: 38px;
+  width: auto;
+  border-radius: 6px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 16px;
+  justify-content: flex-start;
+  gap: 18px;
   margin: 0;
   padding: 0;
+  flex: 1;
 }
 
-.nav-links a {
-  color: #004d40;
+.nav-links li a {
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
-  padding: 8px 4px;
+  font-size: 15.5px;
+  min-height: 58px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0 0;
+  position: relative;
+  letter-spacing: .3px;
+  line-height: 1.2;
+  text-align: center;
 }
 
-.nav-links a:hover { text-decoration: underline; }
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg,#ffeb3b,gold);
+  border-radius: 2px;
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 2px 8px rgba(255,235,59,.4);
+  pointer-events: none;
+}
+
+.nav-links li a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.nav-links li a:hover {
+  color: #ffeb3b;
+  text-shadow: 0 2px 8px rgba(255,235,59,.3);
+}
 
 /* Mobile-only title */
 .mobile-only { display: none; }
@@ -228,7 +264,7 @@ body {
   top: 0;
   height: 100vh;
   width: 280px;
-  background: #fff;
+  background: linear-gradient(135deg,#007b3a,#00a067);
   box-shadow: -6px 0 24px rgba(0,0,0,0.08);
   padding: 24px;
   flex-direction: column;
@@ -240,6 +276,21 @@ body {
 .nav-links.mobile-only-menu.active {
   display: flex;
   transform: translateX(0);
+}
+
+/* Mobile slide menu: dark text on white panel */
+.nav-links.mobile-only-menu li a {
+  color: #004d40;
+}
+
+.nav-links.mobile-only-menu li a::after {
+  display: none;
+}
+
+/* Anchor offset so sections are not hidden under sticky header */
+section[id],
+div[id] {
+  scroll-margin-top: 80px;
 }
 
 /* ===== PAGE CONTENT CSS UNTOUCHED ===== */
@@ -282,6 +333,64 @@ body {
       .also-see a:hover { text-decoration:underline; }
 
       .block-container h2, .block-container h3 { margin-top:0; color:#1b5e20 !important; }
+
+@media (max-width:768px){
+  body,html{overflow-x:hidden}
+  .nav-links.mobile-only-menu{
+    width:100%;max-width:100%;box-sizing:border-box;
+    padding:0 5vw;margin:0 auto;overflow-x:hidden;
+  }
+  .nav-links.mobile-only-menu li a{
+    display:block;width:100%;max-width:90%;margin:.4rem auto;
+    border-radius:50px;text-align:center;box-sizing:border-box;
+  }
+  .nav-links.mobile-only-menu li{width:100%;text-align:center}
+}
+@media (max-width:768px){
+  .nav-links.mobile-only-menu li a{
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;height:60px;line-height:1.2;font-weight:600;
+  }
+  .nav-links.mobile-only-menu li{margin:.2rem 0}
+}
+@media (max-width:768px){
+  .nav-links.mobile-only-menu li{margin:.1rem 0}
+  .nav-links.mobile-only-menu li a{
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;height:55px;line-height:1.2;font-weight:600;
+  }
+}
+@media (max-width:768px){
+  .nav-links.mobile-only-menu li a{
+    display:flex!important;align-items:center!important;justify-content:center!important;
+    text-align:center!important;height:55px!important;border-radius:50px!important;
+    font-weight:600!important;line-height:1.2!important;
+    border:1.5px solid #d4af37!important;box-shadow:0 3px 8px rgba(0,0,0,.15);
+    transition:all .3s ease;background:linear-gradient(135deg,#00a67a,#00c28a);color:#fff;
+  }
+  .nav-links.mobile-only-menu li a:hover{
+    background:linear-gradient(135deg,#027a60,#009e77);
+    border-color:gold;transform:scale(1.02);
+  }
+}
+@media (max-width:1024px){
+  .nav-links.mobile-only-menu{
+    gap:2px!important;padding-top:2px!important;padding-bottom:2px!important;
+  }
+  .nav-links.mobile-only-menu li{
+    margin-top:1px!important;margin-bottom:1px!important;
+  }
+  .nav-links.mobile-only-menu li a{
+    height:44px!important;padding-top:0!important;padding-bottom:0!important;
+    line-height:1.1!important;
+  }
+}
+@media (max-width:1024px){
+  .nav-links.mobile-only-menu li a{
+    width:85%!important;margin:0 auto!important;height:43px!important;
+    border-radius:50px!important;
+  }
+}
     </style>
   </head>
 
@@ -289,40 +398,55 @@ body {
     <!-- HEADER (ARIA + master navigation structure matched) -->
     <header class="top-header">
       <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <!-- Logo (aligned with index.html structure) -->
         <a href="/" class="logo" aria-label="Homepage">
-          <img src="/assets/logo.webp" width="120" height="36" loading="lazy" alt="Dr. Rubina Sultana Website Logo"/>
+          <img 
+            src="/assets/logo.webp" 
+            width="120" 
+            height="36" 
+            loading="lazy" 
+            alt="Dr. Rubina Sultana Website Logo" 
+            class="favicon-logo" />
         </a>
 
+        <!-- Mobile-Only Title -->
         <div class="navbar-center mobile-only"><a href="/" class="site-title">Dr. Rubina Sultana</a></div>
 
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
 
-        <!-- Desktop menu (role menubar, li role none, a role menuitem) -->
-        <ul class="nav-links" role="menubar">
-          <li role="none"><a role="menuitem" href="/">Home</a></li>
-          <li role="none"><a role="menuitem" href="#about">About Dr.</a></li>
-          <li role="none"><a role="menuitem" href="#credentials">Doctor Credentials</a></li>
-          <li role="none"><a role="menuitem" href="#specializations">Cancer Specializations</a></li>
-          <li role="none"><a role="menuitem" href="#chambers">Chamber Locations</a></li>
-          <li role="none"><a role="menuitem" href="#testimonials">Patient Reviews</a></li>
-          <li role="none"><a role="menuitem" href="#verified-profiles">Recommended in Portals</a></li>
-          <li role="none"><a role="menuitem" href="#faq">FAQ</a></li>
+        <!-- Desktop menu (same items as index.html) -->
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About Dr.</a></li>
+          <li><a href="#credentials">Doctor Credentials</a></li>
+          <li><a href="#specializations">Cancer Specializations</a></li>
+          <li><a href="#chambers">Chamber Locations</a></li>
+          <li><a href="#testimonials">Patient Reviews</a></li>
+          <li><a href="#media-interviews">TV Interviews</a></li>
+          <li><a href="#verified-profiles">Recommended in Portals</a></li>
+          <li><a href="#research">Research &amp; Publications</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#social-media">Facebook</a></li>
         </ul>
 
-        <!-- Backdrop -->
+        <!-- Mobile menu (same items/labels as index.html mobile menu) -->
+        <ul class="nav-links mobile-only-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About Dr. Rubina</a></li>
+          <li><a href="#credentials">Doctor Credentials</a></li>
+          <li><a href="#specializations">Cancer Specializations</a></li>
+          <li><a href="#chambers">Chamber Locations</a></li>
+          <li><a href="#testimonials">Verified Patients Reviews</a></li>
+          <li><a href="#media-interviews">TV Channel Programs</a></li>
+          <li><a href="#verified-profiles">Recommended in Portals</a></li>
+          <li><a href="#research">Research &amp; Publications</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#social-media">Follow on Facebook</a></li>
+        </ul>
+
+        <!-- Backdrop kept for menu JS -->
         <div class="menu-backdrop" aria-hidden="true"></div>
-
-        <!-- Mobile menu (role menu, aria-hidden true, aria-label) -->
-        <ul class="nav-links mobile-only-menu" role="menu" aria-hidden="true" aria-label="Mobile Navigation">
-          <li role="none"><a role="menuitem" href="/">Home</a></li>
-          <li role="none"><a role="menuitem" href="#about">About Dr.</a></li>
-          <li role="none"><a role="menuitem" href="#credentials">Doctor Credentials</a></li>
-          <li role="none"><a role="menuitem" href="#specializations">Cancer Specializations</a></li>
-          <li role="none"><a role="menuitem" href="#chambers">Chamber Locations</a></li>
-          <li role="none"><a role="menuitem" href="#testimonials">Patient Reviews</a></li>
-          <li role="none"><a role="menuitem" href="#verified-profiles">Recommended in Portals</a></li>
-          <li role="none"><a role="menuitem" href="#faq">FAQ</a></li>
-        </ul>
       </nav>
     </header>
 
@@ -414,17 +538,15 @@ body {
         <h3>Verified Patient Reviews</h3>
         <p><a href="/#testimonials">See Patient Reviews</a></p>
       </div>
+      <div class="block-container box-narrow" id="media-interviews">
+        <h3>TV Interviews</h3>
+        <p><a href="/#media-interviews">Watch TV interviews</a></p>
+      </div>
 
       <div class="block-container box-narrow" id="research">
         <h3>Research & Publications</h3>
         <p><a href="/#research">View Research</a></p>
       </div>
-
-      <div class="block-container box-narrow" id="social-media">
-        <h3>Follow on Facebook</h3>
-        <p><a href="/#social-media">Official Facebook Link</a></p>
-      </div>
-
       <div class="block-container box-narrow" id="faq">
         <h3>❓Frequently Asked Questions</h3>
 
@@ -452,6 +574,11 @@ body {
           <h4>What is the treatment success rate?</h4>
           <p>Early-stage breast cancer treatment success rate in Bangladesh ranges from 75–90%.</p>
         </div>
+      </div>
+
+      <div class="block-container box-narrow" id="social-media">
+        <h3>Follow on Facebook</h3>
+        <p><a href="/#social-media">Official Facebook Link</a></p>
       </div>
     </main>
 
