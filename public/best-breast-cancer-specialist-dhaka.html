@@ -334,6 +334,26 @@ div[id] {
 
       .block-container h2, .block-container h3 { margin-top:0; color:#1b5e20 !important; }
 
+      /* Responsive image inside figure-centered blocks (match index.html) */
+      .figure-centered {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .figure-centered img {
+        width: 280px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      @media (max-width:768px){
+        .figure-centered img {
+          width: 220px;
+        }
+      }
+
 @media (max-width:768px){
   body,html{overflow-x:hidden}
   .nav-links.mobile-only-menu{
