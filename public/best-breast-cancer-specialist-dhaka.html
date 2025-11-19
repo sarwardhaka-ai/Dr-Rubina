@@ -142,6 +142,13 @@ body {
   color: #222;
 }
 
+@media (max-width:768px){
+  body {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 /* Top green menubar to match public/index.html */
 .top-header {
   position: sticky;
@@ -251,13 +258,14 @@ body {
 
 /* Toggle button */
 .menu-toggle {
-  font-size: 26px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #004d40;
-  padding: 4px;
   display: none;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
 @media (max-width:1024px){
