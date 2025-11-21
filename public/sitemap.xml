@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ✅ Final verified bilingual + video sitemap for drrubinasultana.com – Updated 2025-11-19 -->
+<!-- ✅ Final verified bilingual + video sitemap for drrubinasultana.com – Updated 2025-11-21 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
@@ -7,7 +7,7 @@
   <!-- 🌐 English version -->
   <url>
     <loc>https://drrubinasultana.com/</loc>
-    <lastmod>2025-11-19T15:20:00+06:00</lastmod>
+    <lastmod>2025-11-21T15:20:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
@@ -16,14 +16,14 @@
 
     <!-- 🎥 English video entries -->
     <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>Breast Cancer Awareness and Prevention | Bangla Vision TV</video:title>
-      <video:description>Dr. Rubina Sultana discusses breast cancer awareness and prevention on Bangla Vision TV.</video:description>
-      <video:content_loc>https://www.facebook.com/reel/1461796545117552/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1461796545117552&amp;</video:player_loc>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-20T00:00:00+06:00</video:publication_date>
-    </video:video>
+  <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+  <video:title>Special Program on Cancer Diagnosis and Treatment | Ekhon TV</video:title>
+  <video:description>Dr. Rubina Sultana discusses cancer diagnosis, screening, and treatment in a special program on Ekhon TV.</video:description>
+  <video:content_loc>https://www.facebook.com/reel/1195874992407084/</video:content_loc>
+  <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1195874992407084&amp;</video:player_loc>
+  <video:family_friendly>yes</video:family_friendly>
+  <video:publication_date>2025-11-21T10:00:00+06:00</video:publication_date>
+</video:video>
 
     <video:video>
       <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
@@ -32,7 +32,7 @@
       <video:content_loc>https://www.facebook.com/reel/588466000219527/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/588466000219527&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-21T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-21T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -42,7 +42,7 @@
       <video:content_loc>https://www.youtube.com/watch?v=OgiLc0p7JOQ</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/OgiLc0p7JOQ</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-22T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-22T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -52,7 +52,7 @@
       <video:content_loc>https://www.facebook.com/reel/798895959295670/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/798895959295670&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-23T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-23T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -62,7 +62,7 @@
       <video:content_loc>https://www.facebook.com/reel/2188716744939881/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/2188716744939881&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-24T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-24T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -72,14 +72,14 @@
       <video:content_loc>https://www.facebook.com/reel/777239188275290/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/777239188275290&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-25T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-25T10:00:00+06:00</video:publication_date>
     </video:video>
   </url>
 
   <!-- 🌐 English service pages -->
   <url>
     <loc>https://drrubinasultana.com/best-female-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-19T15:20:00+06:00</lastmod>
+    <lastmod>2025-11-21T15:20:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
@@ -87,7 +87,7 @@
   </url>
   <url>
     <loc>https://drrubinasultana.com/best-tumor-specialist-dhaka</loc>
-    <lastmod>2025-11-19T15:20:00+06:00</lastmod>
+    <lastmod>2025-11-21T15:20:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
@@ -95,7 +95,7 @@
   </url>
   <url>
     <loc>https://drrubinasultana.com/best-breast-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-19T15:20:00+06:00</lastmod>
+    <lastmod>2025-11-21T15:20:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
@@ -103,7 +103,7 @@
   </url>
   <url>
     <loc>https://drrubinasultana.com/best-lung-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-19T15:20:00+06:00</lastmod>
+    <lastmod>2025-11-21T15:20:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
@@ -111,7 +111,7 @@
   </url>
   <url>
     <loc>https://drrubinasultana.com/best-chemotherapist-dhaka</loc>
-    <lastmod>2025-11-19T15:20:00+06:00</lastmod>
+    <lastmod>2025-11-21T15:20:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
@@ -121,7 +121,7 @@
   <!-- 🌐 Bangla version -->
   <url>
     <loc>https://drrubinasultana.com/bn</loc>
-    <lastmod>2025-11-19T15:20:00+06:00</lastmod>
+    <lastmod>2025-11-21T15:20:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
@@ -130,14 +130,14 @@
 
     <!-- 🎥 Bangla localized video entries (identical but localized) -->
     <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>স্তন ক্যান্সার সচেতনতা ও প্রতিরোধ | Bangla Vision TV</video:title>
-      <video:description>ডাঃ রুবিনা সুলতানা Bangla Vision TV-তে স্তন ক্যান্সার প্রতিরোধ ও সচেতনতা নিয়ে আলোচনা করছেন।</video:description>
-      <video:content_loc>https://www.facebook.com/reel/1461796545117552/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1461796545117552&amp;</video:player_loc>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-20T00:00:00+06:00</video:publication_date>
-    </video:video>
+  <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+  <video:title>ক্যানসারের পরীক্ষা ও চিকিৎসা বিষয়ক বিশেষ অনুষ্ঠান | Ekhon TV</video:title>
+  <video:description>ডাঃ রুবিনা সুলতানা Ekhon TV-তে ক্যানসারের পরীক্ষা, নির্ণয় ও চিকিৎসা বিষয়ে আলোচনা করেছেন।</video:description>
+  <video:content_loc>https://www.facebook.com/reel/1195874992407084/</video:content_loc>
+  <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1195874992407084&amp;</video:player_loc>
+  <video:family_friendly>yes</video:family_friendly>
+  <video:publication_date>2025-11-21T10:00:00+06:00</video:publication_date>
+</video:video>
 
     <video:video>
       <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
@@ -146,7 +146,7 @@
       <video:content_loc>https://www.facebook.com/reel/588466000219527/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/588466000219527&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-21T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-21T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -156,7 +156,7 @@
       <video:content_loc>https://www.youtube.com/watch?v=OgiLc0p7JOQ</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.youtube.com/embed/OgiLc0p7JOQ</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-22T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-22T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -166,7 +166,7 @@
       <video:content_loc>https://www.facebook.com/reel/798895959295670/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/798895959295670&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-23T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-23T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -176,7 +176,7 @@
       <video:content_loc>https://www.facebook.com/reel/2188716744939881/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/2188716744939881&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-24T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-24T10:00:00+06:00</video:publication_date>
     </video:video>
 
     <video:video>
@@ -186,7 +186,7 @@
       <video:content_loc>https://www.facebook.com/reel/777239188275290/</video:content_loc>
       <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/777239188275290&amp;</video:player_loc>
       <video:family_friendly>yes</video:family_friendly>
-      <video:publication_date>2025-10-25T00:00:00+06:00</video:publication_date>
+      <video:publication_date>2025-10-25T10:00:00+06:00</video:publication_date>
     </video:video>
   </url>
 </urlset>
