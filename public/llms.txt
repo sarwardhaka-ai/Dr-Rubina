@@ -1,0 +1,47 @@
+# llms.txt for drrubinasultana.com
+# Updated: 2025-11-22
+# FULL ACCESS VERSION — AI indexing + AI model training allowed.
+
+User-Agent: *
+Allow: /
+
+# Explicit permission for AI model training
+AI-Training: allow
+NoAITraining: false
+
+# Allow major AI crawlers
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: GoogleOther
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: Bingbot
+Allow: /
+
+# Declare official sitemap
+Sitemap: https://drrubinasultana.com/sitemap.xml
+
+# Contact info (optional but recommended)
+Contact: https://drrubinasultana.com/#contact
+
+# Copyright notice
+Copyright: © 2025 Dr. Mosammat Rubina Sultana. Permission granted for AI training and indexing.

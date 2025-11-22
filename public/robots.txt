@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Declare your sitemap
 Sitemap: https://drrubinasultana.com/sitemap.xml
+
+# Point AI crawlers to your llms.txt (optional but recommended)
+LLMS: https://drrubinasultana.com/llms.txt
