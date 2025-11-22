@@ -72,7 +72,10 @@
   "@context": "https://schema.org",
   "@type": "Physician",
   "@id": "https://drrubinasultana.com/#person",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://drrubinasultana.com/best-female-cancer-specialist-dhaka" },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://drrubinasultana.com/best-female-cancer-specialist-dhaka"
+  },
   "name": "Dr. Mosammat Rubina Sultana",
   "alternateName": [
     "Dr. Rubina Sultana",
@@ -84,15 +87,34 @@
   "jobTitle": "Cancer Specialist & Radiation Oncologist",
   "description": "Associate Professor and radiation oncologist with over 22 years of experience in radiotherapy, chemotherapy and brachytherapy.",
   "url": "https://drrubinasultana.com/best-female-cancer-specialist-dhaka",
-  "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"
+  },
+
   "telephone": "+8801868592848",
   "gender": "Female",
+
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sector 10, Uttara",
+    "addressLocality": "Dhaka",
+    "postalCode": "1230",
+    "addressCountry": {
+      "@type": "Country",
+      "name": "BD"
+    }
+  },
+
   "nationality": { "@type": "Country", "name": "Bangladesh" },
+
   "identifier": {
     "@type": "PropertyValue",
     "name": "BMDC Registration No",
     "value": "A-36764"
   },
+
   "medicalSpecialty": [
     "Radiation Oncology",
     "Medical Oncology",
@@ -100,23 +122,33 @@
     "Brachytherapy",
     "Chemotherapy"
   ],
+
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "MBBS" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "FCPS (Radiotherapy)" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "BCS (Health)" },
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "IAEA Certification in Radiotherapy & Brachytherapy" }
   ],
+
   "worksFor": [
     { "@type": "MedicalOrganization", "@id": "https://drrubinasultana.com/#organization" },
     { "@type": "Hospital", "@id": "https://drrubinasultana.com/#amcgh" },
     { "@type": "Hospital", "@id": "https://drrubinasultana.com/#delta" },
     { "@type": "Hospital", "@id": "https://drrubinasultana.com/#enam" }
   ],
+
+  "areaServed": [
+    "Dhaka",
+    "Bangladesh"
+  ],
+
   "sameAs": [
     "https://nicrh.gov.bd/departments/radiation-oncology",
     "https://amcghbd.org/doctor_details/dr-mosammat-rubina-sultana",
-    "https://www.doctorbangladesh.com/dr-mosammat-rubina-sultana/"
+    "https://www.doctorbangladesh.com/dr-mosammat-rubina-sultana/",
+    "https://www.facebook.com/profile.php?id=61565733513826"
   ],
+
   "knowsAbout": [
     "Breast Cancer",
     "Cervical Cancer",
