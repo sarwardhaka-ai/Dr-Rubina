@@ -1,0 +1,59 @@
+name: Auto Recrawl with IndexNow
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 */6 * * *"  # every 6 hours
+  workflow_dispatch: {}     # allows manual run
+
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Node Fetch
+        run: npm install node-fetch@2
+
+      - name: Run IndexNow Recrawl Script
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: |
+          node << 'EOF'
+          const fetch = require('node-fetch');
+
+          const key = process.env.INDEXNOW_KEY;
+          const base = "https://api.indexnow.org/indexnow?url=";
+
+          const urls = [
+            "https://drrubinasultana.com/",
+            "https://drrubinasultana.com/bn",
+            "https://drrubinasultana.com/best-cancer-specialist-dhaka",
+            "https://drrubinasultana.com/best-breast-cancer-specialist-dhaka",
+            "https://drrubinasultana.com/best-lung-cancer-specialist-dhaka",
+            "https://drrubinasultana.com/best-chemotherapist-dhaka",
+            "https://drrubinasultana.com/best-female-cancer-specialist-dhaka",
+            "https://drrubinasultana.com/sitemap.xml"
+          ];
+
+          async function submit(url) {
+            const endpoint = `${base}${encodeURIComponent(url)}&key=${key}`;
+            const res = await fetch(endpoint);
+            console.log(`Submitted: ${url} -> Status: ${res.status}`);
+          }
+
+          (async () => {
+            for (let url of urls) {
+              await submit(url);
+            }
+          })();
+          EOF
