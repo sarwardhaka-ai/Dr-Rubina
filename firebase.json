@@ -73,11 +73,14 @@
       }
     ],
 
-    "rewrites": [
+    "redirects": [
       {
-        "source": "/bn",
-        "destination": "/bn.html"
+        "source": "/bn.html",
+        "destination": "/bn",
+        "type": 301
       }
-    ]
+    ],
+
+    "rewrites": []
   }
 }
