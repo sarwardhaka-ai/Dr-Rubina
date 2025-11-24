@@ -73,13 +73,7 @@
       }
     ],
 
-    "redirects": [
-      {
-        "source": "/bn.html",
-        "destination": "/bn",
-        "type": 301
-      }
-    ],
+    "redirects": [],
 
     "rewrites": []
   }

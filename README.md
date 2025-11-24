@@ -1,65 +1,67 @@
 ![Firebase Deploy](https://github.com/sarwardhaka-ai/Dr-Rubina/actions/workflows/firebase-hosting.yml/badge.svg)
+![IndexNow Automation](https://github.com/sarwardhaka-ai/Dr-Rubina/actions/workflows/indexnow.yml/badge.svg)
 
 # 🩺 Dr. Mosammat Rubina Sultana — Patient-Friendly Homepage
 
-This repository contains the deploy-ready homepage for **Dr. Mosammat Rubina Sultana**, a leading cancer specialist and radiation oncologist in Dhaka, Bangladesh.  
-The project is optimized for ethical outreach, secure hosting, fast performance, and strong visibility on Google, Bing, and AI-powered search platforms.
+This repository contains the production-ready homepage for  
+**Dr. Mosammat Rubina Sultana**, a leading cancer specialist and Associate Professor of Radiation Oncology, Bangladesh.
+
+The project is built with a priority on **patient accessibility**, **fast performance**,  
+**search visibility**, and **secure medical communication**.
 
 ---
 
 ## 🌟 Features
 
-- Fully static, fast-loading website  
+- High-performance static website (HTML + CSS + JS)
 - Bengali + English language support  
-- SEO-optimized for healthcare queries in Bangladesh  
-- Modern security headers (CSP, HSTS, XFO, XSS Protection)  
-- Firebase Hosting + GitHub Actions automatic deployments  
-- Responsive UI focused on patient readability  
-- Privacy-respecting analytics (Google Analytics + Clarity)
+- Correct hreflang tags for bilingual SEO  
+- Strict security headers (CSP, HSTS, Permissions-Policy)  
+- Rich structured data: Person, WebPage, FAQ, VideoObject  
+- Firebase Hosting + GitHub Actions deployment  
+- IndexNow auto-recrawl submission every 6 hours  
+- Privacy-preserving analytics (GA4 + Clarity)
 
 ---
 
 ## 🔍 Purpose
 
-- Democratize access to verified medical profiles  
-- Benchmark patient-friendly cancer-care communication  
-- Support ethical outreach for healthcare professionals  
-- Strengthen Bengali-language visibility in search engines  
-- Provide a transparent, research-backed medical homepage  
+- Strengthen visibility of credible cancer-care information  
+- Support ethical medical outreach in Bangladesh  
+- Enhance Bengali-language presence in Google & Bing  
+- Deliver fast, secure, accessible patient communication  
+- Provide a benchmark example for healthcare websites
 
 ---
 
-## 🚀 Deployment Strategy
+## 🚀 Deployment Architecture
 
-This project is deployed using **Firebase Hosting**, with automated GitHub Actions for continuous delivery.
+This project is deployed on **Firebase Hosting**, powered by **GitHub Actions CI/CD**.
 
-### 🔧 Firebase Hosting Configuration (from `firebase.json`)
+---
+
+## 🔧 Firebase Hosting Configuration
+
 - **Site:** `drrubinasultanasite2025`  
 - **Public Directory:** `public/`  
-- **Clean URLs:** Enabled  
-- **Trailing Slash:** Disabled  
-- **301 Redirects:**  
-  - `/bn.html` → `/bn`  
-  - All unmatched routes → `https://drrubinasultana.com/:splat`  
-- **Rewrite:**  
-  - `/bn` → `/bn.html`  
+- **Clean URLs:** Enabled (removes `.html`)  
+- **Trailing Slash:** Disabled (`/bn`, not `/bn/`)  
+- **Redirects:** None (bn.html completely removed)  
+- **Rewrites:** None (static site, not SPA)
 
-### 🔒 Security Headers
-This project enforces enterprise-grade security:
+### 🔒 Security Headers (from `firebase.json`)
+- `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload`
+- `X-Frame-Options: SAMEORIGIN`
+- `X-Content-Type-Options: nosniff`
+- `X-XSS-Protection: 1; mode=block`
+- `Permissions-Policy` (cameras/microphones/sensors blocked)
+- `Referrer-Policy: strict-origin-when-cross-origin`
+- `Content-Security-Policy` allowing only required domains (YouTube, GA4, Clarity, Facebook)
 
-- `Strict-Transport-Security` (HSTS)  
-- `X-Frame-Options: SAMEORIGIN`  
-- `X-Content-Type-Options: nosniff`  
-- `X-XSS-Protection: 1; mode=block`  
-- `Content-Security-Policy` with strict rules  
-- `Permissions-Policy` (restricted access to sensors/camera/microphone)  
-- `Referrer-Policy: strict-origin-when-cross-origin`  
-
-### ⚡ Performance Optimization
-
-- Long-term caching for images/fonts (`max-age=31536000`)  
+### ⚡ Performance
+- CDN-cached assets (`max-age=31536000`, immutable)  
 - Controlled caching for HTML, JS, CSS  
-- Delivered via Firebase's global CDN  
+- Fast global delivery using Firebase CDN
 
 ---
 
@@ -69,70 +71,14 @@ This project enforces enterprise-grade security:
 /
 ├─ public/
 │  ├─ index.html              # English homepage
-│  ├─ bn.html                 # Bengali homepage
-│  ├─ 404.html                # Custom 404 page
-│  └─ assets/                 # Images, icons, CSS, JS
-├─ firebase.json              # Hosting + security configuration
+│  ├─ bn/
+│  │   └─ index.html          # Bengali homepage
+│  ├─ assets/                 # Images, CSS, JS
+│  ├─ sitemap.xml
+│  └─ robots.txt
+├─ firebase.json              # Hosting, security, CSP configuration
 └─ .github/
    └─ workflows/
-      ├─ firebase-hosting.yml     # Deploy on push to main
-      └─ firebase-hosting-PR.yml  # Deploy previews on PR
-```
-
----
-
-## 🔄 Continuous Deployment (GitHub Actions)
-
-### **Push to main branch → Automatic deployment**
-Triggered by:
-
-```
-.github/workflows/firebase-hosting.yml
-```
-
-### **Pull Requests → Preview deployment**
-Triggered by:
-
-```
-.github/workflows/firebase-hosting-PR.yml
-```
-
-### 🔐 GitHub Secrets Required
-
-| Secret Name | Purpose |
-|-------------|---------|
-| `FIREBASE_SERVICE_ACCOUNT_DRRUBINASULTANASITE2025` | Authenticates GitHub → Firebase |
-| `GITHUB_TOKEN` | Default GitHub token for actions |
-
----
-
-## 🛠 Developer Guide
-
-### Install Firebase Tools (optional)
-```bash
-npm install -g firebase-tools
-```
-
-### Preview the site locally
-```bash
-firebase serve
-```
-
-### Deploy manually (optional)
-```bash
-firebase deploy --only hosting:drrubinasultanasite2025
-```
-
----
-
-## 🤝 Maintainer
-
-**Md. Golam Sarwar**  
-ICT Professional • Ethical Outreach Strategist  
-Focused on inclusive benchmarking across healthcare, travel, and wellness sectors.
-
----
-
-## 📜 License
-
-This project is maintained privately and should not be redistributed without permission.
+      ├─ firebase-hosting.yml     # Auto deploy on push to main
+      ├─ firebase-hosting-PR.yml  # PR preview deploy
+      └─ indexnow.yml             # Auto IndexNow recrawl submission
