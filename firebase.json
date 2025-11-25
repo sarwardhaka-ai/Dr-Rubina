@@ -76,7 +76,7 @@
     "redirects": [],
 
     "rewrites": [
-      { "source": "/bn", "destination": "/bn" }
+      { "source": "/bn", "destination": "/bn/index.html" }
     ]
   }
 }
