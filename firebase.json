@@ -2,16 +2,13 @@
   "hosting": {
     "site": "drrubinasultanasite2025",
     "public": "public",
-
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-
     "cleanUrls": true,
     "trailingSlash": false,
-
     "headers": [
       {
         "source": "**/*.@(jpg|jpeg|gif|png|webp|svg|ico|woff|woff2|ttf|eot)",
@@ -72,11 +69,7 @@
         ]
       }
     ],
-
     "redirects": [],
-
-    "rewrites": [
-      { "source": "/bn", "destination": "/bn/index.html" }
-    ]
+    "rewrites": []
   }
 }
