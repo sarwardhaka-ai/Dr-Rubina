@@ -42,9 +42,19 @@
 <meta name="twitter:image" content="https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp">
 <meta name="twitter:url" content="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fonts & Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+  <!-- Preload Google Font -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600&display=swap">
+
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <!-- Preload Hero Image -->
 <link rel="preload" href="/assets/Dr-Mosammat-Rubina-Sultana.webp" as="image" fetchpriority="high">
@@ -218,261 +228,273 @@
 </script>
 
 
-     <style>
-      /* ========== FAQ STYLES ========== */
-      #faq h4 {
-        color: #000080; /* Navy blue color */
-        margin-bottom: 8px;
-      }
+    <!-- Styles (MASTER MENU + PAGE) -->
+    <style>
+/* ========== FAQ STYLES ========== */
+#faq h4 {
+  color: #000080; /* Navy blue color */
+  margin-bottom: 8px;
+}
 
-      /* ========== MASTER MENU CSS (VISUAL MATCH WITH INDEX) ========== */
+/* ========== MASTER MENU CSS (COPIED EXACTLY) ========== */
 
-      body {
-        margin: 0;
-        font-family: "Noto Sans Bengali", system-ui, sans-serif;
-        background: #f7f7f7;
-        color: #222;
-      }
+body {
+  margin: 0;
+  font-family: "Noto Sans Bengali", system-ui, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
 
-      @media (max-width:768px){
-        body {
-          padding-left: 8px;
-          padding-right: 8px;
-        }
-      }
-      .top-header {
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        background: linear-gradient(90deg,#007b3a,#009e5a);
-      }
+@media (max-width:768px){
+  body {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
 
-      @media (max-width:1024px){
-        body {
-          padding-top: 64px;
-        }
-        .top-header {
-          position: fixed;
-          left: 0;
-          right: 0;
-        }
-      }
+/* Top green menubar to match public/index.html */
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(90deg,#007b3a,#009e5a);
+}
 
-      .navbar {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        padding: 6px 18px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+@media (max-width:1024px){
+  body {
+    padding-top: 64px;
+  }
+  .top-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+}
 
-      .logo img {
-        height: 38px;
-        width: auto;
-        border-radius: 6px;
-      }
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-      .navbar-center {
-        flex: 1;
-        text-align: center;
-      }
+.logo img {
+  height: 38px;
+  width: auto;
+  border-radius: 6px;
+}
 
-      .navbar-center .site-title {
-        font-family: "Playfair Display", serif;
-        font-size: 20px;
-        font-weight: 700;
-        background: linear-gradient(120deg,#fff6d4 0,#ffe082 40%,#f4b400 70%,#d6b46e 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent;
-        text-decoration: none;
-        letter-spacing: .3px;
-      }
+.navbar-center {
+  flex: 1;
+  text-align: center;
+}
 
-      .nav-links {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 18px;
-        margin: 0;
-        padding: 0;
-        flex: 1;
-      }
+.navbar-center .site-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(120deg,#fff6d4 0,#ffe082 40%,#f4b400 70%,#d6b46e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  letter-spacing: .3px;
+}
 
-      .nav-links li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 15.5px;
-        min-height: 58px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0 0;
-        position: relative;
-        letter-spacing: .3px;
-        line-height: 1.2;
-        text-align: center;
-      }
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
 
-      .nav-links li a::after {
-        content: '';
-        position: absolute;
-        bottom: 6px;
-        left: 50%;
-        transform: translateX(-50%) scaleX(0);
-        width: 80%;
-        height: 2px;
-        background: linear-gradient(90deg,#ffeb3b,gold);
-        border-radius: 2px;
-        transition: transform .3s cubic-bezier(.4,0,.2,1);
-        box-shadow: 0 2px 8px rgba(255,235,59,.4);
-        pointer-events: none;
-      }
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15.5px;
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0;
+  position: relative;
+  letter-spacing: .3px;
+  line-height: 1.2;
+  text-align: center;
+}
 
-      .nav-links li a:hover::after {
-        transform: translateX(-50%) scaleX(1);
-      }
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 2px;
+  background: linear-gradient(90deg,#ffeb3b,gold);
+  border-radius: 2px;
+  transition: transform .3s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 2px 8px rgba(255,235,59,.4);
+  pointer-events: none;
+}
 
-      .nav-links li a:hover {
-        color: #ffeb3b;
-        text-shadow: 0 2px 8px rgba(255,235,59,.3);
-      }
+.nav-links li a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
 
-      /* Mobile-only title */
-      .mobile-only { display: none; }
-      @media (max-width:1024px){ .mobile-only{display:block;} }
+.nav-links li a:hover {
+  color: #ffeb3b;
+  text-shadow: 0 2px 8px rgba(255,235,59,.3);
+}
 
-      /* Toggle button */
-      .menu-toggle {
-        display: none;
-        background: transparent;
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        padding: 6px 10px;
-        font-size: 18px;
-        border-radius: 6px;
-        cursor: pointer;
-      }
+/* Mobile-only title */
+.mobile-only { display: none; }
+@media (max-width:1024px){ .mobile-only{display:block;} }
 
-      @media (max-width:1024px){
-        .menu-toggle { display:block; margin-left:auto; }
-        .nav-links:not(.mobile-only-menu){ display:none; }
-      }
-      @media (min-width:1025px){
-        .mobile-only-menu{ display:none!important; }
-      }
+/* Toggle button */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 6px 10px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-      /* Backdrop */
-      .menu-backdrop {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,.4);
-        z-index: 80;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity .2s ease;
-      }
-      .menu-backdrop.active {
-        display: block;
-        opacity: 1;
-        pointer-events: auto;
-      }
+@media (max-width:1024px){
+  .menu-toggle { display:block; margin-left:auto; }
+  .nav-links:not(.mobile-only-menu){ display:none; }
+}
+@media (min-width:1025px){
+  .mobile-only-menu{ display:none!important; }
+}
 
-      /* Mobile slide menu */
-      .nav-links.mobile-only-menu {
-        display: none;
-        position: fixed;
-        right: 0;
-        top: 0;
-        height: 100vh;
-        width: 280px;
-        background: linear-gradient(135deg,#007b3a,#00a067);
-        box-shadow: -6px 0 24px rgba(0,0,0,0.08);
-        padding: 24px;
-        flex-direction: column;
-        gap: 12px;
-        z-index: 90;
-        transform: translateX(100%);
-        transition: transform .22s ease;
-      }
-      .nav-links.mobile-only-menu.active {
-        display: flex;
-        transform: translateX(0);
-      }
+/* Backdrop */
+.menu-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  z-index: 80;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+.menu-backdrop.active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
 
-      /* Anchor offset so sections are not hidden under sticky header */
-      section[id],
-      div[id] {
-        scroll-margin-top: 80px;
-      }
+/* Mobile slide menu */
+.nav-links.mobile-only-menu {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 280px;
+  background: linear-gradient(135deg,#007b3a,#00a067);
+  box-shadow: -6px 0 24px rgba(0,0,0,0.08);
+  padding: 24px;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 90;
+  transform: translateX(100%);
+  transition: transform .22s ease;
+}
+.nav-links.mobile-only-menu.active {
+  display: flex;
+  transform: translateX(0);
+}
 
-      /* ===== PAGE CONTENT CSS UNTOUCHED ===== */
+/* Mobile slide menu: dark text on white panel */
+.nav-links.mobile-only-menu li a {
+  color: #004d40;
+}
 
-      .intro-header {
-        padding: 28px 16px 8px;
-        text-align: center;
-        background: linear-gradient(180deg,#fff,#f6fff6);
-      }
-      .intro-header h1 { color:#006a4e; margin:0 0 10px; font-size:26px; }
-      .intro-header h2 { color:#005a9c; font-size:21px; font-weight:600; margin-top:14px; }
-      .tagline { font-size:1.25em; font-weight:600; color:#006a4e; margin-top:8px; }
+.nav-links.mobile-only-menu li a::after {
+  display: none;
+}
 
-      .designation-block p {
-        margin: 2px 0;
-        line-height: 1.4;
-      }
+/* Anchor offset so sections are not hidden under sticky header */
+section[id],
+div[id] {
+  scroll-margin-top: 80px;
+}
 
-      .designation-block a {
-        color: #003366;
-        font-weight: 700;
-        text-decoration: none;
-      }
+/* ===== PAGE CONTENT CSS UNTOUCHED ===== */
 
-      .designation-block p:last-child {
-        margin-bottom: 18px;
-      }
+.intro-header {
+  padding: 28px 16px 8px;
+  text-align: center;
+  background: linear-gradient(180deg,#fff,#f6fff6);
+}
+.intro-header h1 { color:#006a4e; margin:0 0 10px; font-size:26px; }
+.intro-header h2 { color:#005a9c; font-size:21px; font-weight:600; margin-top:14px; }
+.tagline { font-size:1.25em; font-weight:600; color:#006a4e; margin-top:8px; }
 
-      .block-container {
-        background:#fff;
-        border:1.5px solid #DAA520;
-        border-radius:12px;
-        padding:16px 20px;
-        margin:16px auto;
-        max-width:980px;
-        text-align:center;
-      }
+.designation-block p {
+  margin: 2px 0;
+  line-height: 1.4;
+}
 
-      /* Slightly tighter gap right after the intro section */
-      .intro-header + .block-container {
-        margin-top: 8px;
-      }
+.designation-block a {
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+}
 
-      /* Remove extra gap only between the first two blocks */
-      .block-container + .block-container {
-        margin-top: 0;
-      }
+.designation-block p:last-child {
+  margin-bottom: 18px;
+}
 
-      .box-narrow { max-width:720px; }
+.block-container {
+  background:#fff;
+  border:1.5px solid #DAA520;
+  border-radius:12px;
+  padding:16px 20px;
+	margin:16px auto;
+  max-width:980px;
+  text-align:center;
+}
 
-      #credentials ul, #specializations ul {
-        list-style: disc;
-        padding-left:26px;
-        display:inline-block;
-        text-align:left;
-      }
-      #credentials li, #specializations li { margin:4px 0; }
+/* Slightly tighter gap right after the intro section */
+.intro-header + .block-container {
+	margin-top: 8px;
+}
 
-      /* Credentials block: links are navy blue but scoped to this block only */
-      #credentials a {
-        color: #003366;
-        text-decoration: none;
-        font-weight: inherit;
-      }
+/* Remove extra gap only between the first two blocks */
+.block-container + .block-container {
+	margin-top: 0;
+}
+
+.box-narrow { max-width:720px; }
+
+#credentials ul, #specializations ul {
+  list-style: disc;
+  padding-left:26px;
+  display:inline-block;
+  text-align:left;
+}
+#credentials li, #specializations li { margin:4px 0; }
+
+/* Credentials block: links are navy blue but scoped to this block only */
+#credentials a {
+	color: #003366;
+	text-decoration: none;
+	font-weight: inherit;
+}
 
       /* QUICK LINKS → blue hyperlinks */
       .quick-links a { color:#0000EE; text-decoration:underline; }
@@ -503,73 +525,70 @@
         }
       }
 
-      @media (max-width:768px){
-        body,html{overflow-x:hidden}
-        .nav-links.mobile-only-menu{
-          width:100%;max-width:100%;box-sizing:border-box;
-          padding:0 5vw;margin:0 auto;overflow-x:hidden;
-        }
-        .nav-links.mobile-only-menu li a{
-          display:block;width:100%;max-width:90%;margin:.4rem auto;
-          border-radius:50px;text-align:center;box-sizing:border-box;
-        }
-        .nav-links.mobile-only-menu li{width:100%;text-align:center}
-      }
-      @media (max-width:768px){
-        .nav-links.mobile-only-menu li a{
-          display:flex;align-items:center;justify-content:center;
-          text-align:center;height:60px;line-height:1.2;font-weight:600;
-        }
-        .nav-links.mobile-only-menu li{margin:.2rem 0}
-      }
-      @media (max-width:768px){
-        .nav-links.mobile-only-menu li{margin:.1rem 0}
-        .nav-links.mobile-only-menu li a{
-          display:flex;align-items:center;justify-content:center;
-          text-align:center;height:55px;line-height:1.2;font-weight:600;
-        }
-      }
-      @media (max-width:768px){
-        .nav-links.mobile-only-menu li a{
-          display:flex!important;align-items:center!important;justify-content:center!important;
-          text-align:center!important;height:55px!important;border-radius:50px!important;
-          font-weight:600!important;line-height:1.2!important;border:1.5px solid #d4af37!important;
-          box-shadow:0 3px 8px rgba(0,0,0,.15);transition:all .3s ease;
-          background:linear-gradient(135deg,#00a67a,#00c28a);color:#fff;
-        }
-        .nav-links.mobile-only-menu li a:hover{
-          background:linear-gradient(135deg,#027a60,#009e77);
-          border-color:gold;transform:scale(1.02);
-        }
-      }
-      @media (max-width:1024px){
-        .nav-links.mobile-only-menu{
-          gap:2px!important;padding-top:2px!important;padding-bottom:2px!important;
-        }
-        .nav-links.mobile-only-menu li{
-          margin-top:1px!important;margin-bottom:1px!important;
-        }
-        .nav-links.mobile-only-menu li a{
-          height:44px!important;padding-top:0!important;padding-bottom:0!important;
-          line-height:1.1!important;
-        }
-      }
-      @media (max-width:1024px){
-        .nav-links.mobile-only-menu li a{
-          width:85%!important;margin:0 auto!important;height:43px!important;
-          border-radius:50px!important;
-        }
-      }
-
-      .footer-text {
-        text-align: center;
-      }
+@media (max-width:768px){
+  body,html{overflow-x:hidden}
+  .nav-links.mobile-only-menu{
+    width:100%;max-width:100%;box-sizing:border-box;
+    padding:0 5vw;margin:0 auto;overflow-x:hidden;
+  }
+  .nav-links.mobile-only-menu li a{
+    display:block;width:100%;max-width:90%;margin:.4rem auto;
+    border-radius:50px;text-align:center;box-sizing:border-box;
+  }
+  .nav-links.mobile-only-menu li{width:100%;text-align:center}
+}
+@media (max-width:768px){
+  .nav-links.mobile-only-menu li a{
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;height:60px;line-height:1.2;font-weight:600;
+  }
+  .nav-links.mobile-only-menu li{margin:.2rem 0}
+}
+@media (max-width:768px){
+  .nav-links.mobile-only-menu li{margin:.1rem 0}
+  .nav-links.mobile-only-menu li a{
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;height:55px;line-height:1.2;font-weight:600;
+  }
+}
+@media (max-width:768px){
+  .nav-links.mobile-only-menu li a{
+    display:flex!important;align-items:center!important;justify-content:center!important;
+    text-align:center!important;height:55px!important;border-radius:50px!important;
+    font-weight:600!important;line-height:1.2!important;
+    border:1.5px solid #d4af37!important;box-shadow:0 3px 8px rgba(0,0,0,.15);
+    transition:all .3s ease;background:linear-gradient(135deg,#00a67a,#00c28a);color:#fff;
+  }
+  .nav-links.mobile-only-menu li a:hover{
+    background:linear-gradient(135deg,#027a60,#009e77);
+    border-color:gold;transform:scale(1.02);
+  }
+}
+@media (max-width:1024px){
+  .nav-links.mobile-only-menu{
+    gap:2px!important;padding-top:2px!important;padding-bottom:2px!important;
+  }
+  .nav-links.mobile-only-menu li{
+    margin-top:1px!important;margin-bottom:1px!important;
+  }
+  .nav-links.mobile-only-menu li a{
+    height:44px!important;padding-top:0!important;padding-bottom:0!important;
+    line-height:1.1!important;
+  }
+}
+@media (max-width:1024px){
+  .nav-links.mobile-only-menu li a{
+    width:85%!important;margin:0 auto!important;height:43px!important;
+    border-radius:50px!important;
+  }
+}
     </style>
 	
   </head>
 
-  <body>
- <header class="top-header">
+ <body>
+
+<header class="top-header">
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
     <a href="/bn/" class="logo" aria-label="Homepage">
       <img src="/assets/logo.webp" width="120" height="36" loading="lazy" alt="ডাঃ রুবিনা সুলতানা ওয়েবসাইট লোগো">
@@ -579,7 +598,6 @@
 
     <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
 
-    <!-- DESKTOP MENU (FULL BANGLA) -->
     <ul class="nav-links">
       <li><a href="/bn/">হোম</a></li>
       <li><a href="#about">ডাক্তারের পরিচিতি</a></li>
@@ -588,14 +606,14 @@
       <li><a href="/bn#chambers">চেম্বার</a></li>
       <li><a href="/bn#testimonials">রোগীর রিভিউ</a></li>
       <li><a href="/bn#media-interviews">টিভি সাক্ষাৎকার</a></li>
-      <li><a href="/bn#verified-profiles">স্বীকৃত প্রোফাইল</a></li>
+      <li><a href="/bn#verified-profiles">ভেরিফায়েড প্রোফাইল</a></li>
       <li><a href="/bn#research">গবেষণা</a></li>
       <li><a href="#faq">প্রশ্নোত্তর</a></li>
       <li><a href="/bn#social-media">ফেসবুক</a></li>
     </ul>
 
-    <!-- MOBILE MENU (FULL BANGLA) -->
-    <ul class="nav-links mobile-only-menu" aria-hidden="true">
+    <!-- Mobile menu (unchanged structure) -->
+    <ul class="nav-links mobile-only-menu">
       <li><a href="/bn/">হোম</a></li>
       <li><a href="#about">ডাঃ রুবিনা সম্পর্কে</a></li>
       <li><a href="#credentials">যোগ্যতা</a></li>
@@ -603,7 +621,7 @@
       <li><a href="/bn#chambers">চেম্বার</a></li>
       <li><a href="/bn#testimonials">রিভিউ</a></li>
       <li><a href="/bn#media-interviews">টিভি প্রোগ্রাম</a></li>
-      <li><a href="/bn#verified-profiles">স্বীকৃত প্রোফাইল</a></li>
+      <li><a href="/bn#verified-profiles">ভেরিফায়েড প্রোফাইল</a></li>
       <li><a href="/bn#research">গবেষণা</a></li>
       <li><a href="#faq">প্রশ্নোত্তর</a></li>
       <li><a href="/bn#social-media">ফেসবুকে অনুসরণ করুন</a></li>
@@ -617,7 +635,7 @@
 
 <section class="intro-header">
   <h1>ঢাকার সেরা ফুসফুস ক্যান্সার বিশেষজ্ঞ – ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</h1>
-  <h2>ফুসফুস ক্যান্সারের আধুনিক চিকিৎসা — রেডিয়েশন, কেমোথেরাপি ও উপসর্গ নিয়ন্ত্রণ</h2>
+  <h2>ফুসফুস ক্যান্সারের আধুনিক চিকিৎসা – রেডিয়েশন, কেমোথেরাপি ও উপসর্গ নিয়ন্ত্রণ</h2>
 
   <section id="qualification">
     <p class="qualifications"><strong>
@@ -648,10 +666,10 @@
     </p>
   </div>
 
-  <p class="tagline">ফুসফুস ক্যান্সার রোগীদের জন্য ব্যক্তিগতায়িত, নিরাপদ ও আধুনিক চিকিৎসা</p>
+  <p class="tagline">ফুসফুস ক্যান্সার রোগীদের জন্য বিশেষায়িত নিরাপদ ও আধুনিক চিকিৎসা</p>
 </section>
 
-
+<main>
 <!-- ================= QUICK LINKS ================= -->
 
 <div class="block-container">
@@ -666,15 +684,12 @@
 
   <p class="also-see">
     <strong>আরও দেখুন:</strong>
-    <a href="/bn/best-female-cancer-specialist-dhaka">ঢাকার সেরা নারী ক্যান্সার বিশেষজ্ঞ</a> ·
-    <a href="/bn/best-tumor-specialist-dhaka">ঢাকার সেরা টিউমার বিশেষজ্ঞ</a> ·
-    <a href="/bn/best-breast-cancer-specialist-dhaka">ঢাকার সেরা ব্রেস্ট ক্যান্সার বিশেষজ্ঞ</a> ·
-    <a href="/bn/best-chemotherapist-dhaka">ঢাকার সেরা কেমোথেরাপি বিশেষজ্ঞ</a>
+    <a href="/bn/best-female-cancer-specialist-dhaka">সেরা নারী ক্যান্সার বিশেষজ্ঞ</a> ·
+    <a href="/bn/best-tumor-specialist-dhaka">সেরা টিউমার বিশেষজ্ঞ</a> ·
+    <a href="/bn/best-breast-cancer-specialist-dhaka">সেরা ব্রেস্ট ক্যান্সার বিশেষজ্ঞ</a> ·
+    <a href="/bn/best-chemotherapist-dhaka">সেরা কেমোথেরাপি বিশেষজ্ঞ</a>
   </p>
 </div>
-
-<main>
-
 
 <!-- ================= ABOUT ================= -->
 
