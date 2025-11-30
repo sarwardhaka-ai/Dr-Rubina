@@ -34,13 +34,13 @@
 <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
 <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
-<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
 <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), fullscreen=(self)">
 <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
 
 
 <!-- ✅ Canonical & hreflang -->
-<link rel="alternate" href="https://drrubinasultana.com/bn" hreflang="bn" />
+<link rel="canonical" href="https://drrubinasultana.com/bn">
+<link rel="alternate" href="https://drrubinasultana.com/bn" hreflang="bn-BD" />
 <link rel="alternate" href="https://drrubinasultana.com/" hreflang="en" />
 <link rel="alternate" href="https://drrubinasultana.com/" hreflang="x-default" />
 
@@ -145,7 +145,7 @@
   "worksFor": [
     {
       "@type": "MedicalOrganization",
-      "@id": "https://drrubinasultana.com/bn#organization",
+      "@id": "https://drrubinasultana.com/#nicrh",
    "name": "National Institute of Cancer Research & Hospital (NICRH)",
       "url": "https://nicrh.gov.bd/",
       "address": {
@@ -158,7 +158,7 @@
     },
     {
       "@type": "Hospital",
-  "@id": "https://drrubinasultana.com/bn#amcgh",
+  "@id": "https://drrubinasultana.com/#amcgh",
   "name": "Ahsania Mission Cancer & General Hospital",
   "url": "https://amcghbd.org/",
       "address": {
@@ -176,7 +176,7 @@
     },
     {
       "@type": "Hospital",
-	  "@id": "https://drrubinasultana.com/bn#delta",
+	  "@id": "https://drrubinasultana.com/#delta",
       "name": "Delta Hospital Ltd",
       "url": "https://www.deltahospital.com.bd/",
       "address": {
@@ -194,7 +194,7 @@
     },
 	{
   "@type": "Hospital",
-  "@id": "https://drrubinasultana.com/bn#enam",
+  "@id": "https://drrubinasultana.com/#enam",
   "name": "Enam Medical College & Hospital Savar",
   "url": "https://emch.com.bd/",
   "address": {
@@ -247,15 +247,14 @@
 </script>
 
  <!-- ✅ Organization Schema (NICRH - Employer Reference for Dr. Rubina Sultana) -->
- <script type="application/ld+json">
+<script type="application/ld+json">
 {
-   "@context": "https://schema.org",
+  "@context": "https://schema.org",
   "@type": "MedicalOrganization",
-  "@id": "https://drrubinasultana.com/bn#organization",
+  "@id": "https://drrubinasultana.com/#nicrh",
   "name": "National Institute of Cancer Research & Hospital (NICRH)",
   "alternateName": "NICRH Dhaka",
   "url": "https://nicrh.gov.bd/",
-  "logo": "https://nicrh.gov.bd/themes/custom/nicrh/logo.png",
   "medicalSpecialty": "Oncology",
   "address": {
     "@type": "PostalAddress",
@@ -265,12 +264,10 @@
     "addressCountry": "BD"
   },
   "sameAs": [
-    "https://nicrh.gov.bd/departments/radiation-oncology",
-    "https://drrubinasultana.com/bn"
+    "https://nicrh.gov.bd/departments/radiation-oncology"
   ]
 }
 </script>
-
 
   <!-- Breadcrumb (bn) -->
   <script type="application/ld+json">
@@ -543,7 +540,7 @@
   {
     "@context": "https://schema.org",
  "@type": "Hospital",
-	"@id": "https://drrubinasultana.com/bn#delta",
+	"@id": "https://drrubinasultana.com/#delta",
     "name": "Delta Hospital Ltd",
 	"image": "https://www.deltahospital.com.bd/assets/img/logo.png",
 	"priceRange": "Affordable",
@@ -557,7 +554,7 @@
   {
     "@context": "https://schema.org",
  "@type": "Hospital",
-	"@id": "https://drrubinasultana.com/bn#enam",
+	"@id": "https://drrubinasultana.com/#enam",
     "name": "Enam Medical College & Hospital Savar",
 	"image": "https://emch.com.bd/assets/images/logo.png",
 	"priceRange": "Affordable",
@@ -566,6 +563,17 @@
     "telephone": "10603"
   }
   </script>
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://drrubinasultana.com/#organization",
+  "name": "Dr. Mosammat Rubina Sultana",
+  "url": "https://drrubinasultana.com",
+  "logo": "https://drrubinasultana.com/assets/logo.webp"
+}
+</script>
   
 <!-- Microsoft Clarity Tracking Code -->
 <script type="text/javascript">
