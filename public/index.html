@@ -24,12 +24,7 @@
 
 	  
       <!-- ✅ Security Headers (CSP moved to firebase.json for better control) -->
-      <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
-      <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-      <meta http-equiv="X-Content-Type-Options" content="nosniff">
-      <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-      <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=(), fullscreen=(self)">
-      <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
+	  
       <!-- ✅ Canonical & Icons -->
       <link rel="canonical" href="https://drrubinasultana.com/">
       <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -40,8 +35,9 @@
       <meta name="geo.placename" content="Dhaka, Bangladesh">
 	  
       <!-- ✅ hreflang for Multilingual Support -->
+<link rel="canonical" href="https://drrubinasultana.com/">
 <link rel="alternate" href="https://drrubinasultana.com/" hreflang="en" />
-<link rel="alternate" href="https://drrubinasultana.com/bn" hreflang="bn" />
+<link rel="alternate" href="https://drrubinasultana.com/bn" hreflang="bn-BD" />
 <link rel="alternate" href="https://drrubinasultana.com/" hreflang="x-default" />
 
       <!-- ✅ Verified GMB / GBP Links -->
@@ -137,7 +133,7 @@
            "worksFor": [
              {
                "@type": "MedicalOrganization",
-               "@id": "https://drrubinasultana.com/#organization",
+               "@id": "https://drrubinasultana.com/#nicrh",
                "name": "National Institute of Cancer Research & Hospital (NICRH)",
                "url": "https://nicrh.gov.bd/",
                "address": {
@@ -243,7 +239,7 @@
          {
             "@context": "https://schema.org",
            "@type": "MedicalOrganization",
-           "@id": "https://drrubinasultana.com/#organization",
+           "@id": "https://drrubinasultana.com/#nicrh",
            "name": "National Institute of Cancer Research & Hospital (NICRH)",
            "alternateName": "NICRH Dhaka",
            "url": "https://nicrh.gov.bd/",
@@ -287,7 +283,7 @@
            "alternateName": "Dr. Rubina Sultana | Radiation Oncologist Bangladesh",
            "inLanguage": ["en", "bn-BD"],
            "about": { "@id": "https://drrubinasultana.com/#person" },
-           "publisher": { "@id": "https://drrubinasultana.com/#organization" },
+           "publisher": { "@id": "https://drrubinasultana.com/#website-organization" },
            "potentialAction": {
              "@type": "SearchAction",
              "target": "https://drrubinasultana.com/?q={search_term_string}",
@@ -309,7 +305,7 @@
            "isPartOf": { "@id": "https://drrubinasultana.com/#website" },
            "about": { "@id": "https://drrubinasultana.com/#person" },
            "breadcrumb": { "@id": "https://drrubinasultana.com/#breadcrumb" },
-           "publisher": { "@id": "https://drrubinasultana.com/#organization" },
+           "publisher": { "@id": "https://drrubinasultana.com/#website-organization" },
            "primaryImageOfPage": {
              "@type": "ImageObject",
              "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
@@ -349,7 +345,7 @@
                }
              }
            ],
-           "publisher": { "@id": "https://drrubinasultana.com/#organization" }
+           "publisher": { "@id": "https://drrubinasultana.com/#website-organization" }
          }
       </script>
       <!-- ✅ Final VideoObject Schema (Dr. Rubina Sultana – Associate Professor, NICRH) -->
@@ -535,6 +531,18 @@
            "telephone": "10603"
          }
       </script>
+	  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://drrubinasultana.com/#organization",
+  "name": "Dr. Mosammat Rubina Sultana",
+  "url": "https://drrubinasultana.com",
+  "logo": "https://drrubinasultana.com/assets/logo.webp"
+}
+</script>
+	  
       <!-- Microsoft Clarity Tracking Code -->
       <script type="text/javascript">
          (function(c,l,a,r,i,t,y){

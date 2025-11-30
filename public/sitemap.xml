@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ✅ Final bilingual + video sitemap for drrubinasultana.com — Updated 2025-11-24 -->
+<!-- ✅ Final bilingual + video sitemap for drrubinasultana.com — Updated 2025-11-30 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
@@ -74,68 +74,67 @@
   </url>
 
   <!-- 🌐 English Service Pages -->
-  <!-- 🔁 Each English page now includes full reciprocal hreflang set -->
+  <!-- 🔥 hreflang now correctly maps EN ↔ BN service pages -->
   
- <url>
-  <loc>https://drrubinasultana.com/best-female-cancer-specialist-dhaka</loc>
-  <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-  <priority>0.85</priority>
-  <changefreq>monthly</changefreq>
+  <url>
+    <loc>https://drrubinasultana.com/best-female-cancer-specialist-dhaka</loc>
+    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
 
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/best-tumor-specialist-dhaka</loc>
-  <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-  <priority>0.82</priority>
-  <changefreq>monthly</changefreq>
+  <url>
+    <loc>https://drrubinasultana.com/best-tumor-specialist-dhaka</loc>
+    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
+    <priority>0.82</priority>
+    <changefreq>monthly</changefreq>
 
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/best-breast-cancer-specialist-dhaka</loc>
-  <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-  <priority>0.82</priority>
-  <changefreq>monthly</changefreq>
+  <url>
+    <loc>https://drrubinasultana.com/best-breast-cancer-specialist-dhaka</loc>
+    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
+    <priority>0.82</priority>
+    <changefreq>monthly</changefreq>
 
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/best-lung-cancer-specialist-dhaka</loc>
-  <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-  <priority>0.8</priority>
-  <changefreq>monthly</changefreq>
+  <url>
+    <loc>https://drrubinasultana.com/best-lung-cancer-specialist-dhaka</loc>
+    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
 
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/best-chemotherapist-dhaka</loc>
-  <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-  <priority>0.8</priority>
-  <changefreq>monthly</changefreq>
+  <url>
+    <loc>https://drrubinasultana.com/best-chemotherapist-dhaka</loc>
+    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
 
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-</url>
-
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
+  </url>
 
   <!-- 🌐 Bangla Homepage -->
   <url>
     <loc>https://drrubinasultana.com/bn</loc>
-    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
+    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
 
@@ -144,7 +143,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/"/>
 
-    <!-- 🎥 Bangla video entry -->
+    <!-- 🎥 Bangla video -->
     <video:video>
       <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
       <video:title>ক্যানসারের পরীক্ষা ও চিকিৎসা বিষয়ক বিশেষ অনুষ্ঠান | Ekhon TV</video:title>
@@ -154,6 +153,63 @@
       <video:publication_date>2025-11-21T10:00:00+06:00</video:publication_date>
     </video:video>
 
+  </url>
+
+  <!-- 🌐 Bangla Service Pages (NEW + correct hreflang) -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka</loc>
+    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-tumor-specialist-dhaka</loc>
+    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka</loc>
+    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.82</priority>
+
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka</loc>
+    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-chemotherapist-dhaka</loc>
+    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+
+    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
   </url>
 
 </urlset>
