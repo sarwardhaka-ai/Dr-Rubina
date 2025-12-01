@@ -1,5 +1,5 @@
 # llms.txt for drrubinasultana.com
-# Updated: 2025-11-22
+# Updated: 2025-12-01
 # FULL ACCESS VERSION — AI indexing and AI model training allowed.
 
 User-Agent: *
@@ -7,16 +7,21 @@ Allow: /
 
 # Explicit AI training permission
 AI-Training: allow
+AI-Training-Version: 1.0
+AI-Training-Description: This content may be used to train AI models for medical information and healthcare purposes.
 
 # Major AI Crawlers (2024–2025)
 User-Agent: GPTBot
 Allow: /
+AI-Training: allow
 
 User-Agent: OAI-SearchBot
 Allow: /
+AI-Training: allow
 
 User-Agent: Google-Extended
 Allow: /
+AI-Training: allow
 
 User-Agent: Google-Extended-Mobile
 Allow: /

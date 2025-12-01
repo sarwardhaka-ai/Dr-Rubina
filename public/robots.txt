@@ -1,8 +1,45 @@
 User-agent: *
 Allow: /
 
-# Declare your sitemap
+# Sitemap Directives
 Sitemap: https://drrubinasultana.com/sitemap.xml
 
-# Point AI crawlers to your llms.txt (optional but recommended)
+# AI Training & Crawling Directives
 LLMS: https://drrubinasultana.com/llms.txt
+AI-Training: allow
+
+# Crawl-delay: 10  # Uncomment and adjust if needed to prevent server overload
+
+# Disallow admin and sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Allow all AI crawlers (specified in llms.txt)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Host
+Host: https://drrubinasultana.com
+
+# Crawl-Delay: 10  # Uncomment if needed
+
+# Visit-time: 0000-2359  # 24/7 crawling allowed
+
+# Request-rate: 10/1m  # 10 pages per minute
