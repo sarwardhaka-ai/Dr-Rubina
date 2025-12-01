@@ -163,10 +163,10 @@
   ],
 
   "worksFor": [
-   { "@type": "MedicalOrganization", "@id": "https://drrubinasultana.com/#nicrh" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#amcgh" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#delta" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#enam" }
+    { "@id": "https://drrubinasultana.com/#nicrh" },
+    { "@id": "https://drrubinasultana.com/#amcgh" },
+    { "@id": "https://drrubinasultana.com/#delta" },
+    { "@id": "https://drrubinasultana.com/#enam" }
   ],
 
   "areaServed": [ "Dhaka", "Bangladesh" ],
@@ -176,6 +176,68 @@
     "https://amcghbd.org/doctor_details/dr-mosammat-rubina-sultana",
     "https://www.doctorbangladesh.com/dr-mosammat-rubina-sultana/",
     "https://www.facebook.com/profile.php?id=61565733513826"
+  ],
+  
+  "@graph": [
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://drrubinasultana.com/#nicrh",
+      "name": "National Institute of Cancer Research & Hospital (NICRH)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mohakhali, Dhaka 1212",
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka",
+        "postalCode": "1212",
+        "addressCountry": "BD"
+      },
+      "url": "https://nicrh.gov.bd"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#amcgh",
+      "name": "Ahsania Mission Cancer & General Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1/8, Block-E, Lalmatia",
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka",
+        "postalCode": "1207",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8809613787811",
+      "url": "https://amcghbd.org"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#delta",
+      "name": "Delta Medical College & Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot 4-8, Road 2, Sector 4, Dhaka 1230",
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka",
+        "postalCode": "1230",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8809612345678",
+      "url": "https://delta-hospital.com"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#enam",
+      "name": "Enam Medical College & Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9/3, Parbotti Nagar, Savar Union",
+        "addressLocality": "Savar",
+        "addressRegion": "Dhaka",
+        "postalCode": "1340",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8801713300000",
+      "url": "https://emch.com.bd"
+    }
   ],
 
   "knowsAbout": [

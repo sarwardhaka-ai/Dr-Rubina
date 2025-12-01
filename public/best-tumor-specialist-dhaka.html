@@ -208,10 +208,10 @@
   ],
 
   "worksFor": [
-   { "@type": "MedicalOrganization", "@id": "https://drrubinasultana.com/#nicrh" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#amcgh" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#delta" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#enam" }
+    { "@id": "https://drrubinasultana.com/#nicrh" },
+    { "@id": "https://drrubinasultana.com/#amcgh" },
+    { "@id": "https://drrubinasultana.com/#delta" },
+    { "@id": "https://drrubinasultana.com/#enam" }
   ],
 
   "areaServed": [
@@ -225,6 +225,68 @@
     "https://www.doctorbangladesh.com/dr-mosammat-rubina-sultana/",
     "https://www.facebook.com/profile.php?id=61565733513826"
   ],
+  
+  "@graph": [
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://drrubinasultana.com/#nicrh",
+      "name": "National Institute of Cancer Research & Hospital (NICRH)",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mohakhali, Dhaka 1212",
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka",
+        "postalCode": "1212",
+        "addressCountry": "BD"
+      },
+      "url": "https://nicrh.gov.bd"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#amcgh",
+      "name": "Ahsania Mission Cancer & General Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1/8, Block-E, Lalmatia",
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka",
+        "postalCode": "1207",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8809613787811",
+      "url": "https://amcghbd.org"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#delta",
+      "name": "Delta Medical College & Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot 4-8, Road 2, Sector 4, Dhaka 1230",
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka",
+        "postalCode": "1230",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8809612345678",
+      "url": "https://delta-hospital.com"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#enam",
+      "name": "Enam Medical College & Hospital",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9/3, Parbotti Nagar, Savar Union",
+        "addressLocality": "Savar",
+        "addressRegion": "Dhaka",
+        "postalCode": "1340",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8801713300000",
+      "url": "https://emch.com.bd"
+    }
+  ],
 
   "knowsAbout": [
     "Benign Tumors",
@@ -235,6 +297,70 @@
     "Chemotherapy",
     "Oncology Research"
   ]
+}
+</script>
+
+<!-- Hospital Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "@id": "https://drrubinasultana.com/#amcgh",
+  "name": "Ahsania Mission Cancer & General Hospital",
+  "description": "Ahsania Mission Cancer & General Hospital is a leading healthcare facility in Dhaka providing comprehensive cancer care.",
+  "url": "https://amcghbd.org/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "House #12, Road #12, Dhanmondi",
+    "addressLocality": "Dhaka",
+    "postalCode": "1209",
+    "addressCountry": "BD"
+  },
+  "telephone": "+8802222222222",
+  "priceRange": "$$",
+  "image": "https://amcghbd.org/images/logo.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "@id": "https://drrubinasultana.com/#delta",
+  "name": "Delta Hospital Ltd.",
+  "description": "Delta Hospital is a multi-disciplinary hospital in Dhaka offering specialized cancer treatment services.",
+  "url": "https://delta-hospital.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plot #81, Block #E, Road #1, Bashundhara R/A",
+    "addressLocality": "Dhaka",
+    "postalCode": "1229",
+    "addressCountry": "BD"
+  },
+  "telephone": "+8802222222223",
+  "priceRange": "$$$",
+  "image": "https://delta-hospital.com/images/logo.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "@id": "https://drrubinasultana.com/#enam",
+  "name": "Enam Medical College Hospital",
+  "description": "Enam Medical College Hospital is a leading medical institution in Dhaka providing comprehensive healthcare services.",
+  "url": "https://emch.com.bd/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plot #81, Block #A, Main Road, Savar Cantonment",
+    "addressLocality": "Savar, Dhaka",
+    "postalCode": "1349",
+    "addressCountry": "BD"
+  },
+  "telephone": "+8802222222224",
+  "priceRange": "$$",
+  "image": "https://emch.com.bd/images/logo.png"
 }
 </script>
 
