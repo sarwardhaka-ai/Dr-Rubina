@@ -1,23 +1,46 @@
+# Global directives for all crawlers
 User-agent: *
 Allow: /
-
-# Sitemap Directives
-Sitemap: https://drrubinasultana.com/sitemap.xml
-
-# AI Training & Crawling Directives
-LLMS: https://drrubinasultana.com/llms.txt
-AI-Training: allow
-
-# Crawl-delay: 10  # Uncomment and adjust if needed to prevent server overload
-
-# Disallow admin and sensitive areas
 Disallow: /admin/
 Disallow: /private/
 Disallow: /cgi-bin/
 
-# Allow all major search engines
+# Sitemap Directives
+Sitemap: https://drrubinasultana.com/sitemap.xml
+
+# Crawl-delay: 10  # Uncomment and adjust if needed to prevent server overload
+
+# AI Crawler Controls
+# Google AI
+User-agent: Google-Extended
+Disallow: /
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+# Anthropic
+User-agent: anthropic-ai
+Disallow: /
+
+# Common AI/LLM Crawlers
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Allow standard search engines
 User-agent: Googlebot
 Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block AI training by specific services
+# Facebook AI
+User-agent: facebookexternalhit/1.1
+Disallow: /
 
 User-agent: Bingbot
 Allow: /
