@@ -172,9 +172,84 @@
       "identifier":{"@type":"PropertyValue","name":"BMDC Registration No","value":"A-36764"},
       "medicalSpecialty":["টিউমার অনকোলজি","রেডিয়েশন অনকোলজি","মেডিকেল অনকোলজি","ব্র্যাকিথেরাপি","কেমোথেরাপি"],
       "hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"MBBS"},{"@type":"EducationalOccupationalCredential","credentialCategory":"FCPS (Radiotherapy)"},{"@type":"EducationalOccupationalCredential","credentialCategory":"BCS (Health)"},{"@type":"EducationalOccupationalCredential","credentialCategory":"IAEA Certification in Radiotherapy & Brachytherapy"}],
-      "worksFor":[{"@type":"MedicalOrganization","@id":"https://drrubinasultana.com/#nicrh"},{"@type":"Hospital","@id":"https://drrubinasultana.com/#amcgh"},{"@type":"Hospital","@id":"https://drrubinasultana.com/#delta"},{"@type":"Hospital","@id":"https://drrubinasultana.com/#enam"}],
-      "areaServed":["Dhaka","Bangladesh"],
-      "sameAs":["https://nicrh.gov.bd/departments/radiation-oncology","https://amcghbd.org/doctor_details/dr-mosammat-rubina-sultana","https://www.doctorbangladesh.com/dr-mosammat-rubina-sultana/"]
+      "worksFor": [
+        { "@id": "https://drrubinasultana.com/#nicrh" },
+        { "@id": "https://drrubinasultana.com/#amcgh" },
+        { "@id": "https://drrubinasultana.com/#delta" },
+        { "@id": "https://drrubinasultana.com/#enam" }
+      ],
+      
+      "@graph": [
+        {
+          "@type": "MedicalOrganization",
+          "@id": "https://drrubinasultana.com/#nicrh",
+          "name": "জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট ও হাসপাতাল (NICRH)",
+          "name@en": "National Institute of Cancer Research & Hospital (NICRH)",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "মোহাম্মদপুর, ঢাকা ১২১২",
+            "addressLocality": "ঢাকা",
+            "addressRegion": "ঢাকা",
+            "postalCode": "১২১২",
+            "addressCountry": "BD"
+          },
+          "url": "https://nicrh.gov.bd"
+        },
+        {
+          "@type": "Hospital",
+          "@id": "https://drrubinasultana.com/#amcgh",
+          "name": "আহ্ছানিয়া মিশন ক্যান্সার ও জেনারেল হাসপাতাল",
+          "name@en": "Ahsania Mission Cancer & General Hospital",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "১/৮, ব্লক-ই, লালমাটিয়া",
+            "addressLocality": "ঢাকা",
+            "addressRegion": "ঢাকা",
+            "postalCode": "১২০৭",
+            "addressCountry": "BD"
+          },
+          "telephone": "+8809613787811",
+          "url": "https://amcghbd.org"
+        },
+        {
+          "@type": "Hospital",
+          "@id": "https://drrubinasultana.com/#delta",
+          "name": "ডেল্টা মেডিকেল কলেজ ও হাসপাতাল",
+          "name@en": "Delta Medical College & Hospital",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "প্লট ৪-৮, রোড ২, সেক্টর ৪, উত্তরা, ঢাকা ১২৩০",
+            "addressLocality": "ঢাকা",
+            "addressRegion": "ঢাকা",
+            "postalCode": "১২৩০",
+            "addressCountry": "BD"
+          },
+          "telephone": "+8809612345678",
+          "url": "https://delta-hospital.com"
+        },
+        {
+          "@type": "Hospital",
+          "@id": "https://drrubinasultana.com/#enam",
+          "name": "এনাম মেডিকেল কলেজ ও হাসপাতাল",
+          "name@en": "Enam Medical College & Hospital",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "৯/৩, পর্বতী নগর, সাভার ইউনিয়ন",
+            "addressLocality": "সাভার",
+            "addressRegion": "ঢাকা",
+            "postalCode": "১৩৪০",
+            "addressCountry": "BD"
+          },
+          "telephone": "+8801713300000",
+          "url": "https://emch.com.bd"
+        }
+      ],
+      "areaServed": ["Dhaka", "Bangladesh"],
+      "sameAs": [
+        "https://nicrh.gov.bd/departments/radiation-oncology",
+        "https://amcghbd.org/doctor_details/dr-mosammat-rubina-sultana",
+        "https://www.doctorbangladesh.com/dr-mosammat-rubina-sultana/"
+      ]
     }
     </script>
 
