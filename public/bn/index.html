@@ -128,11 +128,12 @@
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "IAEA Certification in Radiotherapy & Brachytherapy" }
   ],
   "worksFor": [
-    { "@type": "MedicalOrganization", "@id": "https://drrubinasultana.com/#nicrh", "name": "National Institute of Cancer Research & Hospital (NICRH)", "url": "https://nicrh.gov.bd/" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#amcgh", "name": "Ahsania Mission Cancer & General Hospital", "url": "https://amcghbd.org/" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#delta", "name": "Delta Hospital Ltd", "url": "https://www.deltahospital.com.bd/" },
-    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#enam", "name": "Enam Medical College & Hospital Savar", "url": "https://emch.com.bd/" }
+    { "@id": "https://drrubinasultana.com/#nicrh" },
+    { "@id": "https://drrubinasultana.com/#amcgh" },
+    { "@id": "https://drrubinasultana.com/#delta" },
+    { "@id": "https://drrubinasultana.com/#enam" }
   ],
+  "areaServed": ["Dhaka"],
   "affiliation": [
     { "@type": "MedicalOrganization", "name": "Bangladesh Society of Radiation Oncologists (BSRO)" },
     { "@type": "MedicalOrganization", "name": "Oncology Club of Bangladesh" }
@@ -167,25 +168,118 @@
 }
 </script>
 
- <!-- ✅ Organization Schema (NICRH - Employer Reference for Dr. Rubina Sultana) -->
+ <!-- ✅ Medical Business Schema -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalOrganization",
-  "@id": "https://drrubinasultana.com/#nicrh",
-  "name": "National Institute of Cancer Research & Hospital (NICRH)",
-  "alternateName": "NICRH Dhaka",
-  "url": "https://nicrh.gov.bd/",
-  "medicalSpecialty": "Oncology",
+  "@type": "MedicalBusiness",
+  "name": "Dr. Mosammat Rubina Sultana - Best Cancer Specialist and Radiation Oncologist",
+  "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+  "@id": "https://drrubinasultana.com/bn#medicalbusiness",
+  "url": "https://drrubinasultana.com/bn",
+  "telephone": "+8801868592848",
+  "priceRange": "Affordable",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Mohakhali",
+    "streetAddress": "Sector 10, Uttara",
     "addressLocality": "Dhaka",
-    "postalCode": "1212",
+    "postalCode": "1230",
     "addressCountry": "BD"
   },
-  "sameAs": [
-    "https://nicrh.gov.bd/departments/radiation-oncology"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 23.8103,
+    "longitude": 90.4125
+  },
+  "medicalSpecialty": [
+    "Oncology",
+    "Radiation Oncology",
+    "Medical Oncology",
+    "Radiotherapy",
+    "Chemotherapy"
+  ]
+}
+</script>
+
+  <!-- ✅ Organization Schema (NICRH) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalOrganization",
+      "@id": "https://drrubinasultana.com/#nicrh",
+      "name": "National Institute of Cancer Research & Hospital (NICRH)",
+      "description": "The National Institute of Cancer Research & Hospital (NICRH) is the only government cancer hospital in Bangladesh providing comprehensive cancer treatment and research facilities.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mohakhali, TB Gate Road",
+        "addressLocality": "Mohakhali",
+        "addressRegion": "Dhaka",
+        "postalCode": "1212",
+        "addressCountry": "BD"
+      },
+      "telephone": "+88027913975",
+      "url": "https://nicrh.gov.bd",
+      "priceRange": "Affordable",
+      "image": "https://nicrh.gov.bd/images/logo.png"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#amcgh",
+      "name": "Ahsania Mission Cancer & General Hospital",
+      "alternateName": "আহসানিয়া মিশন ক্যান্সার ও জেনারেল হাসপাতাল",
+      "description": "Ahsania Mission Cancer & General Hospital is a leading healthcare facility in Dhaka providing comprehensive cancer care with modern treatment facilities.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Plot #03, Embankment Drive Way, Sector 10",
+        "addressLocality": "Uttara",
+        "addressRegion": "Dhaka",
+        "postalCode": "1230",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8809612310617",
+      "url": "https://amcghbd.org",
+      "priceRange": "Affordable",
+      "image": "https://amcghbd.org/images/logo.png"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#delta",
+      "name": "Delta Hospital Ltd",
+      "alternateName": "ডেল্টা হাসপাতাল লিমিটেড",
+      "description": "Delta Hospital Ltd is a multi-specialty hospital in Dhaka providing specialized cancer treatment services.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "26/2 Principal Abul Kashem Road, Mirpur-1",
+        "addressLocality": "Dhaka",
+        "postalCode": "1216",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8801795699147",
+      "url": "https://www.deltahospital.com.bd/",
+      "priceRange": "Affordable",
+      "image": "https://www.deltahospital.com.bd/assets/img/logo.png"
+    },
+    {
+      "@type": "Hospital",
+      "@id": "https://drrubinasultana.com/#enam",
+      "name": "Enam Medical College & Hospital Savar",
+      "alternateName": "এনাম মেডিকেল কলেজ ও হাসপাতাল, সাভার",
+      "description": "Enam Medical College & Hospital is a renowned healthcare institution in Savar, Dhaka, providing comprehensive cancer treatment and care.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9/3, Parbotti Nagar, Savar Union",
+        "addressLocality": "Savar",
+        "addressRegion": "Dhaka",
+        "postalCode": "1340",
+        "addressCountry": "BD"
+      },
+      "telephone": "+8801716358146",
+      "url": "https://emch.com.bd",
+      "priceRange": "Affordable",
+      "image": "https://emch.com.bd/images/logo.png"
+    }
   ]
 }
 </script>
