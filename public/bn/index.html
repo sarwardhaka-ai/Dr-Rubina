@@ -128,12 +128,11 @@
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "IAEA Certification in Radiotherapy & Brachytherapy" }
   ],
   "worksFor": [
-    { "@id": "https://drrubinasultana.com/#nicrh" },
-    { "@id": "https://drrubinasultana.com/#amcgh" },
-    { "@id": "https://drrubinasultana.com/#delta" },
-    { "@id": "https://drrubinasultana.com/#enam" }
+    { "@type": "MedicalOrganization", "@id": "https://drrubinasultana.com/#nicrh", "name": "National Institute of Cancer Research & Hospital (NICRH)", "url": "https://nicrh.gov.bd/" },
+    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#amcgh", "name": "Ahsania Mission Cancer & General Hospital", "url": "https://amcghbd.org/" },
+    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#delta", "name": "Delta Hospital Ltd", "url": "https://www.deltahospital.com.bd/" },
+    { "@type": "Hospital", "@id": "https://drrubinasultana.com/#enam", "name": "Enam Medical College & Hospital Savar", "url": "https://emch.com.bd/" }
   ],
-  "areaServed": ["Dhaka"],
   "affiliation": [
     { "@type": "MedicalOrganization", "name": "Bangladesh Society of Radiation Oncologists (BSRO)" },
     { "@type": "MedicalOrganization", "name": "Oncology Club of Bangladesh" }
@@ -168,108 +167,25 @@
 }
 </script>
 
- <!-- ✅ Medical Business Schema -->
+ <!-- ✅ Organization Schema (NICRH - Employer Reference for Dr. Rubina Sultana) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Dr. Mosammat Rubina Sultana - Best Cancer Specialist and Radiation Oncologist",
-  "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
-  "@id": "https://drrubinasultana.com/bn#medicalbusiness",
-  "url": "https://drrubinasultana.com/bn",
-  "telephone": "+8801868592848",
-  "priceRange": "Affordable",
+  "@type": "MedicalOrganization",
+  "@id": "https://drrubinasultana.com/#nicrh",
+  "name": "National Institute of Cancer Research & Hospital (NICRH)",
+  "alternateName": "NICRH Dhaka",
+  "url": "https://nicrh.gov.bd/",
+  "medicalSpecialty": "Oncology",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Sector 10, Uttara",
+    "streetAddress": "Mohakhali",
     "addressLocality": "Dhaka",
-    "postalCode": "1230",
+    "postalCode": "1212",
     "addressCountry": "BD"
   },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 23.8103,
-    "longitude": 90.4125
-  },
-  "medicalSpecialty": [
-    "Oncology",
-    "Radiation Oncology",
-    "Medical Oncology",
-    "Radiotherapy",
-    "Chemotherapy"
-  ]
-}
-</script>
-
-  <!-- ✅ Organization Schema (NICRH) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "MedicalOrganization",
-      "@id": "https://drrubinasultana.com/#nicrh",
-      "name": "National Institute of Cancer Research & Hospital (NICRH)",
-      "description": "The National Institute of Cancer Research & Hospital (NICRH) is the only government cancer hospital in Bangladesh providing comprehensive cancer treatment and research facilities.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Mohakhali, TB Gate Road",
-        "addressLocality": "Mohakhali",
-        "addressRegion": "Dhaka",
-        "postalCode": "1212",
-        "addressCountry": "BD"
-      },
-      "telephone": "+88027913975",
-      "url": "https://nicrh.gov.bd",
-      "priceRange": "Affordable"
-    },
-    {
-      "@type": "Hospital",
-      "@id": "https://drrubinasultana.com/#amcgh",
-      "name": "Ahsania Mission Cancer & General Hospital",
-      "alternateName": "আহসানিয়া মিশন ক্যান্সার ও জেনারেল হাসপাতাল",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Plot #03, Embankment Drive Way, Sector 10",
-        "addressLocality": "Uttara",
-        "addressRegion": "Dhaka",
-        "postalCode": "1230",
-        "addressCountry": "BD"
-      },
-      "telephone": "+8801868592848",
-      "priceRange": "Affordable"
-    },
-    {
-      "@type": "Hospital",
-      "@id": "https://drrubinasultana.com/#delta",
-      "name": "Delta Hospital Ltd",
-      "alternateName": "ডেল্টা হাসপাতাল লিমিটেড",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "26/2 Principal Abul Kashem Road, Mirpur-1",
-        "addressLocality": "Dhaka",
-        "postalCode": "1216",
-        "addressCountry": "BD"
-      },
-      "telephone": "+8801795699147",
-      "priceRange": "Affordable"
-    },
-    {
-      "@type": "Hospital",
-      "@id": "https://drrubinasultana.com/#enam",
-      "name": "Enam Medical College & Hospital Savar",
-      "alternateName": "এনাম মেডিকেল কলেজ ও হাসপাতাল, সাভার",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "9/3, Parbotti Nagar, Savar Union",
-        "addressLocality": "Savar",
-        "addressRegion": "Dhaka",
-        "postalCode": "1340",
-        "addressCountry": "BD"
-      },
-      "telephone": "+8801716358146",
-      "priceRange": "Affordable"
-    }
+  "sameAs": [
+    "https://nicrh.gov.bd/departments/radiation-oncology"
   ]
 }
 </script>
@@ -526,7 +442,203 @@
 }
 </script>
 
-  <!-- Microsoft Clarity Tracking Code -->
+  <!-- LocalBusiness Schema for GBP (Bengali) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Dr. Mosammat Rubina Sultana - Best Cancer Specialist and Radiation Oncologist",
+    "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+    "@id": "https://drrubinasultana.com/bn",
+    "url": "https://drrubinasultana.com/bn",
+    "telephone": "+880 1868592848",
+    "priceRange": "Affordable",
+    "inLanguage": "bn",
+    "medicalSpecialty": "ক্যান্সার চিকিৎসা, অনকোলজি",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "এম্ব্যাঙ্কমেন্ট ড্রাইভ ওয়ে, সেক্টর-১০",
+      "addressLocality": "উত্তরা",
+      "addressRegion": "ঢাকা",
+      "postalCode": "১২৩০",
+      "addressCountry": "BD"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "ক্যান্সার চিকিৎসা সেবাসমূহ",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "রেডিয়েশন থেরাপি",
+          "itemListElement": [
+            { "@type": "MedicalTherapy", "name": "বাহ্যিক বিম রেডিয়েশন" },
+            { "@type": "MedicalTherapy", "name": "ব্র্যাকিথেরাপি" },
+            { "@type": "MedicalTherapy", "name": "আইএমআরটি" },
+            { "@type": "MedicalTherapy", "name": "আইজিআরটি" }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "কেমোথেরাপি",
+          "itemListElement": [
+            { "@type": "MedicalTherapy", "name": "সিস্টেমিক কেমোথেরাপি" },
+            { "@type": "MedicalTherapy", "name": "টার্গেটেড থেরাপি" },
+            { "@type": "MedicalTherapy", "name": "ইমিউনোথেরাপি" }
+          ]
+        }
+      ]
+    },
+    "department": [
+      {
+        "@type": "MedicalBusiness",
+        "name": "Ahsania Mission Cancer & General Hospital",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "telephone": "+88010617",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "এম্ব্যাঙ্কমেন্ট ড্রাইভ ওয়ে, সেক্টর-১০",
+          "addressLocality": "উত্তরা",
+          "addressRegion": "ঢাকা",
+          "postalCode": "১২৩০",
+          "addressCountry": "BD"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 23.8622,
+          "longitude": 90.4008
+        },
+        "priceRange": "Affordable",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "শনিবার",
+              "রবিবার",
+              "সোমবার",
+              "মঙ্গলবার",
+              "বুধবার",
+              "বৃহস্পতিবার"
+            ],
+            "opens": "16:30",
+            "closes": "20:00"
+          }
+        ]
+      },
+      {
+        "@type": "MedicalBusiness",
+        "name": "Delta Hospital Ltd",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "telephone": "+8801795699147",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "২৬/২, প্রিন্সিপাল আবুল কাশেম রোড, মিরপুর-১",
+          "addressLocality": "ঢাকা",
+          "addressRegion": "ঢাকা",
+          "postalCode": "১২১৬",
+          "addressCountry": "BD"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 23.8056,
+          "longitude": 90.3680
+        },
+        "priceRange": "Affordable",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "সোমবার",
+              "বুধবার"
+            ],
+            "opens": "14:30",
+            "closes": "16:00"
+          }
+        ]
+      }
+    ],
+    "sameAs": [
+      "https://www.google.com/maps/place/?q=place_id:ChIJK5kXKn3BVTcRyI0dnfTnpyw",
+      "https://www.google.com/maps/place/?q=place_id:ChIJibF52PfFVTcRs2f2eps-ceM"
+    ]
+  }
+  </script>
+  
+  <!-- ✅ Chamber Schemas -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "@id": "https://drrubinasultana.com/#amcgh",
+  "name": "Ahsania Mission Cancer & General Hospital",
+  "image": "https://drrubinasultana.com/assets/ahsania-logo.png",
+  "priceRange": "Affordable",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plot-03, Embankment Drive Way, Sector-10",
+    "addressLocality": "Uttara Model Town",
+    "addressRegion": "Dhaka",
+    "postalCode": "1230",
+    "addressCountry": "BD"
+  },
+  "hasMap": "https://maps.app.goo.gl/iZQp6L5B612wDsFS8",
+  "telephone": "+8809612310617"
+}
+</script>
+
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "@id": "https://drrubinasultana.com/#delta",
+  "name": "Delta Hospital Ltd",
+  "image": "https://www.deltahospital.com.bd/assets/img/logo.png",
+  "priceRange": "Affordable",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "26/2 Principal Abul Kashem Road",
+    "addressLocality": "Mirpur-1",
+    "addressRegion": "Dhaka",
+    "postalCode": "1216",
+    "addressCountry": "BD"
+  },
+  "hasMap": "https://maps.app.goo.gl/1JN8Xhw8wnUK41CP6",
+  "telephone": "+8801795699147"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hospital",
+  "@id": "https://drrubinasultana.com/#enam",
+  "name": "Enam Medical College & Hospital Savar",
+  "image": "https://emch.com.bd/assets/images/logo.png",
+  "priceRange": "Affordable",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "9/3, Parboti Nagar, Thana Road",
+    "addressLocality": "Savar",
+    "addressRegion": "Dhaka",
+    "postalCode": "1340",
+    "addressCountry": "BD"
+  },
+  "hasMap": "https://maps.app.goo.gl/CjTtsaji4DQLH5gY9",
+  "telephone": "+8801716358146"
+}
+</script>
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://drrubinasultana.com/bn#organization",
+  "name": "Dr. Mosammat Rubina Sultana",
+  "url": "https://drrubinasultana.com/bn",
+  "logo": "https://drrubinasultana.com/assets/logo.webp"
+}
+</script>
+  
+<!-- Microsoft Clarity Tracking Code -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
