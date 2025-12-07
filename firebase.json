@@ -8,18 +8,7 @@
       "**/node_modules/**"
     ],
     "i18n": {
-      "root": "/",
-      "i18nPath": "/",
-      "locales": {
-        "en": {
-          "path": "",
-          "hreflang": "en-BD"
-        },
-        "bn": {
-          "path": "bn",
-          "hreflang": "bn-BD"
-        }
-      }
+      "root": "/"
     },
 
     "cleanUrls": true,
