@@ -1,46 +1,19 @@
-# Global directives for all crawlers
+# ===========================
+# GLOBAL ACCESS (SEO + AI Friendly)
+# ===========================
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /cgi-bin/
 
-# Sitemap Directives
 Sitemap: https://drrubinasultana.com/sitemap.xml
 
-# Crawl-delay: 10  # Uncomment and adjust if needed to prevent server overload
-
-# AI Crawler Controls
-# Google AI
-User-agent: Google-Extended
-Disallow: /
-
-# OpenAI
-User-agent: GPTBot
-Disallow: /
-
-# Anthropic
-User-agent: anthropic-ai
-Disallow: /
-
-# Common AI/LLM Crawlers
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
-
-# Allow standard search engines
+# ===========================
+# Search Engine Crawlers
+# ===========================
 User-agent: Googlebot
 Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# Block AI training by specific services
-# Facebook AI
-User-agent: facebookexternalhit/1.1
-Disallow: /
 
 User-agent: Bingbot
 Allow: /
@@ -48,21 +21,34 @@ Allow: /
 User-agent: Slurp
 Allow: /
 
-# Allow all AI crawlers (specified in llms.txt)
+# ===========================
+# AI / LLM Crawlers Allowed
+# ===========================
 User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-# Host
-Host: https://drrubinasultana.com
+User-agent: OAI-SearchBot
+Allow: /
 
-# Crawl-Delay: 10  # Uncomment if needed
+User-agent: anthropic-ai
+Allow: /
 
-# Visit-time: 0000-2359  # 24/7 crawling allowed
+User-agent: CCBot
+Allow: /
 
-# Request-rate: 10/1m  # 10 pages per minute
+User-agent: ChatGPT-User
+Allow: /
+
+user-agent: facebookexternalhit
+Allow: /
+
+# ===========================
+# Optional performance controls (disabled)
+# Crawl-delay: 10
+# Request-rate: 10/1m
+# ===========================
+
+# End of robots.txt
