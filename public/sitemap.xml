@@ -1,282 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- ✅ Enhanced sitemap for drrubinasultana.com — Updated 2025-12-01 -->
 <urlset 
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-    xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-  <!-- 🌐 English Homepage -->
-  <url>
-    <loc>https://drrubinasultana.com/</loc>
-    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+<!-- ========================= ENGLISH HOMEPAGE ========================= -->
+<url>
+  <loc>https://drrubinasultana.com/</loc>
+  <lastmod>2025-11-24T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
 
-    <!-- Reciprocal hreflangs -->
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/"/>
 
-    <!-- 🎥 Video Objects with Enhanced Metadata -->
-    <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp</video:thumbnail_loc>
-      <video:title>Special Program on Cancer Diagnosis and Treatment | Ekhon TV</video:title>
-      <video:description>Dr. Rubina Sultana, a leading oncologist in Dhaka, discusses the latest advancements in cancer diagnosis, screening, and treatment options in this special program on Ekhon TV.</video:description>
-      <video:content_loc>https://www.facebook.com/reel/1195874992407084/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1195874992407084&amp;</video:player_loc>
-      <video:duration>600</video:duration>
-      <video:publication_date>2025-11-21T10:00:00+06:00</video:publication_date>
-      <video:expiration_date>2026-11-21T10:00:00+06:00</video:expiration_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:uploader info="https://drrubinasultana.com">Dr. Mosammat Rubina Sultana</video:uploader>
-      <video:view_count>1000</video:view_count>
-      <video:tags>cancer treatment, oncology, radiation therapy, Dhaka, Bangladesh, medical expert, cancer specialist</video:tags>
-      <video:category>Health &amp; Medical</video:category>
-    </video:video>
+  <!-- 6 English Video Entries -->
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp</video:thumbnail_loc>
+    <video:title>Special Program on Cancer Diagnosis and Treatment | Ekhon TV</video:title>
+    <video:description>Discussion on cancer diagnosis and treatment.</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1195874992407084&amp;</video:player_loc>
+    <video:duration>600</video:duration>
+    <video:publication_date>2025-11-21T10:00:00+06:00</video:publication_date>
+    <video:tag>cancer</video:tag><video:tag>oncology</video:tag><video:tag>Dhaka</video:tag><video:tag>specialist</video:tag>
+  </video:video>
 
-    <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>Lung Cancer Awareness Program | ATN News TV</video:title>
-      <video:description>Dr. Rubina Sultana speaks about lung cancer awareness and prevention on ATN News TV.</video:description>
-      <video:content_loc>https://www.facebook.com/reel/588466000219527/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/588466000219527&amp;</video:player_loc>
-      <video:duration>300</video:duration>
-      <video:publication_date>2025-10-21T10:00:00+06:00</video:publication_date>
-      <video:expiration_date>2026-10-21T10:00:00+06:00</video:expiration_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:uploader info="https://drrubinasultana.com">Dr. Mosammat Rubina Sultana</video:uploader>
-      <video:view_count>500</video:view_count>
-      <video:tags>lung cancer, cancer awareness, oncology, Dhaka, Bangladesh, medical expert, cancer specialist</video:tags>
-      <video:category>Health &amp; Medical</video:category>
-    </video:video>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>Lung Cancer Awareness Program | ATN News TV</video:title>
+    <video:description>Lung cancer prevention and awareness.</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/588466000219527&amp;</video:player_loc>
+    <video:duration>300</video:duration>
+    <video:publication_date>2025-10-21T10:00:00+06:00</video:publication_date>
+    <video:tag>lung cancer</video:tag><video:tag>oncology</video:tag><video:tag>awareness</video:tag>
+  </video:video>
 
-    <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>Why Cancer Occurs: Symptoms &amp; Prevention | Samakal News</video:title>
-      <video:description>Dr. Rubina Sultana explains causes, symptoms, and prevention of cancer on Samakal News.</video:description>
-      <video:content_loc>https://www.youtube.com/watch?v=OgiLc0p7JOQ</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.youtube.com/embed/OgiLc0p7JOQ</video:player_loc>
-      <video:duration>900</video:duration>
-      <video:publication_date>2025-10-22T10:00:00+06:00</video:publication_date>
-      <video:expiration_date>2026-10-22T10:00:00+06:00</video:expiration_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:uploader info="https://drrubinasultana.com">Dr. Mosammat Rubina Sultana</video:uploader>
-      <video:view_count>2000</video:view_count>
-      <video:tags>cancer causes, cancer symptoms, cancer prevention, oncology, Dhaka, Bangladesh, medical expert, cancer specialist</video:tags>
-      <video:category>Health &amp; Medical</video:category>
-    </video:video>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>Why Cancer Occurs: Symptoms & Prevention | Samakal News</video:title>
+    <video:description>Causes, symptoms, and prevention of cancer.</video:description>
+    <video:player_loc allow_embed="yes">https://www.youtube.com/embed/OgiLc0p7JOQ</video:player_loc>
+    <video:duration>900</video:duration>
+    <video:publication_date>2025-10-22T10:00:00+06:00</video:publication_date>
+    <video:tag>cancer</video:tag><video:tag>prevention</video:tag><video:tag>symptoms</video:tag>
+  </video:video>
 
-    <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>Ovarian Cancer Treatment Method | Nexus TV</video:title>
-      <video:description>Discussion on ovarian cancer treatment methods with Dr. Rubina Sultana on Nexus TV.</video:description>
-      <video:content_loc>https://www.facebook.com/reel/798895959295670/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/798895959295670&amp;</video:player_loc>
-      <video:duration>450</video:duration>
-      <video:publication_date>2025-10-23T10:00:00+06:00</video:publication_date>
-      <video:expiration_date>2026-10-23T10:00:00+06:00</video:expiration_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:uploader info="https://drrubinasultana.com">Dr. Mosammat Rubina Sultana</video:uploader>
-      <video:view_count>800</video:view_count>
-      <video:tags>ovarian cancer, cancer treatment, oncology, Dhaka, Bangladesh, medical expert, cancer specialist</video:tags>
-      <video:category>Health &amp; Medical</video:category>
-    </video:video>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>Ovarian Cancer Treatment Method | Nexus TV</video:title>
+    <video:description>Ovarian cancer treatment discussion.</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/798895959295670&amp;</video:player_loc>
+    <video:duration>450</video:duration>
+    <video:publication_date>2025-10-23T10:00:00+06:00</video:publication_date>
+    <video:tag>ovarian cancer</video:tag><video:tag>treatment</video:tag>
+  </video:video>
 
-    <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>What is Ovarian Cancer? | Nexus TV</video:title>
-      <video:description>Dr. Rubina Sultana shares insights on ovarian cancer symptoms and prevention on Nexus TV.</video:description>
-      <video:content_loc>https://www.facebook.com/reel/2188716744939881/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/2188716744939881&amp;</video:player_loc>
-      <video:duration>360</video:duration>
-      <video:publication_date>2025-10-24T10:00:00+06:00</video:publication_date>
-      <video:expiration_date>2026-10-24T10:00:00+06:00</video:expiration_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:uploader info="https://drrubinasultana.com">Dr. Mosammat Rubina Sultana</video:uploader>
-      <video:view_count>1200</video:view_count>
-      <video:tags>ovarian cancer, cancer symptoms, cancer prevention, oncology, Dhaka, Bangladesh, medical expert, cancer specialist</video:tags>
-      <video:category>Health &amp; Medical</video:category>
-    </video:video>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>What is Ovarian Cancer? | Nexus TV</video:title>
+    <video:description>Symptoms and prevention of ovarian cancer.</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/2188716744939881&amp;</video:player_loc>
+    <video:duration>360</video:duration>
+    <video:publication_date>2025-10-24T10:00:00+06:00</video:publication_date>
+    <video:tag>ovarian cancer</video:tag><video:tag>symptoms</video:tag>
+  </video:video>
 
-    <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>Side Effects in Ovarian Cancer Operation | Nexus TV</video:title>
-      <video:description>Dr. Rubina Sultana discusses postoperative side effects of ovarian cancer surgery on Nexus TV.</video:description>
-      <video:content_loc>https://www.facebook.com/reel/777239188275290/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/777239188275290&amp;</video:player_loc>
-      <video:duration>540</video:duration>
-      <video:publication_date>2025-10-25T10:00:00+06:00</video:publication_date>
-      <video:expiration_date>2026-10-25T10:00:00+06:00</video:expiration_date>
-      <video:family_friendly>yes</video:family_friendly>
-      <video:requires_subscription>no</video:requires_subscription>
-      <video:live>no</video:live>
-      <video:uploader info="https://drrubinasultana.com">Dr. Mosammat Rubina Sultana</video:uploader>
-      <video:view_count>900</video:view_count>
-      <video:tags>ovarian cancer, cancer surgery, oncology, Dhaka, Bangladesh, medical expert, cancer specialist</video:tags>
-      <video:category>Health &amp; Medical</video:category>
-    </video:video>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>Side Effects in Ovarian Cancer Operation | Nexus TV</video:title>
+    <video:description>Post-surgery effects and patient care.</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/777239188275290&amp;</video:player_loc>
+    <video:duration>540</video:duration>
+    <video:publication_date>2025-10-25T10:00:00+06:00</video:publication_date>
+    <video:tag>ovarian cancer</video:tag><video:tag>surgery</video:tag><video:tag>care</video:tag>
+  </video:video>
+</url>
 
-  </url>
 
-  <!-- 🌐 English Service Pages with Enhanced Metadata -->
-  <!-- 🔥 hreflang now correctly maps EN ↔ BN service pages -->
-  
-  <!-- Image Sitemap Example (uncomment and add more as needed) -->
-  <!--
-  <image:image>
-    <image:loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp</image:loc>
-    <image:caption>Dr. Mosammat Rubina Sultana - Leading Cancer Specialist in Dhaka</image:caption>
-    <image:title>Dr. Mosammat Rubina Sultana - Best Oncologist in Bangladesh</image:title>
-    <image:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</image:license>
-  </image:image>
-  -->
-  
-  <url>
-    <loc>https://drrubinasultana.com/best-female-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-    <priority>0.85</priority>
-    <changefreq>monthly</changefreq>
+<!-- ========================= BANGLA HOMEPAGE ========================= -->
+<url>
+  <loc>https://drrubinasultana.com/bn</loc>
+  <lastmod>2025-11-30T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
 
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-  </url>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/"/>
 
-  <url>
-    <loc>https://drrubinasultana.com/best-tumor-specialist-dhaka</loc>
-    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-    <priority>0.82</priority>
-    <changefreq>monthly</changefreq>
+  <!-- 6 Bangla Video Entries -->
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp</video:thumbnail_loc>
+    <video:title>ক্যানসার নির্ণয় ও চিকিৎসা | Ekhon TV</video:title>
+    <video:description>ক্যানসার নির্ণয় ও চিকিৎসা বিষয়ক আলোচনা।</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1195874992407084&amp;</video:player_loc>
+    <video:tag>ক্যানসার</video:tag><video:tag>অনকোলজি</video:tag><video:tag>ঢাকা</video:tag>
+  </video:video>
 
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-  </url>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>ফুসফুস ক্যানসার সচেতনতা | ATN News</video:title>
+    <video:description>ফুসফুস ক্যানসার প্রতিরোধ ও সচেতনতা।</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/588466000219527&amp;</video:player_loc>
+    <video:tag>ফুসফুস ক্যানসার</video:tag><video:tag>সচেতনতা</video:tag>
+  </video:video>
 
-  <url>
-    <loc>https://drrubinasultana.com/best-breast-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-    <priority>0.82</priority>
-    <changefreq>monthly</changefreq>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>ক্যানসার কেন হয়? লক্ষণ ও প্রতিরোধ | Samakal News</video:title>
+    <video:description>ক্যানসারের কারণ, উপসর্গ এবং প্রতিরোধ।</video:description>
+    <video:player_loc allow_embed="yes">https://www.youtube.com/embed/OgiLc0p7JOQ</video:player_loc>
+    <video:tag>ক্যানসার</video:tag><video:tag>প্রতিরোধ</video:tag><video:tag>উপসর্গ</video:tag>
+  </video:video>
 
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-  </url>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>ডিম্বাশয় ক্যানসারের চিকিৎসা | Nexus TV</video:title>
+    <video:description>ডিম্বাশয় ক্যানসারের চিকিৎসা পদ্ধতি।</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/798895959295670&amp;</video:player_loc>
+    <video:tag>ডিম্বাশয় ক্যানসার</video:tag><video:tag>চিকিৎসা</video:tag>
+  </video:video>
 
-  <url>
-    <loc>https://drrubinasultana.com/best-lung-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>ডিম্বাশয় ক্যানসার কী? | Nexus TV</video:title>
+    <video:description>ডিম্বাশয় ক্যানসারের উপসর্গ ও প্রতিরোধ।</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/2188716744939881&amp;</video:player_loc>
+    <video:tag>ডিম্বাশয় ক্যানসার</video:tag><video:tag>উপসর্গ</video:tag>
+  </video:video>
 
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-  </url>
+  <video:video>
+    <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
+    <video:title>ডিম্বাশয় ক্যানসার অপারেশনের পার্শ্বপ্রতিক্রিয়া | Nexus TV</video:title>
+    <video:description>অপারেশনের পর সম্ভাব্য পার্শ্বপ্রতিক্রিয়া ও যত্ন।</video:description>
+    <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/777239188275290&amp;</video:player_loc>
+    <video:tag>ডিম্বাশয় ক্যানসার</video:tag><video:tag>অপারেশন</video:tag>
+  </video:video>
+</url>
 
-  <url>
-    <loc>https://drrubinasultana.com/best-chemotherapist-dhaka</loc>
-    <lastmod>2025-11-24T12:00:00+06:00</lastmod>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
 
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-  </url>
+<!-- ========================= ENGLISH SERVICES ========================= -->
+<url><loc>https://drrubinasultana.com/best-female-cancer-specialist-dhaka</loc><lastmod>2025-11-24T12:00:00+06:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/best-tumor-specialist-dhaka</loc><lastmod>2025-11-24T12:00:00+06:00</lastmod><priority>0.82</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/best-breast-cancer-specialist-dhaka</loc><lastmod>2025-11-24T12:00:00+06:00</lastmod><priority>0.82</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/best-lung-cancer-specialist-dhaka</loc><lastmod>2025-11-24T12:00:00+06:00</lastmod><priority>0.8</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/best-chemotherapist-dhaka</loc><lastmod>2025-11-24T12:00:00+06:00</lastmod><priority>0.8</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/></url>
 
-  <!-- 🌐 Bangla Homepage -->
-  <url>
-    <loc>https://drrubinasultana.com/bn</loc>
-    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-
-    <!-- Reciprocal hreflangs -->
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/"/>
-
-    <!-- 🎥 Bangla video -->
-    <video:video>
-      <video:thumbnail_loc>https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.png</video:thumbnail_loc>
-      <video:title>ক্যানসারের পরীক্ষা ও চিকিৎসা বিষয়ক বিশেষ অনুষ্ঠান | Ekhon TV</video:title>
-      <video:description>ডাঃ রুবিনা সুলতানা ক্যানসারের পরীক্ষা, নির্ণয় ও চিকিৎসা বিষয়ে আলোচনা করেছেন।</video:description>
-      <video:content_loc>https://www.facebook.com/reel/1195874992407084/</video:content_loc>
-      <video:player_loc allow_embed="yes">https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1195874992407084&amp;</video:player_loc>
-      <video:publication_date>2025-11-21T10:00:00+06:00</video:publication_date>
-    </video:video>
-
-  </url>
-
-  <!-- 🌐 Bangla Service Pages (NEW + correct hreflang) -->
-
-  <url>
-    <loc>https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
-  </url>
-
-  <url>
-    <loc>https://drrubinasultana.com/bn/best-tumor-specialist-dhaka</loc>
-    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
-  </url>
-
-  <url>
-    <loc>https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
-  </url>
-
-  <url>
-    <loc>https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka</loc>
-    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
-  </url>
-
-  <url>
-    <loc>https://drrubinasultana.com/bn/best-chemotherapist-dhaka</loc>
-    <lastmod>2025-11-30T12:00:00+06:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-
-    <xhtml:link rel="alternate" hreflang="bn-BD" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
-  </url>
+<!-- ========================= BANGLA SERVICES ========================= -->
+<url><loc>https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka</loc><lastmod>2025-11-30T12:00:00+06:00</lastmod><priority>0.85</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/bn/best-tumor-specialist-dhaka</loc><lastmod>2025-11-30T12:00:00+06:00</lastmod><priority>0.82</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka</loc><lastmod>2025-11-30T12:00:00+06:00</lastmod><priority>0.82</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka</loc><lastmod>2025-11-30T12:00:00+06:00</lastmod><priority>0.8</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/></url>
+<url><loc>https://drrubinasultana.com/bn/best-chemotherapist-dhaka</loc><lastmod>2025-11-30T12:00:00+06:00</lastmod><priority>0.8</priority><changefreq>monthly</changefreq><xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/><xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/><xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/></url>
 
 </urlset>
