@@ -2,14 +2,12 @@
   "hosting": {
     "site": "drrubinasultanasite2025",
     "public": "public",
+
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
-    "i18n": {
-      "root": "/"
-    },
 
     "cleanUrls": true,
     "trailingSlash": false,
