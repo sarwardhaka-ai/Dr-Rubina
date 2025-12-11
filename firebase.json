@@ -80,6 +80,10 @@
     ],
 
     "redirects": [],
-    "rewrites": []
+    "rewrites": [],
+	
+	"errorHandlers": {
+  "404": "/404.html"
+}
   }
 }
