@@ -5,17 +5,15 @@
 
 <!-- ========================= ENGLISH HOMEPAGE ========================= -->
 <url>
-  <loc>https://drrubinasultana.com/</loc>
+  <loc>https://drrubinasultana.com</loc>
   <lastmod>2025-12-11T12:00:00+06:00</lastmod>
   <changefreq>monthly</changefreq>
   <priority>1.0</priority>
 
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
+  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com"/>
   <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/"/>
-
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com"/>
 </url>
-
 <!-- ========================= BANGLA HOMEPAGE ========================= -->
 <url>
   <loc>https://drrubinasultana.com/bn</loc>
@@ -24,9 +22,8 @@
   <priority>1.0</priority>
 
   <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/"/>
-  
+  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com"/>
 </url>
 
 <!-- ========================= ENGLISH SERVICES ========================= -->
