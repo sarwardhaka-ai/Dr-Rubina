@@ -1,12 +1,10 @@
-name: Auto Recrawl with IndexNow
+name: IndexNow – Submit Changed + Targeted URLs
 
 on:
   push:
     branches:
       - main
-  schedule:
-    - cron: "0 */6 * * *"  # every 6 hours
-  workflow_dispatch: {}     # allows manual run
+  workflow_dispatch:
 
 jobs:
   indexnow:
@@ -15,44 +13,77 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
-      - name: Use Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      - name: Install Node Fetch
+      - name: Install dependencies
         run: npm install node-fetch@2
 
-      - name: Run IndexNow Recrawl Script
+      - name: Submit URLs to IndexNow
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
           node << 'EOF'
           const fetch = require('node-fetch');
+          const { execSync } = require('child_process');
 
+          const DOMAIN = 'https://drrubinasultana.com';
           const key = process.env.INDEXNOW_KEY;
-          const base = "https://api.indexnow.org/indexnow?url=";
 
-          const urls = [
-            "https://drrubinasultana.com/",
-            "https://drrubinasultana.com/bn",
-            "https://drrubinasultana.com/best-cancer-specialist-dhaka",
-            "https://drrubinasultana.com/best-breast-cancer-specialist-dhaka",
-            "https://drrubinasultana.com/best-lung-cancer-specialist-dhaka",
-            "https://drrubinasultana.com/best-chemotherapist-dhaka",
-            "https://drrubinasultana.com/best-female-cancer-specialist-dhaka",
-            "https://drrubinasultana.com/sitemap.xml"
+          if (!key) {
+            console.error('❌ INDEXNOW_KEY is missing');
+            process.exit(1);
+          }
+
+          // 1️⃣ Target URLs (currently not indexed in Bing)
+          const priorityUrls = [
+            `${DOMAIN}/best-cervical-cancer-specialist-dhaka`,
+            `${DOMAIN}/bn/best-female-cancer-specialist-dhaka`,
+            `${DOMAIN}/bn/best-tumor-specialist-dhaka`,
+            `${DOMAIN}/bn/best-lung-cancer-specialist-dhaka`
           ];
 
+          // 2️⃣ Detect changed HTML files from last commit
+          let changedUrls = [];
+          try {
+            const diff = execSync('git diff --name-only HEAD~1 HEAD', { encoding: 'utf8' })
+              .split('\n')
+              .filter(Boolean);
+
+            changedUrls = diff
+              .filter(f => f.endsWith('.html'))
+              .map(file => {
+                if (file === 'index.html') return `${DOMAIN}/`;
+                if (file === 'bn.html') return `${DOMAIN}/bn`;
+                return `${DOMAIN}/${file.replace(/\.html$/, '')}`;
+              });
+          } catch (e) {}
+
+          // 3️⃣ Merge + deduplicate
+          const urls = [...new Set([...priorityUrls, ...changedUrls])];
+
+          if (urls.length === 0) {
+            console.log('ℹ️ No URLs to submit');
+            process.exit(0);
+          }
+
+          console.log('🚀 Submitting URLs to IndexNow:');
+          urls.forEach(u => console.log(' -', u));
+
           async function submit(url) {
-            const endpoint = `${base}${encodeURIComponent(url)}&key=${key}`;
+            const endpoint =
+              `https://api.indexnow.org/indexnow?url=${encodeURIComponent(url)}&key=${key}`;
             const res = await fetch(endpoint);
-            console.log(`Submitted: ${url} -> Status: ${res.status}`);
+            console.log(`✔ ${url} → ${res.status}`);
           }
 
           (async () => {
-            for (let url of urls) {
+            for (const url of urls) {
               await submit(url);
             }
           })();
