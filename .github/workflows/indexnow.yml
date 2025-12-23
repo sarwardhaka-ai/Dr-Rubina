@@ -42,7 +42,6 @@ jobs:
 
           // 1️⃣ Target URLs (ONLY pages you still want Bing to focus on)
           const priorityUrls = [
-            `${DOMAIN}/best-cervical-cancer-specialist-dhaka`,
             `${DOMAIN}/bn/best-tumor-specialist-dhaka`,
             `${DOMAIN}/bn/best-lung-cancer-specialist-dhaka`
           ];
