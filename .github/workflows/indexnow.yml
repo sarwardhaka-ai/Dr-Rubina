@@ -40,9 +40,8 @@ jobs:
             process.exit(1);
           }
 
-          // 1️⃣ Target URLs (ONLY pages you still want Bing to focus on)
+          // 1️⃣ ONLY pages that still need indexing
           const priorityUrls = [
-            `${DOMAIN}/bn/best-tumor-specialist-dhaka`,
             `${DOMAIN}/bn/best-lung-cancer-specialist-dhaka`
           ];
 
