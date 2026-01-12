@@ -118,54 +118,6 @@
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Physician",
-  "@id":"https://drrubinasultana.com/bn#person",
-  "mainEntityOfPage":{"@type":"WebPage","@id":"https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka"},
-  "name":"ডাঃ মোসাম্মাৎ রুবিনা সুলতানা",
-  "alternateName":["ডাঃ রুবিনা সুলতানা","Dr. Rubina Sultana"],
-  "honorificPrefix":"Dr.",
-  "jobTitle":"ক্যান্সার বিশেষজ্ঞ ও রেডিয়েশন অনকোলজিস্ট",
-  "description":"অ্যাসোসিয়েট প্রফেসর ও রেডিয়েশন অনকোলজিস্ট — রেডিওথেরাপি, কেমোথেরাপি ও ব্র্যাকিথেরাপিতে ২২+ বছরের অভিজ্ঞতা।",
-  "url":"https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka",
-  "image":{"@type":"ImageObject","url":"https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"},
-  "telephone":"+8801868592848",
-  "priceRange":"Affordable",
-  "gender":"Female",
-  "address":{"@type":"PostalAddress","streetAddress":"সেক্টর ১০, উত্তরা","addressLocality":"ঢাকা","postalCode":"1230","addressCountry":"BD"},
-  "nationality":"Bangladesh",
-  "identifier":{"@type":"PropertyValue","name":"BMDC Registration No","value":"A-36764"},
-  "medicalSpecialty":[
-    "Cervical Cancer Treatment",
-    "Gynecologic Oncology",
-    "টিউমার অনকোলজি",
-    "রেডিয়েশন অনকোলজি",
-    "মেডিকেল অনকোলজি",
-    "ব্র্যাকিথেরাপি",
-    "কেমোথেরাপি"
-  ],
-  "hasCredential":[
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"MBBS"},
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"FCPS (Radiotherapy)"},
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"BCS (Health)"},
-    {"@type":"EducationalOccupationalCredential","credentialCategory":"IAEA Certification in Radiotherapy & Brachytherapy"}
-  ],
-  "worksFor": [
-    { "@id": "https://drrubinasultana.com/bn#nicrh" },
-    { "@id": "https://drrubinasultana.com/bn#amcgh" },
-    { "@id": "https://drrubinasultana.com/bn#delta" },
-    { "@id": "https://drrubinasultana.com/bn#enam" }
-  ],
-  "areaServed": ["Dhaka", "Bangladesh"],
-  "sameAs": [
-    "https://nicrh.gov.bd/departments/radiation-oncology",
-    "https://amcghbd.org/doctor_details/dr-mosammat-rubina-sultana",
-    "https://www.doctorbangladesh.com/dr-mosammat-rubina-sultana/"
-  ]
-}
-</script>
 
 <script type="application/ld+json">
 {
@@ -275,6 +227,50 @@
 "inLanguage": "bn"
 }
 </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://drrubinasultana.com/bn#cervical-cancer",
+      "name": "Cervical Cancer",
+      "alternateName": ["জরায়ু ক্যান্সার","Cervix Cancer","Gynecologic Cancer"],
+      "description": "জরায়ু ক্যান্সার (Cervical Cancer) একটি গাইনেকোলজিক ক্যান্সার যা সাধারণত HPV সংক্রমণের কারণে সৃষ্টি হয় এবং রেডিওথেরাপি, ব্র্যাকিথেরাপি ও কেমোথেরাপির মাধ্যমে চিকিৎসা করা হয়।"
+    },
+
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://drrubinasultana.com/bn#ovarian-cancer",
+      "name": "Ovarian Cancer",
+      "alternateName": ["ডিম্বাশয় ক্যান্সার","Ovary Cancer","Gynecologic Malignancy"],
+      "description": "ডিম্বাশয় ক্যান্সার (Ovarian Cancer) একটি মারাত্মক গাইনেকোলজিক ক্যান্সার যা সাধারণত দেরিতে শনাক্ত হয় এবং কেমোথেরাপি ও সার্জারির মাধ্যমে চিকিৎসা করা হয়।"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka/#webpage",
+      "about": [
+        { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
+        { "@id": "https://drrubinasultana.com/bn#ovarian-cancer" }
+      ]
+    },
+
+    {
+      "@type": "Physician",
+      "@id": "https://drrubinasultana.com/bn#person",
+      "knowsAbout": [
+        { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
+        { "@id": "https://drrubinasultana.com/bn#ovarian-cancer" }
+      ]
+    }
+
+  ]
+}
+</script>
+
 
   <style>
 /* ========== FAQ STYLES ========== */

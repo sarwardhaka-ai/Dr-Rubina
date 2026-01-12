@@ -250,13 +250,14 @@
     "name":"BMDC Registration No",
     "value":"A-36764"
   },
-  "medicalSpecialty":[
-    "Radiation Oncology",
-    "Medical Oncology",
-    "Breast Oncology",
-    "Brachytherapy",
-    "Chemotherapy"
-  ],
+"medicalSpecialty":[
+  "Radiation Oncology",
+  "Medical Oncology",
+  "Breast Oncology",
+  "Brachytherapy",
+  "Chemotherapy",
+  "Oncologic Tumor Management"
+],
   "worksFor":[
     { "@id":"https://drrubinasultana.com/bn#nicrh" },
     { "@id":"https://drrubinasultana.com/bn#amcgh" },
@@ -358,6 +359,59 @@
   "name": "Dr. Mosammat Rubina Sultana",
   "url": "https://drrubinasultana.com/bn/",
   "logo": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "MedicalCondition",
+      "@id": "https://drrubinasultana.com/bn#tumor",
+      "name": "Tumor",
+      "alternateName": [
+        "টিউমার",
+        "Neoplasm",
+        "Tumour",
+        "Benign Tumor",
+        "Malignant Tumor"
+      ],
+      "description": "টিউমার হলো অস্বাভাবিক কোষ বৃদ্ধির ফলে তৈরি হওয়া গাঁঠ বা mass, যা বেনাইন (নিরীহ) বা ম্যালিগন্যান্ট (ক্যান্সার) হতে পারে। অনকোলজিক টিউমার ম্যানেজমেন্টে রেডিওথেরাপি, কেমোথেরাপি, ব্র্যাকিথেরাপি ও মাল্টিডিসিপ্লিনারি চিকিৎসা ব্যবহৃত হয়।",
+      "possibleTreatment": [
+        "Radiation Therapy",
+        "Chemotherapy",
+        "Brachytherapy",
+        "Targeted Therapy",
+        "Surgery",
+        "Supportive Oncology Care"
+      ],
+      "riskFactor": [
+        "Genetic mutation",
+        "Smoking",
+        "Radiation exposure",
+        "Environmental toxins",
+        "Hormonal imbalance"
+      ]
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://drrubinasultana.com/bn/best-tumor-specialist-dhaka/#webpage",
+      "about": {
+        "@id": "https://drrubinasultana.com/bn#tumor"
+      }
+    },
+
+    {
+      "@type": "Physician",
+      "@id": "https://drrubinasultana.com/bn#person",
+      "knowsAbout": [
+        { "@id": "https://drrubinasultana.com/bn#tumor" }
+      ]
+    }
+
+  ]
 }
 </script>
 
