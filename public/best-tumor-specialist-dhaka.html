@@ -96,7 +96,7 @@
   "inLanguage": "en",
   "description": "Benign and malignant tumor care by a top tumor specialist in Dhaka using radiotherapy, chemotherapy and targeted planning.",
   "isPartOf": { "@id": "https://drrubinasultana.com/#website" },
-  "about": { "@id": "https://drrubinasultana.com/best-tumor-specialist-dhaka#person" },
+  "about": { "@id": "https://drrubinasultana.com/#person" },
   "breadcrumb": { "@id": "https://drrubinasultana.com/best-tumor-specialist-dhaka/#breadcrumb" },
   "publisher": { "@id": "https://drrubinasultana.com/#organization" }
 }
@@ -203,7 +203,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Physician",
-  "@id": "https://drrubinasultana.com/best-tumor-specialist-dhaka#person",
+  "@id": "https://drrubinasultana.com/#person",
 
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -255,12 +255,19 @@
   },
 
   "medicalSpecialty": [
-    "Tumor Oncology",
+    "Clinical Oncology",
     "Radiation Oncology",
     "Medical Oncology",
     "Breast Oncology",
-    "Brachytherapy",
-    "Chemotherapy"
+    "Gynecologic Oncology"
+  ],
+
+  "about": [
+    { "@type": "MedicalCondition", "name": "Benign Tumor" },
+    { "@type": "MedicalCondition", "name": "Malignant Tumor" },
+    { "@type": "MedicalCondition", "name": "Solid Tumor" },
+    { "@type": "MedicalCondition", "name": "Breast Tumor" },
+    { "@type": "MedicalCondition", "name": "Cervical Cancer" }
   ],
 
   "hasCredential": [
@@ -292,7 +299,9 @@
   "knowsAbout": [
     "Benign Tumors",
     "Malignant Tumors",
-    "Breast Cancer",
+    "Solid Tumors",
+    "Oncologic Tumor Management",
+    "Breast Tumor",
     "Cervical Cancer",
     "Radiotherapy",
     "Chemotherapy",
