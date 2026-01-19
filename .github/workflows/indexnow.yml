@@ -1,4 +1,4 @@
-name: IndexNow – Submit Changed + Targeted URLs
+name: IndexNow – Submit Changed URLs Only
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm install node-fetch@2
 
-      - name: Submit URLs to IndexNow
+      - name: Submit changed URLs to IndexNow
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
         run: |
@@ -40,36 +40,29 @@ jobs:
             process.exit(1);
           }
 
-          // 1️⃣ ONLY pages that still need indexing
-          const priorityUrls = [
-            `${DOMAIN}/bn/best-lung-cancer-specialist-dhaka`
-          ];
+          let urls = [];
 
-          // 2️⃣ Detect changed HTML files from last commit
-          let changedUrls = [];
           try {
             const diff = execSync('git diff --name-only HEAD~1 HEAD', { encoding: 'utf8' })
               .split('\n')
-              .filter(Boolean);
+              .filter(Boolean)
+              .filter(f => f.endsWith('.html'));
 
-            changedUrls = diff
-              .filter(f => f.endsWith('.html'))
-              .map(file => {
-                if (file === 'index.html') return `${DOMAIN}/`;
-                if (file === 'bn.html') return `${DOMAIN}/bn`;
-                return `${DOMAIN}/${file.replace(/\.html$/, '')}`;
-              });
+            urls = diff.map(file => {
+              if (file === 'index.html') return `${DOMAIN}/`;
+              if (file === 'bn.html') return `${DOMAIN}/bn`;
+              return `${DOMAIN}/${file.replace(/\.html$/, '')}`;
+            });
           } catch (e) {}
 
-          // 3️⃣ Merge + deduplicate
-          const urls = [...new Set([...priorityUrls, ...changedUrls])];
+          urls = [...new Set(urls)];
 
           if (urls.length === 0) {
-            console.log('ℹ️ No URLs to submit');
+            console.log('ℹ️ No HTML changes detected');
             process.exit(0);
           }
 
-          console.log('🚀 Submitting URLs to IndexNow:');
+          console.log('🚀 Submitting changed URLs to IndexNow:');
           urls.forEach(u => console.log(' -', u));
 
           async function submit(url) {
