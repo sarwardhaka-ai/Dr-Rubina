@@ -150,5 +150,15 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
 </url>
 
+<!-- ========================= BANGLA FAQ PAGE (TUMOR) ========================= -->
+<url>
+  <loc>https://drrubinasultana.com/bn/faq-tumor</loc>
+  <lastmod>2026-01-20T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/faq-tumor"/>
+</url>
+
 
 </urlset>
