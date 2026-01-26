@@ -79,7 +79,27 @@
       }
     ],
 
-    "redirects": [],
+"redirects": [
+  {
+    "source": "/**",
+    "has": [
+      { "type": "host", "value": "www.drrubinasultana.com" }
+    ],
+    "destination": "https://drrubinasultana.com/:splat",
+    "type": 301
+  },
+  {
+    "source": "/best-tumour-specialist-dhaka",
+    "destination": "/best-tumor-specialist-dhaka",
+    "type": 301
+  },
+  {
+    "source": "/bn.html",
+    "destination": "/bn",
+    "type": 301
+  }
+],
+
     "rewrites": [],
 	
 	"errorHandlers": {
