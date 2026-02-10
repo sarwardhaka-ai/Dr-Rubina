@@ -11,66 +11,136 @@
 
   <link rel="canonical" href="https://drrubinasultana.com/bn/faq-tumor">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f7f7f7;
-      color: #222;
-      line-height: 1.7;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #ffffff;
-      padding: 24px 20px;
-    }
-    h1 {
-      color: #1b5e20;
-      font-size: 28px;
-      margin-top: 0;
-    }
-    h2 {
-      color: #2e7d32;
-      margin-top: 28px;
-      font-size: 22px;
-    }
-    p {
-      margin: 12px 0;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    li {
-      margin: 6px 0;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .expert-box {
-      background: #eef7f0;
-      border-left: 4px solid #2e7d32;
-      padding: 14px 16px;
-      margin: 16px 0 24px;
-      font-size: 15px;
-    }
-    .key-takeaways {
-      background: #f3f9ff;
-      border-left: 4px solid #1e88e5;
-      padding: 14px 16px;
-      margin: 20px 0;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #555;
-      padding: 16px 10px;
-    }
-  </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+ <style>
+  body {
+    margin: 0;
+    font-family: "Noto Sans Bengali", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    color: #222;
+    background: #f7f7f7;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 26px 22px;
+  }
+
+  h1 {
+    color: #1b5e20;
+    font-size: 28px;
+    margin-top: 0;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h2 {
+    color: #2e7d32;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  p {
+    margin: 14px 0;
+  }
+
+  ul {
+    padding-left: 22px;
+    margin: 12px 0;
+  }
+
+  li {
+    margin: 8px 0;
+  }
+
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .expert-box {
+    background: #eef7f0;
+    border-left: 4px solid #2e7d32;
+    padding: 18px 20px;
+    margin: 18px 0 26px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
+
+  .key-takeaways {
+    background: #f3f9ff;
+    border-left: 4px solid #1e88e5;
+    padding: 16px 18px;
+    margin: 22px 0;
+    line-height: 1.65;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    padding: 16px 10px;
+  }
+/* Mobile optimization */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+
+  .expert-box {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  /* Doctor name must stay prominent */
+  .expert-box .doctor-name {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+
+  
+.expert-box .doctor-name {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1b5e20;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.expert-box a {
+  text-decoration: none;
+}
+.expert-box a:hover {
+  text-decoration: none;
+}
+
+
+</style>
+
 
   <!-- FAQPage Schema -->
  <script type="application/ld+json">
@@ -177,16 +247,15 @@
 
 <main>
 
-  <div class="expert-box">
-    <strong>
-      <a href="https://drrubinasultana.com/bn" rel="author">
-        ডাঃ মোসাম্মাৎ রুবিনা সুলতানা
-      </a>
-    </strong><br>
-    Associate Professor, Department of Radiation Oncology<br>
-    National Institute of Cancer Research & Hospital (NICRH), Dhaka<br>
-     <strong>অভিজ্ঞ ক্যান্সার ও টিউমার বিশেষজ্ঞ (রেডিয়েশন ও ক্লিনিক্যাল অনকোলজিস্ট)</strong>
-  </div>
+<div class="expert-box">
+  <a href="https://drrubinasultana.com/bn" rel="author">
+    <span class="doctor-name">ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</span>
+  </a>
+  Associate Professor, Department of Radiation Oncology<br>
+  National Institute of Cancer Research & Hospital (NICRH), Dhaka<br>
+  <strong>অভিজ্ঞ ক্যান্সার ও টিউমার বিশেষজ্ঞ (রেডিয়েশন ও ক্লিনিক্যাল অনকোলজিস্ট)</strong>
+</div>
+
 
  <h1>টিউমার নিয়ে সাধারণ প্রশ্ন ও উত্তর</h1>
 
@@ -221,14 +290,14 @@
   অনকোলজিস্ট প্রয়োজন অনুযায়ী পরীক্ষা নির্ধারণ করে চিকিৎসার পরিকল্পনা করেন।
   এ বিষয়ে বিস্তারিত জানতে
   <a href="/bn/best-tumor-specialist-dhaka">
-    ক্যান্সার বিশেষজ্ঞ-এর টিউমার সংক্রান্ত পেইজটি ভিজিট
+    <strong>ক্যান্সার বিশেষজ্ঞ-এর টিউমার সংক্রান্ত পেইজটি ভিজিট</strong>
   </a> করুন।
 </p>
 
 <h2>ব্রেস্ট টিউমার হলে কোন ডাক্তার দেখাবেন?</h2>
 <p>
-  ব্রেস্ট টিউমারের ক্ষেত্রে প্রথমেই একজন
-  <strong>অনকোলজিস্ট বা রেডিয়েশন অনকোলজিস্টের</strong>
+  ব্রেস্ট টিউমারের ক্ষেত্রে প্রথমেই একজন <a href="/bn/best-breast-cancer-specialist-dhaka">
+  <strong>অনকোলজিস্ট বা রেডিয়েশন অনকোলজিস্টের</strong></a>
   পরামর্শ নেওয়া উচিত।
   প্রয়োজনে তিনি ব্রেস্ট সার্জন বা অন্যান্য বিশেষজ্ঞের কাছে রেফার করতে পারেন।
 </p>
