@@ -684,6 +684,40 @@ div[id] {
     border-radius:50px!important;
   }
 }
+
+#about a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#about a:hover {
+  text-decoration: underline; /* optional but recommended */
+}
+
+.appointment-cta {
+  margin: 16px 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.appointment-btn {
+display: inline-block;
+padding: 12px 22px;
+background-color: #2E7D32;
+color: #FFD700;
+font-weight: 600;
+font-size: 17px;
+border-radius: 6px;
+text-decoration: none;
+text-align: center;
+}
+
+.appointment-btn:hover,
+.appointment-btn:focus {
+background-color: #256528;
+color: #FFD700;
+}
+
     </style>
 	
   </head>
@@ -820,6 +854,13 @@ div[id] {
   </p>
 </div>
 
+<div class="appointment-cta">
+  <a href="/bn/#chambers"
+     class="appointment-btn"
+     aria-label="ডাঃ মোসাম্মৎ রুবিনা সুলতানার সাথে অ্যাপয়েন্টমেন্ট বুক করুন">
+    চেম্বারসমূহ
+  </a>
+</div>
 
 <!-- ================= CREDENTIALS ================= -->
 
