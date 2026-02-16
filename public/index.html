@@ -802,7 +802,7 @@
   "about": { "@id": "https://drrubinasultana.com/#person" },
   "breadcrumb": { "@id": "https://drrubinasultana.com/#breadcrumb" },
   "datePublished": "2024-12-01",
- "dateModified": "2026-02-10",
+ "dateModified": "2026-02-16",
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp",
@@ -961,7 +961,61 @@
   text-decoration: underline !important;
 }
 
+/* ✅ Make hyperlinks invisible ONLY in intro and about section */
+.intro-header a,
+#about a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
 
+.intro-header a:hover,
+#about a:hover {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* ✅ Force black color for figure caption and About heading */
+.figure-caption,
+#about h2 {
+  color: #000 !important;
+}
+
+.appointment-cta {
+  margin: 16px 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.appointment-btn {
+display: inline-block;
+padding: 12px 22px;
+background-color: #2E7D32;
+color: #ffffff;
+font-weight: 600;
+font-size: 18px;
+border-radius: 6px;
+text-decoration: none;
+text-align: center;
+}
+
+.appointment-btn:hover,
+.appointment-btn:focus {
+background-color: #256528;
+color: #ffffff;
+}
+
+/* ✅ Force promising yellow text for appointment button */
+.appointment-btn,
+.appointment-btn strong {
+  color: #FFD700 !important;   /* premium gold yellow */
+}
+
+.appointment-btn:hover,
+.appointment-btn:focus,
+.appointment-btn:hover strong,
+.appointment-btn:focus strong {
+  color: #FFEB3B !important;   /* brighter yellow on hover */
+}
       </style>
 	  
    </head>
@@ -1074,7 +1128,7 @@
                   </figcaption>
                </figure>
                <h2>About Dr. Rubina Sultana</h2>
-               <p><strong>Dr. Mosammat Rubina Sultana</strong> is a leading <strong> Cancer Specialist</strong> in Bangladesh, known for her <strong>dual expertise</strong> in <strong>clinical oncology</strong> and <strong>radiation oncology</strong>. With <strong>more than 22 years of experience</strong> in patient care, she has earned recognition for delivering <strong>compassionate, evidence-based cancer care</strong> across all stages of cancer — from early diagnosis to advanced palliative support.</p>
+               <p><strong>Dr. Mosammat Rubina Sultana</strong> is a <strong><a href="https://drrubinasultana.com/">leading Cancer Specialist</a></strong> in Bangladesh, known for her <strong>dual expertise</strong> in <strong>clinical oncology</strong> and <strong>radiation oncology</strong>. With <strong>more than 22 years of experience</strong> in patient care, she has earned recognition for delivering <strong>compassionate, evidence-based cancer care</strong> across all stages of cancer — from early diagnosis to advanced palliative support.</p>
 			   
                <p>She currently serves as an <strong>Associate Professor</strong> in the <strong>Department of Radiation Oncology</strong> at the <strong>National Institute of Cancer Research & Hospital</strong> <a href="https://nicrh.gov.bd/departments/radiation-oncology" target="_blank" rel="noopener nofollow">(NICRH)</a>, Dhaka — Bangladesh’s leading center for cancer research and advanced treatment. As <strong>an academic leader</strong>, she is committed to training and mentoring the next generation of oncologists, <strong>shaping the future of cancer treatment in Bangladesh</strong>.</p>
 			   
@@ -1099,19 +1153,13 @@ She holds an <strong>MBBS</strong> from Chittagong Medical College and an <stron
 
 <p><strong>Dr. Rubina Sultana</strong> is highly experienced in the treatment of <a href="/best-tumor-specialist-dhaka">various types of tumors</a>, <a href="/best-breast-cancer-specialist-dhaka">breast cancer</a>, <a href="/best-cervical-cancer-specialist-dhaka">cervical cancer</a>, <a href="/best-female-cancer-specialist-dhaka">gynecological cancers</a>, rectal cancer, brain tumors, head and neck cancers, gastrointestinal cancers, lung cancer, and metastatic cancers. She is highly skilled and experienced in providing radiotherapy, <a href="/best-chemotherapist-dhaka">chemotherapy</a>, brachytherapy, cancer diagnosis and staging, and comprehensive palliative care.</p>
 
- 	
-<p lang="en" style="text-align:center;">
-  <strong>
-    <a href="#chambers" style="font-size:1.1rem; color:#0000EE;">
-      APPOINTMENT
-    </a>
-  </strong>
-</p>
-
-<p lang="en" style="text-align:center;">
-  <a href="https://drrubinasultana.com/"><strong>Homepage of Dr. Mosammat Rubina Sultana</strong></a>
-</p>
-
+<div class="appointment-cta">
+  <a href="/#chambers"
+     class="appointment-btn"
+     aria-label="Chamber Info of Dr. Rubina Sultana">
+    <strong>Chamber Details</strong>
+  </a>
+  
            </section>
          </div>
          <div class="block-container">
