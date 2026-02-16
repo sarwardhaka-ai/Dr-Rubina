@@ -279,8 +279,8 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "inLanguage": "bn",
-	"datePublished": "2024-12-01",
-	"dateModified": "2026-01-18",
+	"datePublished": "2025-10-01",
+	"dateModified": "2026-02-16",
     "name": "ঢাকার সেরা ক্যান্সার বিশেষজ্ঞ – ডাঃ মোসাম্মাৎ রুবিনা সুলতানা",
     "url": "https://drrubinasultana.com/bn",
     "description": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ, রেডিওথেরাপি, কেমোথেরাপি ও অনকোলজি সেবা প্রদান করেন।",
@@ -2288,6 +2288,63 @@ h4[id] {
   text-decoration: underline !important;
 }
 
+/* ✅ Make hyperlinks invisible ONLY in intro and about section */
+.intro-header a,
+#about a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+.intro-header a:hover,
+#about a:hover {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+/* ✅ Force black color for figure caption and About heading */
+.figure-caption,
+#about h2 {
+  color: #000 !important;
+}
+
+.appointment-cta {
+  margin: 16px 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.appointment-btn {
+display: inline-block;
+padding: 12px 22px;
+background-color: #2E7D32;
+color: #ffffff;
+font-weight: 600;
+font-size: 20px;
+border-radius: 6px;
+text-decoration: none;
+text-align: center;
+}
+
+.appointment-btn:hover,
+.appointment-btn:focus {
+background-color: #256528;
+color: #ffffff;
+}
+
+/* ✅ Force promising yellow text for appointment button */
+.appointment-btn,
+.appointment-btn strong {
+  color: #FFD700 !important;   /* premium gold yellow */
+}
+
+.appointment-btn:hover,
+.appointment-btn:focus,
+.appointment-btn:hover strong,
+.appointment-btn:focus strong {
+  color: #FFEB3B !important;   /* brighter yellow on hover */
+}
+
+
   </style>
 
 
@@ -2421,7 +2478,7 @@ h4[id] {
 
     <h2 lang="bn">ডাঃ রুবিনা সুলতানা সম্পর্কে</h2>
 
-    <p lang="bn"><strong>ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</strong> বাংলাদেশের একজন <strong>স্বনামধন্য ক্যান্সার বিশেষজ্ঞ</strong>। তিনি <strong>ক্লিনিক্যাল অনকোলজি</strong> ও <strong>রেডিয়েশন অনকোলজি</strong>-তে <strong>দক্ষতার জন্য বিশেষভাবে পরিচিত</strong>। চিকিৎসা সেবায় ২২ বছরেরও বেশি অভিজ্ঞতা নিয়ে তিনি প্রাথমিক রোগ নির্ণয় থেকে শুরু করে জটিল প্যালিয়েটিভ কেয়ার পর্যন্ত সকল পর্যায়ে <strong>এভিডেন্স-বেইজড ক্যান্সার চিকিৎসা</strong> প্রদান করে রোগীদের আস্থা অর্জন করেছেন।</p>
+    <p lang="bn"><strong>ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</strong> বাংলাদেশের একজন <strong><a href="https://drrubinasultana.com/bn">অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ</a></strong>। তিনি <strong>ক্লিনিক্যাল অনকোলজি</strong> ও <strong>রেডিয়েশন অনকোলজি</strong>-তে <strong>দক্ষতার জন্য বিশেষভাবে পরিচিত</strong>। চিকিৎসা সেবায় ২২ বছরেরও বেশি অভিজ্ঞতা নিয়ে তিনি প্রাথমিক রোগ নির্ণয় থেকে শুরু করে জটিল প্যালিয়েটিভ কেয়ার পর্যন্ত সকল পর্যায়ে <strong>এভিডেন্স-বেইজড ক্যান্সার চিকিৎসা</strong> প্রদান করে থাকেন।</p>
 
  <p lang="bn">বর্তমানে তিনি ঢাকার <strong>জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট ও হাসপাতাল</strong> <a href="https://nicrh.gov.bd/departments/radiation-oncology" target="_blank" rel="noopener nofollow">(NICRH)</a>-এর <strong>রেডিয়েশন অনকোলজি বিভাগে সহযোগী অধ্যাপক</strong> হিসেবে দায়িত্ব পালন করছেন — যা বাংলাদেশে ক্যান্সার গবেষণা ও উন্নত চিকিৎসার অন্যতম সর্বোচ্চ প্রতিষ্ঠান। তিনি এই হাসপাতালে ক্যান্সার রোগীদের চিকিৎসা সেবা প্রদানের পাশাপাশি শিক্ষানবিশ অনকোলজিস্টদের প্রশিক্ষণও প্রদান করে থাকেন।</p>
  
@@ -2444,18 +2501,15 @@ h4[id] {
 </p>
 
  <p lang="bn">ডাঃ রুবিনা সুলতানা <a href="/bn/best-tumor-specialist-dhaka">বিভিন্ন ধরণের টিউমার</a>, <a href="/bn/best-breast-cancer-specialist-dhaka">ব্রেস্ট ক্যান্সার</a>, <a href="/bn/best-cervical-cancer-specialist-dhaka">জরায়ু ক্যান্সার</a>, <a href="/bn/best-female-cancer-specialist-dhaka">গাইনীকোলজিক্যাল ক্যান্সার</a>, রেকটাল ক্যান্সার, মস্তিষ্কের টিউমার, হেড অ্যান্ড নেক ক্যান্সার, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার, ফুসফুস ক্যান্সার এবং মেটাস্ট্যাটিক ক্যান্সারের চিকিৎসায় বিশেষভাবে পারদর্শী। তিনি রেডিওথেরাপি, <a href="/bn/best-chemotherapist-dhaka">কেমোথেরাপি</a>, ব্র্যাকিথেরাপি, ক্যান্সার নির্ণয় ও স্টেজিং এবং প্যালিয়েটিভ কেয়ার পরিচালনায় অত্যন্ত অভিজ্ঞ ও দক্ষ।</p>
- 
-<p lang="bn" style="text-align:center;">
-  <strong>
-    <a href="#chambers" style="font-size:1.1rem; color:#0000EE;">
-      অ্যাপয়েন্টমেন্ট
-    </a>
-  </strong>
-</p>
 
-<p lang="bn" style="text-align:center;">
-  <a href="https://drrubinasultana.com/bn"><strong>ডাঃ মোসাম্মাৎ রুবিনা সুলতানার হোমপেজ।</strong></a>
-</p>
+<div class="appointment-cta">
+  <a href="/bn/#chambers"
+     class="appointment-btn"
+     aria-label="ডাঃ মোসাম্মৎ রুবিনা সুলতানার সাথে অ্যাপয়েন্টমেন্ট বুক করুন">
+    <strong>চেম্বারসমূহ</strong>
+  </a>
+</div> 
+
 
   </section>
 </div>
