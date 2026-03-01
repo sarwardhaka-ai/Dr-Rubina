@@ -79,7 +79,7 @@
       }
     ],
 
-"redirects": [
+   "redirects": [
   {
     "source": "/**",
     "has": [
@@ -89,7 +89,7 @@
     "type": 301
   },
   {
-    "source": "/best-tumour-specialist-dhaka",
+    "source": "/best-tumour-specialist-dhaka.html",
     "destination": "/best-tumor-specialist-dhaka",
     "type": 301
   },
@@ -100,7 +100,7 @@
   }
 ],
 
-    "rewrites": [],
+"rewrites": [],
 	
 	"errorHandlers": {
   "404": "/404.html"
