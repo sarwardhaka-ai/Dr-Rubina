@@ -148,7 +148,7 @@
     },
     {
   "@type": "Question",
-  "name": "ব্রেস্ট ক্যান্সারে সাফল্যের হার কত?",
+  "name": "ব্রেস্ট ক্যান্সারের চিকিৎসায় সাফল্যের হার কত?",
   "acceptedAnswer": {
     "@type": "Answer",
     "text": "ব্রেস্ট ক্যান্সারের চিকিৎসার সাফল্য বিভিন্ন বিষয়ের উপর নির্ভর করে, যেমন রোগ নির্ণয়ের সময় ক্যান্সারের পর্যায়, টিউমারের ধরন এবং কত দ্রুত চিকিৎসা শুরু করা হয়েছে। যদি ব্রেস্ট ক্যান্সার প্রাথমিক পর্যায়ে শনাক্ত করা যায় এবং সময়মতো সঠিক চিকিৎসা শুরু করা যায়, তাহলে দীর্ঘমেয়াদী বেঁচে থাকার হার অনেক ক্ষেত্রে ৯০% এর বেশি হতে পারে। খুব প্রাথমিক অবস্থায় রোগ ধরা পড়লে অনেক ক্ষেত্রে ফলাফল প্রায় সম্পূর্ণ সুস্থতার কাছাকাছি পৌঁছাতে পারে। তাই দ্রুত রোগ শনাক্তকরণ এবং সময়মতো চিকিৎসা শুরু করা অত্যন্ত গুরুত্বপূর্ণ।"
@@ -722,6 +722,41 @@ color: #FFD700;
     text-decoration: none;
 }
 
+/* Medical-grade professional link styling */
+#credentials a,
+#specializations a {
+  color: #1a1a1a;              /* professional dark gray */
+  text-decoration: none;
+  font-weight: 500;            /* slightly stronger than normal */
+  transition: all 0.2s ease;   /* smooth hover animation */
+}
+
+/* Visited links remain same color (no purple) */
+#credentials a:visited,
+#specializations a:visited {
+  color: #1a1a1a;
+}
+
+/* Hover effect: subtle and professional */
+#credentials a:hover,
+#specializations a:hover {
+  color: #000000;              /* slightly darker on hover */
+  text-decoration: underline;
+  text-underline-offset: 3px; /* cleaner underline spacing */
+}
+
+/* Active click effect */
+#credentials a:active,
+#specializations a:active {
+  color: #000000;
+}
+
+/* Optional: improve readability of list items */
+#credentials li,
+#specializations li {
+  color: #222222;
+  line-height: 1.6;
+}
 
     </style>
   </head>
@@ -947,7 +982,7 @@ color: #FFD700;
   </div>
 
    <div>
-    <h4>ব্রেস্ট ক্যান্সারে সাফল্যের হার কত?</h4>
+    <h4>ব্রেস্ট ক্যান্সারের চিকিৎসায় সাফল্যের হার কত?</h4>
     <p>
       ব্রেস্ট ক্যান্সারের চিকিৎসার সাফল্য বিভিন্ন বিষয়ের উপর নির্ভর করে, যেমন রোগ নির্ণয়ের সময় ক্যান্সারের পর্যায়, টিউমারের ধরন এবং কত দ্রুত চিকিৎসা শুরু করা হয়েছে।
 যদি <strong>ব্রেস্ট ক্যান্সার প্রাথমিক পর্যায়ে শনাক্ত</strong> করা যায় এবং <strong>সময়মতো সঠিক চিকিৎসা</strong> শুরু করা যায়, তাহলে <strong>ব্রেস্ট ক্যান্সার চিকিৎসার দীর্ঘমেয়াদী বেঁচে থাকার হার</strong> অনেক ক্ষেত্রে <strong>৯০% এর বেশি</strong> হতে পারে।

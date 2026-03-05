@@ -757,6 +757,41 @@ color: #FFD700;
     text-decoration: none;
 }
 
+/* Medical-grade professional link styling */
+#credentials a,
+#specializations a {
+  color: #1a1a1a;              /* professional dark gray */
+  text-decoration: none;
+  font-weight: 500;            /* slightly stronger than normal */
+  transition: all 0.2s ease;   /* smooth hover animation */
+}
+
+/* Visited links remain same color (no purple) */
+#credentials a:visited,
+#specializations a:visited {
+  color: #1a1a1a;
+}
+
+/* Hover effect: subtle and professional */
+#credentials a:hover,
+#specializations a:hover {
+  color: #000000;              /* slightly darker on hover */
+  text-decoration: underline;
+  text-underline-offset: 3px; /* cleaner underline spacing */
+}
+
+/* Active click effect */
+#credentials a:active,
+#specializations a:active {
+  color: #000000;
+}
+
+/* Optional: improve readability of list items */
+#credentials li,
+#specializations li {
+  color: #222222;
+  line-height: 1.6;
+}
 </style>
 </head>
 
