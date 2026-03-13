@@ -69,7 +69,7 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
 
-  <!-- ✅ Structured Data: Dr. Mosammat Rubina Sultana (Bangla version) -->
+<!-- ✅ Structured Data: Dr. Mosammat Rubina Sultana (Bangla version) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,10 +89,10 @@
   "ডাঃ মোছাঃ রুবিনা সুলতানা"
 ],
       "honorificPrefix": "Dr.",
-      "jobTitle": "Associate Professor, Department of Radiation Oncology",
-      "description": "ডাঃ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ ও রেডিয়েশন অনকোলজিস্ট, যিনি রেডিওথেরাপি, কেমোথেরাপি ও ব্র্যাকিথেরাপিতে ২২ বছরের বেশি অভিজ্ঞ।",
+	  "jobTitle": "Associate Professor, Department of Radiation Oncology",
+      "description": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ এবং ক্লিনিক্যাল ও রেডিয়েশন অনকোলজিস্ট, যিনি রেডিওথেরাপি, কেমোথেরাপি, টার্গেটেড থেরাপি ও ব্র্যাকিথেরাপিতে ২২ বছরের বেশি অভিজ্ঞ।",
       "url": "https://drrubinasultana.com/bn",
-      "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+      "image":{"@type":"ImageObject","@id":"https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp","url":"https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"},
       "telephone": "+8801868592848",
       "gender": "Female",
       "priceRange": "Affordable",
@@ -111,20 +111,22 @@
   "Gynecologic Oncology",
   "Palliative Care"
 ],
-      "knowsAbout": [
-        "Breast Cancer",
-"Cervical Cancer",
-"Ovarian Cancer",
-"Gynecological Cancers",
-"Solid Tumors",
-"Head and Neck Cancer",
-"Lung Cancer",
-"Radiotherapy",
-"Chemotherapy",
-"Brachytherapy",
-"Targeted Therapy",
-"Immunotherapy",
-"Oncology Research"
+ "knowsAbout": [
+  { "@id": "https://drrubinasultana.com/bn#breast-cancer" },
+  { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
+  { "@id": "https://drrubinasultana.com/bn#female-cancer" },
+  { "@id": "https://drrubinasultana.com/bn#tumor" },
+  { "@id": "https://drrubinasultana.com/bn#lung-cancer" },
+  { "@id": "https://drrubinasultana.com/bn#chemotherapy" },
+
+  "Ovarian Cancer",
+  "Gynecological Cancers",
+  "Head and Neck Cancer",
+  "Radiotherapy",
+  "Brachytherapy",
+  "Targeted Therapy",
+  "Immunotherapy",
+  "Oncology Research"
       ],	  
 
   "availableService": [
@@ -257,10 +259,10 @@
         "item": "https://drrubinasultana.com/bn"
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "ঢাকার সেরা ক্যান্সার বিশেষজ্ঞ – ডাঃ মোসাম্মাৎ রুবিনা সুলতানা",
-        "item": "https://drrubinasultana.com/bn"
+  "@type": "ListItem",
+ "position": 2,
+ "name": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা",
+ "item": "https://drrubinasultana.com/bn"
       }
     ]
   }
@@ -290,28 +292,61 @@
   </script>
 
   <!-- WebPage (bn) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "inLanguage": "bn",
-	"datePublished": "2025-10-01",
-	"dateModified": "2026-02-16",
-    "name": "ঢাকার সেরা ক্যান্সার বিশেষজ্ঞ – ডাঃ মোসাম্মাৎ রুবিনা সুলতানা",
-    "url": "https://drrubinasultana.com/bn",
-    "description": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ, রেডিওথেরাপি, কেমোথেরাপি ও অনকোলজি সেবা প্রদান করেন।",
-    "isPartOf": { "@id": "https://drrubinasultana.com/bn#website" },
-    "about": { "@id": "https://drrubinasultana.com/bn#person" },
-    "breadcrumb": { "@id": "https://drrubinasultana.com/bn#breadcrumb" },
-    "publisher": { "@id": "https://drrubinasultana.com/bn#organization" },
-    "primaryImageOfPage": {
-      "@type": "ImageObject",
-      "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
-      "width": 800,
-      "height": 800
-    }
-  }
-  </script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": ["WebPage","MedicalWebPage"],
+ "@id": "https://drrubinasultana.com/bn#webpage",
+ "url": "https://drrubinasultana.com/bn",
+ "inLanguage": "bn",
+ "name": "ঢাকার সেরা ক্যান্সার বিশেষজ্ঞ – ডাঃ মোসাম্মাৎ রুবিনা সুলতানা",
+ "description": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ, যিনি রেডিওথেরাপি, কেমোথেরাপি, টার্গেটেড থেরাপি ও আধুনিক ক্যান্সার চিকিৎসা প্রদান করেন।",
+ "datePublished": "2025-10-01",
+ "dateModified": "2026-03-13",
+
+ "isPartOf": {
+   "@id": "https://drrubinasultana.com/bn#website"
+ },
+
+ "about": [
+   { "@id": "https://drrubinasultana.com/bn#person" },
+   { "@id": "https://drrubinasultana.com/bn#tumor" },
+   { "@id": "https://drrubinasultana.com/bn#breast-cancer" },
+   { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
+   { "@id": "https://drrubinasultana.com/bn#female-cancer" },
+   { "@id": "https://drrubinasultana.com/bn#chemotherapy" },
+   { "@id": "https://drrubinasultana.com/bn#lung-cancer" }
+ ],
+
+ "mainEntity": {
+   "@id": "https://drrubinasultana.com/bn#person"
+ },
+
+ "author": {
+   "@id": "https://drrubinasultana.com/bn#person"
+ },
+
+ "publisher": {
+   "@id": "https://drrubinasultana.com/bn#organization"
+ },
+
+ "breadcrumb": {
+   "@id": "https://drrubinasultana.com/bn#breadcrumb"
+ },
+
+ "primaryImageOfPage": {
+   "@type": "ImageObject",
+   "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+   "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+   "width": 800,
+   "height": 800
+ },
+
+ "image": {
+   "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"
+ }
+}
+</script>
 
   <!-- FAQ (bn) -->
  <script type="application/ld+json">
@@ -349,7 +384,7 @@
       "name": "রেডিয়েশন অনকোলজিস্ট কী কাজ করেন?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "রেডিয়েশন অনকোলজিস্ট IMRT, IGRT, SBRT ও ব্র্যাকিথেরাপির মতো আধুনিক রেডিয়েশন থেরাপি ব্যবহার করে ক্যান্সার কোষ ধ্বংস করেন এবং সুস্থ টিস্যু সুরক্ষিত রাখেন।"
+        "text": "রেডিয়েশন অনকোলজিস্ট 3D-CRT, IMRT, VMAT, IGRT, SBRT ও ব্র্যাকিথেরাপির মতো আধুনিক রেডিয়েশন থেরাপি ব্যবহার করে ক্যান্সার কোষ ধ্বংস করেন এবং সুস্থ টিস্যু সুরক্ষিত রাখেন।"
       }
     },
     {
@@ -357,7 +392,7 @@
       "name": "ডাঃ রুবিনা সুলতানা কোন কোন ধরনের ক্যান্সারের চিকিৎসা করেন?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "তিনি ব্রেস্ট ক্যান্সার, জরায়ু ও গাইনীকোলজিক্যাল ক্যান্সার, ফুসফুস ক্যান্সার, হেড ও নেক ক্যান্সার, মস্তিষ্কের টিউমার, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার এবং বিভিন্ন ধরনের সলিড টিউমারের চিকিৎসা প্রদান করেন।"
+        "text": "তিনি ব্রেস্ট ক্যান্সার, জরায়ু ও গাইনোকোলজিক্যাল ক্যান্সার, ফুসফুস ক্যান্সার, হেড ও নেক ক্যান্সার, মস্তিষ্কের টিউমার, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার এবং বিভিন্ন ধরনের সলিড টিউমারের চিকিৎসা প্রদান করেন।"
       }
     },
     {
@@ -413,7 +448,7 @@
       "name": "ডাঃ রুবিনা সুলতানা কি সার্জারি ছাড়া ক্যান্সার চিকিৎসা করেন?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "হ্যাঁ। তিনি মূলত নন-সার্জিক্যাল ক্যান্সার চিকিৎসায় বিশেষজ্ঞ এবং রেডিওথেরাপি, কেমোথেরাপি, ব্র্যাকিথেরাপি ও সমন্বিত চিকিৎসা প্রদান করেন।"
+        "text": "হ্যাঁ। ডাঃ রুবিনা সুলতানা মূলত নন-সার্জিক্যাল ক্যান্সার চিকিৎসায় বিশেষজ্ঞ। তিনি আধুনিক রেডিওথেরাপি, কেমোথেরাপি, টার্গেটেড থেরাপি, ইমিউনোথেরাপি, ব্র্যাকিথেরাপি এবং সমন্বিত নন-অপারেটিভ চিকিৎসা প্রদান করেন।"
       }
     },
     {
@@ -613,43 +648,16 @@
       "url": "https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"
     },
     {
-      "@type": "MedicalCondition",
-      "@id": "https://drrubinasultana.com/bn#chemotherapy",
-      "name": "Chemotherapy",
-      "alternateName": ["কেমোথেরাপি"],
-      "url": "https://drrubinasultana.com/bn/best-chemotherapist-dhaka"
-    },
-
-    {
-      "@type": "Physician",
-      "@id": "https://drrubinasultana.com/bn#person",
-      "knowsAbout": [
-	    { "@id": "https://drrubinasultana.com/bn#tumor" },
-        { "@id": "https://drrubinasultana.com/bn#breast-cancer" },
-		{ "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
-        { "@id": "https://drrubinasultana.com/bn#female-cancer" },
-		{ "@id": "https://drrubinasultana.com/bn#chemotherapy" },
-        { "@id": "https://drrubinasultana.com/bn#lung-cancer" }
-        ]
-    },
-
-    {
-      "@type": "WebPage",
-      "@id": "https://drrubinasultana.com/bn",
-      "about": [
-	    { "@id": "https://drrubinasultana.com/bn#tumor" },
-		{ "@id": "https://drrubinasultana.com/bn#breast-cancer" },
-        { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
-        { "@id": "https://drrubinasultana.com/bn#female-cancer" },
-		{ "@id": "https://drrubinasultana.com/bn#chemotherapy" },
-        { "@id": "https://drrubinasultana.com/bn#lung-cancer" }
-        ]
+     "@type": "MedicalTherapy",
+  "@id": "https://drrubinasultana.com/bn#chemotherapy",
+  "name": "Chemotherapy",
+  "alternateName": ["কেমোথেরাপি"],
+  "url": "https://drrubinasultana.com/bn/best-chemotherapist-dhaka"
     }
 
   ]
 }
 </script>
- 
  
 <!-- Microsoft Clarity Tracking Code -->
 <script type="text/javascript">
@@ -2525,50 +2533,52 @@ color: #ffffff;
         </p>
       </div>
 	  
-
-  <!-- ABOUT -->
+<!-- ABOUT -->
 <div class="block-container">
-  <section id="about">
-    <figure class="figure-centered">
+<section id="about">
+
+<figure class="figure-centered">
 <img 
   src="/assets/Dr-Mosammat-Rubina-Sultana.webp"
   width="330"
   height="400"
   loading="eager"
   decoding="async"
-  alt="ডাঃ মোসাম্মাৎ রুবিনা সুলতানা - ঢাকার সেরা ক্যান্সার বিশেষজ্ঞ"
+  alt="ডাঃ মোসাম্মাৎ রুবিনা সুলতানা – ক্লিনিক্যাল ও রেডিয়েশন অনকোলজিস্ট, ঢাকা"
   class="profile-img"
-  style="width: 100%; height: auto; max-width: 330px;">
-  <figcaption class="figure-caption">
-    ডাঃ রুবিনা সুলতানা – সহযোগী অধ্যাপক, NICRH, ঢাকা
-  </figcaption>
+  style="width:100%;height:auto;max-width:330px;">
+
+<figcaption class="figure-caption">
+ডাঃ রুবিনা সুলতানা – সহযোগী অধ্যাপক, NICRH, ঢাকা
+</figcaption>
 </figure>
 
-    <h2 lang="bn">ডাঃ রুবিনা সুলতানা সম্পর্কে</h2>
+ <h2 lang="bn">ঢাকার ক্যান্সার বিশেষজ্ঞ ডাঃ রুবিনা সুলতানা</h2>
 
-    <p lang="bn"><strong>ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</strong> বাংলাদেশের একজন <strong><a href="https://drrubinasultana.com/bn">অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ</a></strong>। তিনি <strong>ক্লিনিক্যাল অনকোলজি</strong> ও <strong>রেডিয়েশন অনকোলজি</strong>-তে <strong>দক্ষতার জন্য বিশেষভাবে পরিচিত</strong>। চিকিৎসা সেবায় ২২ বছরেরও বেশি অভিজ্ঞতা নিয়ে তিনি প্রাথমিক রোগ নির্ণয় থেকে শুরু করে জটিল প্যালিয়েটিভ কেয়ার পর্যন্ত সকল পর্যায়ে <strong>এভিডেন্স-বেইজড ক্যান্সার চিকিৎসা</strong> প্রদান করে থাকেন।</p>
+    <p lang="bn"><strong>ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</strong> বাংলাদেশের একজন <strong><a href="/bn">অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ</a></strong>। তিনি <strong>ক্লিনিক্যাল অনকোলজি</strong> ও <strong>রেডিয়েশন অনকোলজি</strong>-তে <strong>দক্ষতার জন্য বিশেষভাবে পরিচিত</strong>। চিকিৎসা সেবায় ২২ বছরেরও বেশি অভিজ্ঞতা নিয়ে তিনি প্রাথমিক রোগ নির্ণয় থেকে শুরু করে জটিল প্যালিয়েটিভ কেয়ার পর্যন্ত সকল পর্যায়ে <strong>আধুনিক ও এভিডেন্স-বেইজড ক্যান্সার চিকিৎসা</strong> প্রদান করে থাকেন।</p>
 
- <p lang="bn">বর্তমানে তিনি ঢাকার <strong>জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট ও হাসপাতাল</strong> <a href="https://nicrh.gov.bd/departments/radiation-oncology" target="_blank" rel="noopener nofollow">(NICRH)</a>-এর <strong>রেডিয়েশন অনকোলজি বিভাগে সহযোগী অধ্যাপক</strong> হিসেবে দায়িত্ব পালন করছেন — যা বাংলাদেশে ক্যান্সার গবেষণা ও উন্নত চিকিৎসার অন্যতম সর্বোচ্চ প্রতিষ্ঠান। তিনি এই হাসপাতালে ক্যান্সার রোগীদের চিকিৎসা সেবা প্রদানের পাশাপাশি শিক্ষানবিশ অনকোলজিস্টদের প্রশিক্ষণও প্রদান করে থাকেন।</p>
+ <p lang="bn">বর্তমানে তিনি ঢাকার <strong>জাতীয় ক্যান্সার গবেষণা ইনস্টিটিউট ও হাসপাতাল</strong> <a href="https://nicrh.gov.bd/departments/radiation-oncology" target="_blank" rel="noopener">(NICRH)</a>-এর <strong>রেডিয়েশন অনকোলজি বিভাগে সহযোগী অধ্যাপক</strong> হিসেবে দায়িত্ব পালন করছেন — যা বাংলাদেশে ক্যান্সার গবেষণা ও উন্নত চিকিৎসার অন্যতম সর্বোচ্চ প্রতিষ্ঠান। তিনি এই হাসপাতালে ক্যান্সার রোগীদের চিকিৎসা সেবা প্রদানের পাশাপাশি শিক্ষানবিশ অনকোলজিস্টদের প্রশিক্ষণও প্রদান করে থাকেন।</p>
  
- <p lang="bn"><strong>ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</strong> একজন <strong><a href="https://drrubinasultana.com/bn">রেডিয়েশন অনকোলজিস্ট ও ক্লিনিক্যাল অনকোলজিস্ট</a></strong>। তিনি <strong>ব্রেস্ট ক্যান্সার, গাইনোকোলজিক্যাল ক্যান্সার (জরায়ু ও ওভেরিয়ান)–এর নন-সার্জিক্যাল চিকিৎসাসহ টিউমার ও জটিল ক্যান্সার</strong>– চিকিৎসায় অভিজ্ঞ।</p>
+ <p lang="bn"><strong>ডাঃ মোসাম্মাৎ রুবিনা সুলতানা</strong> একজন <strong><a href="/bn">ক্লিনিক্যাল ও রেডিয়েশন অনকোলজিস্ট</a></strong>। তিনি <strong>ব্রেস্ট ক্যান্সার, জরায়ু ক্যান্সার, গাইনোকোলজিক্যাল ক্যান্সার (জরায়ু, ডিম্বাশয় ও জরায়ুমুখের ক্যান্সার)</strong>–এর নন-সার্জিক্যাল চিকিৎসাসহ টিউমার ও জটিল ক্যান্সার চিকিৎসায় অভিজ্ঞ।</p>
 
  <p lang="bn">একাডেমিক দায়িত্বের পাশাপাশি তিনি দেশের অন্যতম শীর্ষস্থানীয় বেসরকারি ক্যান্সার হাসপাতাল <strong>আহসানিয়া মিশন ক্যান্সার ও জেনারেল হাসপাতালে</strong> <strong>কনসালট্যান্ট</strong> হিসেবে এবং <strong>ডেল্টা হাসপাতাল লিমিটেড, মিরপুর-১</strong> এবং <strong>এনাম মেডিকেল কলেজ হাসপাতাল, সাভার</strong>-এ <strong>ভিজিটিং কনসালট্যান্ট</strong> হিসেবে চিকিৎসা সেবা প্রদান করছেন।</p>
 
- <p lang="bn">তিনি রেডিয়েশন অনকোলজির আধুনিক অগ্রগতির সঙ্গে সম্পূর্ণভাবে আপডেট থেকে <strong>IMRT (Intensity-Modulated Radiation Therapy)</strong>, <strong>IGRT (Image-Guided Radiation Therapy)</strong> এবং <strong>SBRT (Stereotactic Body Radiation Therapy)</strong>-এর মতো <strong>আধুনিক চিকিৎসা প্রযুক্তি</strong> ব্যবহার করে থাকেন। প্রতিটি চিকিৎসা পরিকল্পনা রোগীর ক্যান্সারের ধরন, পর্যায় এবং সামগ্রিক শারীরিক অবস্থার ভিত্তিতে নির্ধারণ করা হয়।</p>
+ <p lang="bn">তাঁর ক্লিনিক্যাল চিকিৎসা কার্যক্রমে আধুনিক সিস্টেমিক থেরাপি এবং নির্ভুল রেডিয়েশন প্রযুক্তির সমন্বয় রয়েছে। তিনি কেমোথেরাপি, টার্গেটেড থেরাপি, ইমিউনোথেরাপি এবং উন্নত রেডিওথেরাপি প্রযুক্তি (3D-CRT, IMRT, VMAT, IGRT, SBRT) এর পাশাপাশি ব্র্যাকিথেরাপির মাধ্যমে সমন্বিত ক্যান্সার চিকিৎসা প্রদান করেন।  প্রতিটি চিকিৎসা পরিকল্পনা রোগীর ক্যান্সারের ধরন, পর্যায় এবং সামগ্রিক শারীরিক অবস্থার ভিত্তিতে নির্ধারণ করে থাকেন।</p>
 
- <p lang="bn">ডাঃ রুবিনা সুলতানা একজন <strong><a href="https://drrubinasultana.com/bn">IAEA-সার্টিফায়েড রেডিয়েশন অনকোলজিস্ট</a></strong>। তিনি <strong>International Atomic Energy Agency</strong> 
-<a href="https://www.iaea.org/" target="_blank" rel="noopener nofollow">(IAEA)</a>-এর মাধ্যমে রেডিওথেরাপি ও ব্র্যাকিথেরাপিতে উন্নত আন্তর্জাতিক প্রশিক্ষণ সম্পন্ন করেছেন।
-তিনি চট্টগ্রাম মেডিকেল কলেজ থেকে <strong>MBBS</strong> এবং বাংলাদেশ কলেজ অব ফিজিসিয়ানস এন্ড সার্জনস (BCPS) থেকে <strong>FCPS (Radiotherapy)</strong> ডিগ্রি অর্জন করেছেন — যা ক্যান্সার চিকিৎসার অন্যতম সর্বোচ্চ যোগ্যতা।</p>
+ <p lang="bn">ডাঃ রুবিনা সুলতানা একজন <strong><a href="/bn">IAEA-সার্টিফায়েড রেডিয়েশন অনকোলজিস্ট</a></strong>। তিনি <strong>International Atomic Energy Agency</strong> 
+<a href="https://www.iaea.org/" target="_blank" rel="noopener">(IAEA)</a>-এর মাধ্যমে রেডিওথেরাপি ও ব্র্যাকিথেরাপিতে উন্নত আন্তর্জাতিক প্রশিক্ষণ সম্পন্ন করেছেন।
+তিনি চট্টগ্রাম মেডিকেল কলেজ থেকে <strong>MBBS</strong> এবং বাংলাদেশ কলেজ অব ফিজিসিয়ানস এন্ড সার্জনস (BCPS) থেকে <strong>FCPS (Radiotherapy)</strong> ডিগ্রি অর্জন করেছেন।</p>
 
  <p lang="bn">
 তিনি একাধিক মর্যাদাপূর্ণ আন্তর্জাতিক ও জাতীয় পেশাগত সংগঠনের সক্রিয় সদস্য, যার মধ্যে রয়েছে 
- <strong>আমেরিকান সোসাইটি অফ ক্লিনিক্যাল অনকোলজি</strong> <a href="https://www.asco.org/" target="_blank" rel="noopener nofollow">(ASCO)</a>, 
-এশিয়া ও মধ্য-প্রাচ্য সোসাইটি অব থেরাপিউটিক রেডিওলজি অ্যান্ড অনকোলজি <a href="https://www.amstro.org/" target="_blank" rel="noopener nofollow">(AMSTRO)</a>, 
-বাংলাদেশ সোসাইটি অফ রেডিয়েশন অনকোলজিস্টস <a href="https://www.bsro.info/" target="_blank" rel="noopener nofollow">(BSRO)</a> এবং <a href="https://oncologyclub.org/" target="_blank" rel="noopener noreferrer">অনকোলজি ক্লাব</a>।
+ <strong>আমেরিকান সোসাইটি অফ ক্লিনিক্যাল অনকোলজি</strong> <a href="https://www.asco.org/" target="_blank" rel="noopener">(ASCO)</a>, 
+এশিয়া ও মধ্য-প্রাচ্য সোসাইটি অব থেরাপিউটিক রেডিওলজি অ্যান্ড অনকোলজি <a href="https://www.amstro.org/" target="_blank" rel="noopener">(AMSTRO)</a>, 
+বাংলাদেশ সোসাইটি অফ রেডিয়েশন অনকোলজিস্টস <a href="https://www.bsro.info/" target="_blank" rel="noopener">(BSRO)</a> এবং <a href="https://oncologyclub.org/" target="_blank" rel="noopener">অনকোলজি ক্লাব</a>।
 এই সদস্যপদগুলো তাঁর ধারাবাহিক শিক্ষালাভ, পেশাগত উৎকর্ষতা এবং বাংলাদেশে ক্যান্সার চিকিৎসার অগ্রগতির প্রতি দৃঢ় অঙ্গীকারের প্রতিফলন।
 </p>
 
- <p lang="bn">ডাঃ রুবিনা সুলতানা <a href="/bn/best-tumor-specialist-dhaka">বিভিন্ন ধরণের টিউমার</a>, <a href="/bn/best-breast-cancer-specialist-dhaka">ব্রেস্ট ক্যান্সার</a>, <a href="/bn/best-cervical-cancer-specialist-dhaka">জরায়ু ক্যান্সার</a>, <a href="/bn/best-female-cancer-specialist-dhaka">গাইনীকোলজিক্যাল ক্যান্সার</a>, রেকটাল ক্যান্সার, মস্তিষ্কের টিউমার, হেড অ্যান্ড নেক ক্যান্সার, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার, ফুসফুস ক্যান্সার এবং মেটাস্ট্যাটিক ক্যান্সারের চিকিৎসায় বিশেষভাবে পারদর্শী। তিনি রেডিওথেরাপি, <a href="/bn/best-chemotherapist-dhaka">কেমোথেরাপি</a>, ব্র্যাকিথেরাপি, ক্যান্সার নির্ণয় ও স্টেজিং এবং প্যালিয়েটিভ কেয়ার পরিচালনায় অত্যন্ত অভিজ্ঞ ও দক্ষ।</p>
+ <p lang="bn">ডাঃ রুবিনা সুলতানা <a href="/bn/best-tumor-specialist-dhaka">বিভিন্ন ধরণের টিউমার</a>, <a href="/bn/best-breast-cancer-specialist-dhaka">ব্রেস্ট ক্যান্সার</a>, <a href="/bn/best-cervical-cancer-specialist-dhaka">জরায়ু ক্যান্সার</a>, <a href="/bn/best-female-cancer-specialist-dhaka">গাইনোকোলজিক্যাল ক্যান্সার</a>, রেকটাল ক্যান্সার, মস্তিষ্কের টিউমার, হেড অ্যান্ড নেক ক্যান্সার, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার, ফুসফুস ক্যান্সার এবং মেটাস্ট্যাটিক ক্যান্সারের চিকিৎসায় বিশেষভাবে পারদর্শী। তিনি আধুনিক রেডিওথেরাপি, <a href="/bn/best-chemotherapist-dhaka">কেমোথেরাপি</a>, টার্গেটেড থেরাপি, ইমিউনোথেরাপি এবং ব্র্যাকিথেরাপির মাধ্যমে ক্যান্সারের উন্নত চিকিৎসা প্রদান করেন।
+ </p>
 
 <div class="appointment-cta">
   <a href="/bn/#chambers"
@@ -2587,7 +2597,7 @@ color: #ffffff;
     <div class="dual-blocks">
       <div class="dual-block">
         <section id="credentials">
-          <h3>যোগ্যতা ও দক্ষতা</h3>
+          <h3>যোগ্যতা</h3>
           <ul>
             <li>MBBS – <a href="https://cmch.gov.bd/" target="_blank" rel="noopener nofollow">চট্টগ্রাম মেডিকেল কলেজ</a></li>
             <li>BCS (স্বাস্থ্য)</li>
@@ -2602,16 +2612,16 @@ color: #ffffff;
 
       <div class="dual-block">
         <section id="specializations">
-          <h3>বিশেষত্ব</h3>
+          <h3>বিশেষত্ব ও দক্ষতা</h3>
           <ul>
-            <li>রেডিওথেরাপি, কেমোথেরাপি ও ব্র্যাকিথেরাপি</li>
-            <li>ক্যান্সার নির্ণয়, স্টেজিং ও প্যালিয়েটিভ কেয়ার</li>
-            <li>ক্ষতিকর টিউমার ব্যবস্থাপনা</li>
-            <li>জরায়ু, ব্রেস্ট, রেকটাল ও ফুসফুস ক্যান্সার</li>
-            <li>মস্তিষ্কের টিউমার ও মেটাস্ট্যাটিক ক্যান্সার</li>
-            <li>হেড অ্যান্ড নেক, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার</li>
-            <li>মেডিক্যাল অনকোলজি ও কেমোথেরাপি পরিকল্পনা</li>
-          </ul>
+<li><strong>ক্লিনিক্যাল ও রেডিয়েশন অনকোলজি</strong> – উন্নত রেডিওথেরাপি প্রযুক্তি (3D-CRT, IMRT, VMAT, IGRT, SBRT) এবং ব্র্যাকিথেরাপি</li>
+<li><a href="/bn/best-chemotherapist-dhaka">কেমোথেরাপি</a>, টার্গেটেড থেরাপি ও ইমিউনোথেরাপি</li>
+<li>ক্যান্সার নির্ণয়, স্টেজিং, ব্যক্তিগতকৃত চিকিৎসা পরিকল্পনা ও সমন্বিত প্যালিয়েটিভ কেয়ার</li>
+<li><a href="/bn/best-tumor-specialist-dhaka">বিনাইন ও ম্যালিগন্যান্ট টিউমারের আধুনিক চিকিৎসা</a></li>
+<li><strong>গাইনোকোলজিক্যাল ক্যান্সার চিকিৎসা</strong> – <a href="/bn/best-cervical-cancer-specialist-dhaka">জরায়ুমুখের ক্যান্সার</a>, ডিম্বাশয় ও জরায়ুর ক্যান্সার (<a href="/bn/best-female-cancer-specialist-dhaka">গাইনোকোলজিক্যাল ক্যান্সার বিশেষজ্ঞ</a>)</li>
+<li><a href="/bn/best-breast-cancer-specialist-dhaka">ব্রেস্ট ক্যান্সার</a>, ফুসফুস ক্যান্সার ও রেকটাল ক্যান্সারের চিকিৎসা</li>
+<li>মস্তিষ্কের টিউমার, হেড অ্যান্ড নেক ক্যান্সার, গ্যাস্ট্রোইনটেস্টাইনাল ও মেটাস্ট্যাটিক ক্যান্সারের সমন্বিত চিকিৎসা</li>
+</ul>
         </section>
       </div>
     </div>
@@ -2620,7 +2630,7 @@ color: #ffffff;
   <!-- Chambers -->
   <div class="block-container">
     <section id="chambers">
-      <h3>🏥 চেম্বার তথ্য</h3>
+      <h3>🏥 চেম্বারসমূহ</h3>
 
       <div class="chamber-container">
         <div class="chamber">
@@ -2884,12 +2894,12 @@ color: #ffffff;
 
 <div>
   <h4>রেডিয়েশন অনকোলজিস্ট কী কাজ করেন?</h4>
-  <p>রেডিয়েশন অনকোলজিস্ট <a href="/bn/best-tumor-specialist-dhaka"><strong>ক্যান্সার</strong></a> চিকিৎসায় IMRT, IGRT, SBRT ও ব্র্যাকিথেরাপির মতো আধুনিক রেডিয়েশন থেরাপি ব্যবহার করে ক্যান্সার কোষ ধ্বংস করেন এবং সুস্থ টিস্যু সুরক্ষিত রাখেন।</p>
+  <p>রেডিয়েশন অনকোলজিস্ট <a href="/bn/best-tumor-specialist-dhaka"><strong>ক্যান্সার</strong></a> চিকিৎসায় 3D-CRT, IMRT, VMAT, IGRT, SBRT ও ব্র্যাকিথেরাপির মতো আধুনিক রেডিয়েশন থেরাপি ব্যবহার করে ক্যান্সার কোষ ধ্বংস করেন এবং সুস্থ টিস্যু সুরক্ষিত রাখেন।</p>
 </div>
 
 <div>
   <h4>ডাঃ রুবিনা সুলতানা কোন কোন ধরনের ক্যান্সারের চিকিৎসা করেন?</h4>
-  <p>ডাঃ রুবিনা সুলতানা <a href="/bn/best-breast-cancer-specialist-dhaka"><strong>ব্রেস্ট ক্যান্সার</strong></a>, <a href="/bn/best-cervical-cancer-specialist-dhaka"><strong>জরায়ু ক্যান্সার</strong></a>, <a href="/bn/best-female-cancer-specialist-dhaka"><strong>গাইনীকোলজিক্যাল ক্যান্সার</strong></a>, হেড ও নেক ক্যান্সার, মস্তিষ্কের টিউমার, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার এবং বিভিন্ন ধরনের <a href="/bn/best-tumor-specialist-dhaka"><strong>সলিড টিউমার</strong></a> এর চিকিৎসা প্রদান করেন।</p>
+  <p>ডাঃ রুবিনা সুলতানা <a href="/bn/best-breast-cancer-specialist-dhaka"><strong>ব্রেস্ট ক্যান্সার</strong></a>, <a href="/bn/best-cervical-cancer-specialist-dhaka"><strong>জরায়ু ক্যান্সার</strong></a>, <a href="/bn/best-female-cancer-specialist-dhaka"><strong>গাইনোকোলজিক্যাল ক্যান্সার</strong></a>, হেড ও নেক ক্যান্সার, মস্তিষ্কের টিউমার, গ্যাস্ট্রোইনটেস্টাইনাল ক্যান্সার এবং বিভিন্ন ধরনের <a href="/bn/best-tumor-specialist-dhaka"><strong>সলিড টিউমার</strong></a> এর চিকিৎসা প্রদান করেন।</p>
 </div>
 
 <div>
@@ -2924,7 +2934,7 @@ color: #ffffff;
 
 <div>
   <h4>ডাঃ রুবিনা সুলতানা কি সার্জারি ছাড়া ক্যান্সার চিকিৎসা করেন?</h4>
-  <p>হ্যাঁ। ডাঃ রুবিনা সুলতানা মূলত নন-সার্জিক্যাল ক্যান্সার চিকিৎসায় বিশেষজ্ঞ। তিনি রেডিওথেরাপি, <a href="/bn/best-chemotherapist-dhaka">কেমোথেরাপি</a>, ব্র্যাকিথেরাপি এবং সমন্বিত নন-অপারেটিভ চিকিৎসা প্রদান করেন।</p>
+  <p>হ্যাঁ। ডাঃ রুবিনা সুলতানা মূলত নন-সার্জিক্যাল ক্যান্সার চিকিৎসায় বিশেষজ্ঞ। তিনি আধুনিক রেডিওথেরাপি, <a href="/bn/best-chemotherapist-dhaka">কেমোথেরাপি</a>, টার্গেটেড থেরাপি, ইমিউনোথেরাপি, ব্র্যাকিথেরাপি এবং সমন্বিত নন-অপারেটিভ চিকিৎসা প্রদান করেন।</p>
 </div>
 
 <div>
