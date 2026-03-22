@@ -165,11 +165,11 @@
   "@graph": [
 
     {
-      "@type": "Physician",
+      "@type": ["Person","Physician"],
       "@id": "https://drrubinasultana.com/bn#person",
       "inLanguage": "bn",
       "mainEntityOfPage": {
-        "@type": "WebPage",
+        "@type": ["WebPage","MedicalWebPage"],
         "@id": "https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka/#webpage"
       },
       "about": [
@@ -189,10 +189,9 @@
       "honorificPrefix": "Dr.",
       "jobTitle": "Associate Professor, Department of Radiation Oncology",
       "description": "ডাঃ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ ও রেডিয়েশন অনকোলজিস্ট, যিনি রেডিওথেরাপি, কেমোথেরাপি, ব্র্যাকিথেরাপি এবং টিউমার চিকিৎসায় ২২ বছরের ক্লিনিক্যাল অভিজ্ঞতা সম্পন্ন।",
-      "url": "https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka",
+      "url": "https://drrubinasultana.com/",
       "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
       "telephone": "+8801868592848",
-      "priceRange": "Affordable",
       "gender": "Female",
       "address": {
         "@type": "PostalAddress",
@@ -207,12 +206,7 @@
         "name": "BMDC Registration No",
         "value": "A-36764"
       },
-      "medicalSpecialty": [
-  "Oncology",
-  "Radiation Oncology",
-  "Clinical Oncology",
-  "Palliative Care"
-],
+      "medicalSpecialty": "https://schema.org/Oncology",
       "hasCredential": [
         { "@type": "EducationalOccupationalCredential", "credentialCategory": "FCPS (Radiotherapy)", "educationalLevel": "Postgraduate" },
         { "@type": "EducationalOccupationalCredential", "credentialCategory": "MBBS" },
@@ -320,7 +314,6 @@
   ]
 }
 </script>
-
 
     <!-- Styles (MASTER MENU + PAGE) -->
     <style>

@@ -68,7 +68,6 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
-
 <!-- ✅ Structured Data: Dr. Mosammat Rubina Sultana (Bangla version) -->
 <script type="application/ld+json">
 {
@@ -76,7 +75,7 @@
   "@graph": [
 
     {
-      "@type": "Physician",
+      "@type": ["Person","Physician"],
       "@id": "https://drrubinasultana.com/bn#person",
       "inLanguage": "bn",
       "name": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা",
@@ -88,11 +87,10 @@
       "honorificPrefix": "Dr.",
 	  "jobTitle": "Associate Professor, Department of Radiation Oncology",
       "description": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ এবং ক্লিনিক্যাল ও রেডিয়েশন অনকোলজিস্ট, যিনি রেডিওথেরাপি, কেমোথেরাপি, টার্গেটেড থেরাপি ও ব্র্যাকিথেরাপিতে ২২ বছরের বেশি অভিজ্ঞ।",
-      "url": "https://drrubinasultana.com/bn",
+      "url": "https://drrubinasultana.com/",
       "image":{"@type":"ImageObject","@id":"https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp","url":"https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"},
       "telephone": "+8801868592848",
       "gender": "Female",
-      "priceRange": "Affordable",
       "nationality": { "@type": "Country", "name": "Bangladesh" },
 
       "identifier": {
@@ -101,13 +99,8 @@
         "value": "A-36764"
       },
 
-"medicalSpecialty": [
-  "Medical Oncology",
-  "Clinical Oncology",
-  "Radiation Oncology",
-  "Gynecologic Oncology",
-  "Palliative Care"
-],
+"medicalSpecialty": "https://schema.org/Oncology",
+
  "knowsAbout": [
   { "@id": "https://drrubinasultana.com/bn#breast-cancer" },
   { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
@@ -172,7 +165,7 @@
       "@id": "https://drrubinasultana.com/bn#nicrh",
       "name": "National Institute of Cancer Research & Hospital (NICRH)",
       "url": "https://nicrh.gov.bd",
-      "medicalSpecialty": "Oncology",
+      "medicalSpecialty": "https://schema.org/Oncology",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Mohakhali",
@@ -277,8 +270,7 @@
     "alternateName": "Dr. Mosammat Rubina Sultana | Cancer Specialist in Dhaka",
     "about": { "@id": "https://drrubinasultana.com/bn#person" },
     "publisher": {
-      "@type": "Person",
-      "@id": "https://drrubinasultana.com/bn#person"
+    "@id": "https://drrubinasultana.com/bn#person"
     },
     "potentialAction": {
       "@type": "SearchAction",
@@ -2536,15 +2528,14 @@ color: #ffffff;
 
 <h3>পেশাগত যোগ্যতা</h3>
 
-<p>ডাঃ রুবিনা সুলতানা একজন <strong>IAEA-সার্টিফাইড রেডিয়েশন অনকোলজিস্ট</strong>। তিনি চট্টগ্রাম মেডিকেল কলেজ থেকে <strong>MBBS</strong> এবং <strong>FCPS (Radiotherapy)</strong> ডিগ্রি অর্জন করেছেন এবং <strong>BCS (Health)</strong> ক্যাডারের অন্তর্ভুক্ত।</p>
-
-<h3>চেম্বার ও রোগী সেবা</h3>
-
-<p>একাডেমিক দায়িত্বের পাশাপাশি তিনি <strong>আহসানিয়া মিশন ক্যান্সার ও জেনারেল হাসপাতাল</strong>-এ কনসালটেন্ট হিসেবে এবং <strong>ডেল্টা হাসপাতাল লিমিটেড</strong> ও <strong>এনাম মেডিকেল কলেজ হাসপাতাল</strong>-এ ভিজিটিং কনসালটেন্ট হিসেবে রোগী দেখেন। রোগীদের প্রতি তার আন্তরিকতা, স্পষ্ট যোগাযোগ এবং সম্পূর্ণ চিকিৎসা প্রক্রিয়ায় সহায়তার জন্য তিনি বিশেষভাবে পরিচিত।</p>
+<p>ডাঃ রুবিনা সুলতানা একজন <strong>IAEA-সার্টিফাইড রেডিয়েশন অনকোলজিস্ট</strong>। তিনি চট্টগ্রাম মেডিকেল কলেজ থেকে <strong>MBBS</strong> ও BCPS থেকে <strong>FCPS (Radiotherapy)</strong> ডিগ্রি অর্জন করেছেন এবং <strong>BCS (Health)</strong> ক্যাডারের একজন সরকারি ডাক্তার।</p>
 
 <h3>পেশাগত সদস্যপদ</h3>
 
-<p>তিনি <strong>ASCO</strong>, <strong>AMSTRO</strong>, <strong>BSRO</strong> এবং Oncology Club-এর সক্রিয় সদস্য, যা তার আন্তর্জাতিক মানের ক্যান্সার চিকিৎসায় প্রতিশ্রুতি ও নিয়মিত আপডেট থাকার প্রমাণ।</p>
+<p>তিনি <strong>ASCO</strong>, <strong>AMSTRO</strong>, <strong>BSRO</strong> এবং Oncology Club-এর সক্রিয় সদস্য।</p>
+<h3>চেম্বার ও রোগী সেবা</h3>
+
+<p>একাডেমিক দায়িত্বের পাশাপাশি তিনি <strong>আহসানিয়া মিশন ক্যান্সার ও জেনারেল হাসপাতাল</strong>-এ কনসালটেন্ট হিসেবে এবং <strong>ডেল্টা হাসপাতাল লিমিটেড</strong> ও <strong>এনাম মেডিকেল কলেজ হাসপাতাল</strong>-এ ভিজিটিং কনসালটেন্ট হিসেবে রোগী দেখেন। রোগীদের প্রতি তার আন্তরিকতা, স্পষ্ট যোগাযোগ এবং সম্পূর্ণ চিকিৎসা প্রক্রিয়ায় সহায়তার জন্য তিনি বিশেষভাবে পরিচিত।</p>
 
 <div class="appointment-cta">
   <a href="/bn#chambers"
