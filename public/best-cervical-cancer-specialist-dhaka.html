@@ -96,7 +96,7 @@
   "isPartOf": { "@id": "https://drrubinasultana.com/#website" },
   "about": { "@id": "https://drrubinasultana.com/#person" },
   "breadcrumb": { "@id": "https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka/#breadcrumb" },
-  "publisher": { "@id": "https://drrubinasultana.com/#website-organization" }
+  "publisher": { "@id": "https://drrubinasultana.com/#organization" }
 }
 </script>
 
@@ -146,7 +146,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Physician",
+  "@type": ["Person","Physician"],
   "@id": "https://drrubinasultana.com/#person",
   "name": "Dr. Mosammat Rubina Sultana",
   "alternateName": [
@@ -157,7 +157,7 @@
   "honorificPrefix": "Dr.",
   "jobTitle": "Clinical and Radiation Oncologist",
 
-  "description": "Associate Professor and radiation oncologist with over 22 years of experience in radiotherapy, chemotherapy and brachytherapy.",
+  "description": "Associate Professor and clinical and radiation oncologist with over 22 years of experience in radiotherapy, chemotherapy and brachytherapy.",
   "url": "https://drrubinasultana.com/",
 
   "image": {
@@ -166,7 +166,6 @@
   },
 
   "telephone": "+8801868592848",
-  "priceRange": "Affordable",
   "gender": "Female",
 
   "address": {
@@ -191,11 +190,7 @@
     "value": "A-36764"
   },
 
- "medicalSpecialty": [
-  "Gynecologic Oncology",
-  "Radiation Oncology",
-  "Clinical Oncology"
-],
+"medicalSpecialty": "https://schema.org/Oncology",
 
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "MBBS" },

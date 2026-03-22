@@ -91,7 +91,7 @@
   },
 
   "breadcrumb": { "@id": "https://drrubinasultana.com/best-breast-cancer-specialist-dhaka/#breadcrumb" },
-  "publisher": { "@id": "https://drrubinasultana.com/#website-organization" },
+  "publisher": { "@id": "https://drrubinasultana.com/#organization" },
   "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
@@ -125,13 +125,7 @@
         "latitude": 23.8551,
         "longitude": 90.2606
       },
-  "medicalSpecialty": [
-  "Clinical Oncology",
-  "Radiation Oncology",
-  "Breast Cancer Treatment",
-  "Gynecologic Cancer Treatment",
-  "Palliative Care"
-]
+  "medicalSpecialty": "https://schema.org/Oncology"
     }
     </script>
 
@@ -199,7 +193,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Physician",
+  "@type": ["Person","Physician"],
   "@id": "https://drrubinasultana.com/#person",
   "name": "Dr. Mosammat Rubina Sultana",
   "alternateName": [
@@ -219,7 +213,6 @@
   },
 
   "telephone": "+8801868592848",
-  "priceRange": "Affordable",
   "gender": "Female",
 
   "address": {
@@ -241,16 +234,7 @@
     "value": "A-36764"
   },
 
- "medicalSpecialty": [
-  "Breast Oncology",
-  "Gynecologic Oncology",
-  "Clinical Oncology",
-  "Radiation Oncology",
-  "Medical Oncology",
-  "Radiotherapy",
-  "Brachytherapy",
-  "Chemotherapy"
-  ],
+ "medicalSpecialty": "https://schema.org/Oncology",
 
   "hasCredential": [
     { "@type": "EducationalOccupationalCredential", "credentialCategory": "MBBS" },
@@ -332,10 +316,14 @@
           "streetAddress": "Plot #03, Embankment Drive Way, Sector 10",
           "addressLocality": "Uttara",
           "postalCode": "1230",
-          "addressCountry": { "@type": "Country", "name": "BD" },
-          "geo": { "@type": "GeoCoordinates", "latitude": 23.8103, "longitude": 90.4125 }
+          "addressCountry": { "@type": "Country", "name": "BD" }
         }
       ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.8103,
+        "longitude": 90.4125
+      },
       "telephone": "+8809612310617",
       "url": "https://amcghbd.org",
       "priceRange": "Affordable",
@@ -362,10 +350,14 @@
           "streetAddress": "26/2 Principal Abul Kashem Road, Mirpur-1",
           "addressLocality": "Dhaka",
           "postalCode": "1216",
-          "addressCountry": { "@type": "Country", "name": "BD" },
-          "geo": { "@type": "GeoCoordinates", "latitude": 23.8061, "longitude": 90.3688 }
+          "addressCountry": { "@type": "Country", "name": "BD" }
         }
       ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.8061,
+        "longitude": 90.3688
+      },
       "telephone": "+8801795699147",
       "url": "https://www.deltahospital.com.bd/",
       "priceRange": "Affordable",
@@ -393,8 +385,6 @@
   ]
 }
 </script>
-
-<!-- Removed duplicate hospital schema as it's now included in the main @graph array -->
 
     <!-- Styles (MASTER MENU + PAGE) -->
     <style>
