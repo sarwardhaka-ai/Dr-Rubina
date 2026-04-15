@@ -170,4 +170,82 @@
   <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/faq-breast-cancer"/>
 </url>
 
+
+<!-- ========================= BANGLA CERVICAL CLUSTER ========================= -->
+
+<url>
+  <loc>https://drrubinasultana.com/bn/cervical-cancer-symptoms</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-symptoms"/>
+</url>
+
+<url>
+  <loc>https://drrubinasultana.com/bn/cervical-cancer-screening</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-screening"/>
+</url>
+
+<url>
+  <loc>https://drrubinasultana.com/bn/cervical-cancer-treatment-stages</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-treatment-stages"/>
+</url>
+
+<url>
+  <loc>https://drrubinasultana.com/bn/cervical-cancer-radiotherapy-side-effects</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.75</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-radiotherapy-side-effects"/>
+</url>
+
+<!-- ========================= BANGLA BREAST CLUSTER ========================= -->
+
+<url>
+  <loc>https://drrubinasultana.com/bn/breast-cancer-symptoms</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-symptoms"/>
+</url>
+
+<url>
+  <loc>https://drrubinasultana.com/bn/breast-lump-cancer-or-not</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-lump-cancer-or-not"/>
+</url>
+
+<url>
+  <loc>https://drrubinasultana.com/bn/breast-cancer-screening</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.85</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-screening"/>
+</url>
+
+<url>
+  <loc>https://drrubinasultana.com/bn/breast-cancer-treatment-stages</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-treatment-stages"/>
+</url>
+
+<url>
+  <loc>https://drrubinasultana.com/bn/breast-cancer-chemotherapy-side-effects</loc>
+  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-chemotherapy-side-effects"/>
+</url>
+
+
 </urlset>
