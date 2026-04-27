@@ -88,6 +88,18 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
 </url>
 
+
+<!-- ========================= BANGLA CANCER SYMPTOMS HUB ========================= -->
+<url>
+  <loc>https://drrubinasultana.com/bn/cancer-symptoms</loc>
+  <lastmod>2026-04-27T12:00:00+06:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.95</priority>
+
+  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cancer-symptoms"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/bn/cancer-symptoms"/>
+</url>
+
 <!-- ========================= BANGLA SERVICES ========================= -->
 
 <url>
@@ -149,6 +161,7 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
   <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
 </url>
+
 
 <!-- ========================= BANGLA FAQ PAGE (TUMOR) ========================= -->
 <url>
