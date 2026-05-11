@@ -798,33 +798,14 @@ a:hover {
 }
 
 /* ✅ Block Containers */
-.block-container,
-.block-spacing {
-  width: 100%;
+.block-container, .block-spacing {
   max-width: 900px;
-  margin:
-    10px auto
-    40px auto;
+  margin: 10px auto 40px auto;
   background: #fff;
   padding: 20px;
   border-radius: 8px;
-  border:
-    1px solid #708238;
-  box-shadow:
-    0 0 10px rgba(0,0,0,0.05);
-  box-sizing: border-box;
-}
-
-/* ✅ Mobile-safe container sizing */
-@media (max-width: 768px) {
-  .block-container,
-  .block-spacing {
-    width: calc(100% - 16px);
-    margin:
-      12px auto
-      24px auto;
-    padding: 16px;
-  }
+  border: 1px solid #708238;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 /* ✅ Dual Blocks */
@@ -834,66 +815,35 @@ a:hover {
   gap: 20px;
   justify-content: space-between;
 }
-
 .dual-block {
   flex: 1 1 48%;
   background: #fff;
-  border:
-    1px solid #006a4e;
+  border: 1px solid #006a4e;
   border-radius: 6px;
   padding: 16px;
-  box-shadow:
-    0 0 8px rgba(0,106,78,0.1);
+  box-shadow: 0 0 8px rgba(0,106,78,0.1);
   box-sizing: border-box;
-  min-width: 0; /* ✅ prevents overflow */
-}
-
-/* ✅ Mobile stacking */
-@media (max-width: 768px) {
-  .dual-block {
-    flex: 1 1 100%;
-  }
 }
 
 /* ✅ Chambers */
 .chamber-container {
   display: grid;
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 22px;
   justify-content: center;
-  width: 100%;
 }
-
 .chamber {
-  border:
-    1px solid #708238;
+  border: 1px solid #708238;
   border-radius: 12px;
   padding: 20px;
-  transition:
-    transform 0.25s ease;
+  transition: transform 0.25s ease;
   background: #fff;
-  box-shadow:
-    0 2px 6px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
-  min-width: 0; /* ✅ prevents mobile overflow */
 }
-
 .chamber:hover {
   transform: translateY(-3px);
-}
-
-/* ✅ Chamber mobile optimization */
-@media (max-width: 768px) {
-  .chamber-container {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-  .chamber {
-    padding: 16px;
-  }
 }
 
 /* ✅ Buttons */
@@ -1570,9 +1520,8 @@ h4[id] {
   text-align: center;
 }
 
-/* ✅ Mobile Menu — UPDATED Stable Version */
+/* ✅ Mobile Menu — Gradient Oval Buttons + Slide/Fade Animation (11 Items) */
 @media (max-width: 1024px) {
-
   .menu-toggle {
     display: block !important;
     z-index: 3001;
@@ -1580,195 +1529,98 @@ h4[id] {
 
   .nav-links {
     position: fixed;
-    top: 56px; /* aligned with navbar height */
+    top: 58px; /* keep gold bar visible, identical to index */
     left: 0;
     right: 0;
-    width: 100%;
-    max-width: 100%;
-    background:
-      linear-gradient(
-        135deg,
-        rgba(4, 110, 74, 0.96),
-        rgba(1, 158, 107, 0.96)
-      );
-
+    background: linear-gradient(135deg, rgba(4, 110, 74, 0.95), rgba(1, 158, 107, 0.95));
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     opacity: 0;
     pointer-events: none;
-    transition:
-      opacity 0.35s ease,
-      transform 0.35s ease;
-    transform: translateY(-8px);
+    transition: opacity 0.4s ease;
     z-index: 3000;
 
-    /* ✅ FIXED */
-    max-height: calc(100vh - 56px);
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding:
-      14px 14px 22px;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+    padding: 0;
     margin: 0;
-    gap: 10px;
-    box-sizing: border-box;
   }
 
   .nav-links.active {
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0);
   }
 
-  /* ✅ FIXED — prevent vertical stretching */
+  /* ✅ Equal vertical distribution */
   .nav-links li {
-    flex: 0 0 auto;
+    flex: 1 1 auto;
     width: 100%;
     text-align: center;
     margin: 0;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
   }
 
-  /* ✅ Oval Buttons */
+  /* ✅ Oval shape & text style */
   .nav-links li a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    max-width: 420px;
-    min-height: 52px;
-    padding:
-      12px 18px;
-    margin: 0 auto;
+    width: 84%;
+    height: 80%;
+    margin: 2px auto;
     border-radius: 50px;
     font-size: 15px;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
-    line-height: 1.2;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(16px);
-    transition:
-      transform 0.35s ease,
-      box-shadow 0.35s ease,
-      color 0.35s ease;
-    box-sizing: border-box;
-
-    /* ✅ Gold border */
-    border:
-      1.5px solid #d4af37;
-    box-shadow:
-      0 4px 12px rgba(0,0,0,0.18);
+    line-height: 1.1;
+    opacity: 0;               /* hidden initially for animation */
+    transform: translateY(20px); /* start slightly lower */
+    transition: all 0.4s ease;
   }
 
-  /* ✅ Gradients */
-  .nav-links li:nth-child(1) a {
-    background: linear-gradient(135deg, #007b5e, #00a06e);
-  }
-  .nav-links li:nth-child(2) a {
-    background: linear-gradient(135deg, #00896a, #00ae76);
-  }
-  .nav-links li:nth-child(3) a {
-    background: linear-gradient(135deg, #009773, #00ba80);
-  }
-  .nav-links li:nth-child(4) a {
-    background: linear-gradient(135deg, #00a17c, #00c28a);
-  }
-  .nav-links li:nth-child(5) a {
-    background: linear-gradient(135deg, #00ac84, #00cc92);
-  }
-  .nav-links li:nth-child(6) a {
-    background: linear-gradient(135deg, #00b68c, #00d69a);
-  }
-  .nav-links li:nth-child(7) a {
-    background: linear-gradient(135deg, #00c296, #00e0a3);
-  }
-  .nav-links li:nth-child(8) a {
-    background: linear-gradient(135deg, #00cc9e, #00e8ab);
-  }
-  .nav-links li:nth-child(9) a {
-    background: linear-gradient(135deg, #00d6a8, #00f0b5);
-  }
-  .nav-links li:nth-child(10) a {
-    background: linear-gradient(135deg, #00dfb1, #00f8be);
-  }
-  .nav-links li:nth-child(11) a {
-    background: linear-gradient(135deg, #00e8b9, #22ffc8);
-  }
+  /* ✅ Gradients for all 11 buttons */
+  .nav-links li:nth-child(1) a { background: linear-gradient(135deg, #007b5e, #00a06e); }
+  .nav-links li:nth-child(2) a { background: linear-gradient(135deg, #00896a, #00ae76); }
+  .nav-links li:nth-child(3) a { background: linear-gradient(135deg, #009773, #00ba80); }
+  .nav-links li:nth-child(4) a { background: linear-gradient(135deg, #00a17c, #00c28a); }
+  .nav-links li:nth-child(5) a { background: linear-gradient(135deg, #00ac84, #00cc92); }
+  .nav-links li:nth-child(6) a { background: linear-gradient(135deg, #00b68c, #00d69a); }
+  .nav-links li:nth-child(7) a { background: linear-gradient(135deg, #00c296, #00e0a3); }
+  .nav-links li:nth-child(8) a { background: linear-gradient(135deg, #00cc9e, #00e8ab); }
+  .nav-links li:nth-child(9) a { background: linear-gradient(135deg, #00d6a8, #00f0b5); }
+  .nav-links li:nth-child(10) a { background: linear-gradient(135deg, #00dfb1, #00f8be); }
+  .nav-links li:nth-child(11) a { background: linear-gradient(135deg, #00e8b9, #22ffc8); }
 
-  /* ✅ Hover */
+  /* ✅ Hover glow effect */
   .nav-links li a:hover {
     color: #ffeb3b;
-    transform: scale(1.02);
-    box-shadow:
-      0 0 10px rgba(255,255,255,0.55);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
   }
 
-  /* ✅ Animation */
+  /* ✅ Keyframes for slide & fade */
   @keyframes fadeSlideUp {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
-  /* ✅ Sequential animations */
-  .nav-links.active li:nth-child(1) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.05s;
-  }
-
-  .nav-links.active li:nth-child(2) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.10s;
-  }
-
-  .nav-links.active li:nth-child(3) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.15s;
-  }
-
-  .nav-links.active li:nth-child(4) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.20s;
-  }
-
-  .nav-links.active li:nth-child(5) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.25s;
-  }
-
-  .nav-links.active li:nth-child(6) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.30s;
-  }
-
-  .nav-links.active li:nth-child(7) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.35s;
-  }
-
-  .nav-links.active li:nth-child(8) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.40s;
-  }
-
-  .nav-links.active li:nth-child(9) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.45s;
-  }
-
-  .nav-links.active li:nth-child(10) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.50s;
-  }
-
-  .nav-links.active li:nth-child(11) a {
-    animation: fadeSlideUp 0.35s ease forwards 0.55s;
-  }
-
+  /* ✅ Sequential animation delays */
+  .nav-links.active li:nth-child(1) a { animation: fadeSlideUp 0.4s ease forwards 0.05s; }
+  .nav-links.active li:nth-child(2) a { animation: fadeSlideUp 0.4s ease forwards 0.10s; }
+  .nav-links.active li:nth-child(3) a { animation: fadeSlideUp 0.4s ease forwards 0.15s; }
+  .nav-links.active li:nth-child(4) a { animation: fadeSlideUp 0.4s ease forwards 0.20s; }
+  .nav-links.active li:nth-child(5) a { animation: fadeSlideUp 0.4s ease forwards 0.25s; }
+  .nav-links.active li:nth-child(6) a { animation: fadeSlideUp 0.4s ease forwards 0.30s; }
+  .nav-links.active li:nth-child(7) a { animation: fadeSlideUp 0.4s ease forwards 0.35s; }
+  .nav-links.active li:nth-child(8) a { animation: fadeSlideUp 0.4s ease forwards 0.40s; }
+  .nav-links.active li:nth-child(9) a { animation: fadeSlideUp 0.4s ease forwards 0.45s; }
+  .nav-links.active li:nth-child(10) a { animation: fadeSlideUp 0.4s ease forwards 0.50s; }
+  .nav-links.active li:nth-child(11) a { animation: fadeSlideUp 0.4s ease forwards 0.55s; }
 }
+
 
 /* ✅ Logo - Fixed width to prevent layout shift */
 .favicon-logo {
@@ -1834,6 +1686,7 @@ h4[id] {
     padding: 8px 10px;
   }
 }
+
 
 /* ✅ Bangla Button (unchanged except color) */
 .lang-btn.en {
@@ -2669,7 +2522,7 @@ color: #ffffff;
 </header>
 
 <section class="intro-header">
-  <h1>ক্যান্সার বিশেষজ্ঞ ঢাকা | ডাঃ রুবিনা সুলতানা | ২২+ বছর অভিজ্ঞতা</h1>
+  <h1>ঢাকার অন্যতম ক্যান্সার বিশেষজ্ঞ | ডাঃ রুবিনা সুলতানা</h1>
   <h2>ক্লিনিক্যাল ও রেডিয়েশন অনকোলজিস্ট | ক্যান্সার ও টিউমার চিকিৎসায় বিশেষজ্ঞ</h2>
 
   <section id="qualification">
@@ -2825,7 +2678,7 @@ color: #ffffff;
             <div class="chamber-number">চেম্বার - ০১</div>
             <div class="chamber-name"><a href="https://amcghbd.org/doctor_details/dr-mosammat-rubina-sultana" target="_blank" rel="noopener">আহসানিয়া মিশন ক্যান্সার ও জেনারেল হাসপাতাল</a></div>
             <div class="info"><strong>ঠিকানা:</strong> এম্ব্যাংকমেন্ট ড্রাইভ ওয়ে, সেক্টর-১০, উত্তরা, ঢাকা-১২৩০</div>
-            <div class="info"><strong>পরামর্শ সময়:</strong> শনি থেকে বৃহস্পতি, বিকাল ৪:৩০ – রাত ৮:০০</div>
+            <div class="info"><strong>পরামর্শ সময়:</strong> শনিবার থেকে বৃহস্পতিবার, বিকাল ৪:৩০ – রাত ৮:০০</div>
            <div class="info">
   <strong>অ্যাপয়েন্টমেন্টের জন্য কল করুন:</strong>
   <a href="tel:10617">10617</a> /
