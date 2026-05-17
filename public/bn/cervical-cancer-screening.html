@@ -20,13 +20,46 @@
 
 
 <style>
+html{
+  -webkit-text-size-adjust:100%;
+}
+
 body{
   margin:0;
-  font-family:"Noto Sans Bengali",system-ui;
+
+  font-family:
+    "Noto Sans Bengali",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    system-ui,
+    sans-serif;
+
   font-size:17px;
+  font-weight:400;
   line-height:1.75;
   color:#222;
   background:#f7f7f7;
+
+  /* ✅ iPhone/Safari Bengali rendering optimization */
+  font-synthesis:none;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+
+  /* ✅ Better Bengali glyph spacing */
+  font-kerning:normal;
+
+  /* ✅ OpenType rendering improvements */
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "clig" 1;
+
+  /* ✅ Prevent Safari Bangla shaping issues */
+  word-break:normal;
+  overflow-wrap:break-word;
+  hyphens:none;
 }
 
 main{
@@ -40,29 +73,47 @@ h1{
   color:#1b5e20;
   font-size:28px;
   margin-top:0;
+  margin-bottom:16px;
   font-weight:600;
   line-height:1.3;
+
+  text-rendering:optimizeLegibility;
 }
 
 h2{
   color:#2e7d32;
   margin-top:30px;
+  margin-bottom:14px;
   font-size:22px;
   font-weight:600;
   line-height:1.35;
+
+  text-rendering:optimizeLegibility;
 }
 
 p{
   margin:14px 0;
+  font-weight:400;
   text-align:justify;
+
+  /* ✅ Better justify behavior */
+  text-justify:inter-word;
 }
 
 ul{
   padding-left:22px;
+  margin:14px 0;
 }
 
 li{
   margin:8px 0;
+  font-weight:400;
+}
+
+/* ✅ Prevent fake bold rendering */
+strong,
+b{
+  font-weight:700;
 }
 
 a{
@@ -74,7 +125,7 @@ a:hover{
   text-decoration:underline;
 }
 
-/* ✅ Expert box (fully aligned with Script-1) */
+/* ✅ Expert box */
 .expert-box{
   background:#eef7f0;
   border-left:4px solid #2e7d32;
@@ -82,6 +133,8 @@ a:hover{
   margin:18px 0 26px;
   font-size:20px;
   line-height:1.65;
+
+  text-rendering:optimizeLegibility;
 }
 
 /* Doctor name styling */
@@ -109,6 +162,8 @@ a:hover{
   padding:16px 18px;
   margin:22px 0;
   line-height:1.65;
+
+  text-rendering:optimizeLegibility;
 }
 
 footer{
@@ -136,6 +191,9 @@ footer{
   border-radius:6px;
   text-decoration:none;
   text-align:center;
+
+  /* ✅ iOS text rendering */
+  -webkit-font-smoothing:antialiased;
 }
 
 .appointment-btn:hover,
@@ -144,10 +202,33 @@ footer{
   color:#FFD700;
 }
 
-/* ✅ Mobile optimization (same as Script-1) */
+/* ✅ iPhone/iPad Safari-specific optimization */
+@supports (-webkit-touch-callout:none){
+
+  body,
+  p,
+  li,
+  h1,
+  h2,
+  .expert-box,
+  .key-takeaways,
+  .appointment-btn{
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+  }
+
+}
+
+/* ✅ Mobile optimization */
 @media (max-width:600px){
+
   body{
     font-size:16px;
+    line-height:1.72;
+  }
+
+  main{
+    padding:22px 16px;
   }
 
   h1{
@@ -163,14 +244,22 @@ footer{
   .expert-box{
     font-size:17px;
     line-height:1.6;
+    padding:16px;
   }
 
   .expert-box .doctor-name{
     font-size:22px;
     line-height:1.3;
   }
+
+  .appointment-btn{
+    font-size:14px;
+    padding:8px 18px;
+  }
+
 }
 </style>
+
 
 <script type="application/ld+json">
 {
