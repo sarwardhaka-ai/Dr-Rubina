@@ -11,15 +11,18 @@
 
   <link rel="canonical" href="https://drrubinasultana.com/bn/cervical-cancer-screening">
 
-   <!-- ✅ Optimized Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!-- ✅ Optimized Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<!-- ✅ Switched to Hind Siliguri for better iPhone Bengali rendering -->
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 
 <style>
+
 /* =========================
    GLOBAL / SAFARI FIXES
 ========================= */
@@ -32,7 +35,7 @@ body{
   margin:0;
 
   font-family:
-    "Noto Sans Bengali",
+    "Hind Siliguri",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -111,7 +114,6 @@ p{
   font-weight:400;
   text-align:justify;
 
-  /* ✅ Better justify behavior */
   text-justify:inter-word;
 }
 
@@ -236,14 +238,6 @@ footer{
    iPHONE / iPAD SAFARI FIX
 ========================= */
 
-/* 
-   IMPORTANT:
-   Safari + justified Bangla text
-   still breaks conjuncts sometimes.
-   So ONLY on Apple devices,
-   paragraph text becomes left-aligned.
-*/
-
 @supports (-webkit-touch-callout:none){
 
   body,
@@ -258,6 +252,7 @@ footer{
     -webkit-font-smoothing:antialiased;
   }
 
+  /* ✅ Safari Bangla justification fix */
   p,
   li{
     text-align:left;
@@ -307,6 +302,7 @@ footer{
   }
 
 }
+
 </style>
 
 
