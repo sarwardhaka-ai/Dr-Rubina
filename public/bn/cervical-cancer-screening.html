@@ -20,6 +20,10 @@
 
 
 <style>
+/* =========================
+   GLOBAL / SAFARI FIXES
+========================= */
+
 html{
   -webkit-text-size-adjust:100%;
 }
@@ -41,26 +45,29 @@ body{
   color:#222;
   background:#f7f7f7;
 
-  /* ✅ iPhone/Safari Bengali rendering optimization */
+  /* ✅ Bengali rendering stability */
   font-synthesis:none;
   -webkit-font-smoothing:antialiased;
   -moz-osx-font-smoothing:grayscale;
   text-rendering:optimizeLegibility;
 
-  /* ✅ Better Bengali glyph spacing */
+  /* ✅ OpenType fixes */
   font-kerning:normal;
 
-  /* ✅ OpenType rendering improvements */
   font-feature-settings:
     "kern" 1,
     "liga" 1,
     "clig" 1;
 
-  /* ✅ Prevent Safari Bangla shaping issues */
+  /* ✅ Prevent Safari line-breaking issues */
   word-break:normal;
   overflow-wrap:break-word;
   hyphens:none;
 }
+
+/* =========================
+   MAIN LAYOUT
+========================= */
 
 main{
   max-width:900px;
@@ -68,6 +75,10 @@ main{
   background:#fff;
   padding:26px 22px;
 }
+
+/* =========================
+   HEADINGS
+========================= */
 
 h1{
   color:#1b5e20;
@@ -90,6 +101,10 @@ h2{
 
   text-rendering:optimizeLegibility;
 }
+
+/* =========================
+   TEXT CONTENT
+========================= */
 
 p{
   margin:14px 0;
@@ -116,6 +131,10 @@ b{
   font-weight:700;
 }
 
+/* =========================
+   LINKS
+========================= */
+
 a{
   color:#0066cc;
   text-decoration:none;
@@ -125,7 +144,10 @@ a:hover{
   text-decoration:underline;
 }
 
-/* ✅ Expert box */
+/* =========================
+   EXPERT BOX
+========================= */
+
 .expert-box{
   background:#eef7f0;
   border-left:4px solid #2e7d32;
@@ -137,7 +159,6 @@ a:hover{
   text-rendering:optimizeLegibility;
 }
 
-/* Doctor name styling */
 .expert-box .doctor-name{
   display:block;
   font-size:26px;
@@ -147,7 +168,6 @@ a:hover{
   margin-bottom:6px;
 }
 
-/* Remove underline for doctor name link */
 .expert-box a{
   text-decoration:none;
 }
@@ -155,6 +175,10 @@ a:hover{
 .expert-box a:hover{
   text-decoration:none;
 }
+
+/* =========================
+   KEY TAKEAWAYS
+========================= */
 
 .key-takeaways{
   background:#f3f9ff;
@@ -166,6 +190,10 @@ a:hover{
   text-rendering:optimizeLegibility;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
 footer{
   text-align:center;
   font-size:14px;
@@ -173,7 +201,10 @@ footer{
   padding:16px 10px;
 }
 
-/* CTA button */
+/* =========================
+   CTA BUTTON
+========================= */
+
 .appointment-cta{
   margin:16px 0 24px;
   display:flex;
@@ -192,7 +223,6 @@ footer{
   text-decoration:none;
   text-align:center;
 
-  /* ✅ iOS text rendering */
   -webkit-font-smoothing:antialiased;
 }
 
@@ -202,7 +232,18 @@ footer{
   color:#FFD700;
 }
 
-/* ✅ iPhone/iPad Safari-specific optimization */
+/* =========================
+   iPHONE / iPAD SAFARI FIX
+========================= */
+
+/* 
+   IMPORTANT:
+   Safari + justified Bangla text
+   still breaks conjuncts sometimes.
+   So ONLY on Apple devices,
+   paragraph text becomes left-aligned.
+*/
+
 @supports (-webkit-touch-callout:none){
 
   body,
@@ -217,9 +258,17 @@ footer{
     -webkit-font-smoothing:antialiased;
   }
 
+  p,
+  li{
+    text-align:left;
+  }
+
 }
 
-/* ✅ Mobile optimization */
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width:600px){
 
   body{
