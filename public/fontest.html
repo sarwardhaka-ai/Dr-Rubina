@@ -6,13 +6,25 @@
 
   <title>iPhone Bengali Font Test</title>
 
-  <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
-
   <style>
+    /* SELF-HOSTED NOTO SANS BENGALI */
+
+    @font-face {
+      font-family: "NotoBangla";
+      src: url("./fonts/NotoSansBengali-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "NotoBangla";
+      src: url("./fonts/NotoSansBengali-SemiBold.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
     html {
       -webkit-text-size-adjust: 100%;
     }
@@ -24,9 +36,7 @@
       background: #ffffff;
       color: #111111;
 
-      font-family:
-        "Noto Sans Bengali",
-        sans-serif;
+      font-family: "NotoBangla", sans-serif;
 
       font-size: 24px;
       font-weight: 400;
@@ -34,9 +44,11 @@
 
       text-align: left;
 
-      /* iPhone Bengali rendering fixes */
+      /* iPhone rendering stabilization */
+
       -webkit-font-smoothing: antialiased;
-      text-rendering: geometricPrecision;
+
+      text-rendering: auto;
 
       font-feature-settings: normal;
       font-kerning: normal;
@@ -44,8 +56,9 @@
       letter-spacing: normal;
       word-spacing: normal;
 
-      word-break: keep-all;
+      word-break: normal;
       overflow-wrap: normal;
+
       white-space: normal;
 
       max-width: 100%;
@@ -53,12 +66,16 @@
 
     .test-box {
       width: 100%;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
 
     .test-line {
-      margin-bottom: 40px;
+      margin-bottom: 42px;
+    }
+
+    .nowrap {
+      white-space: nowrap;
     }
 
     @media (max-width: 768px) {
@@ -80,7 +97,7 @@
   <div class="test-box">
 
     <div class="test-line">
-      সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,
+      ৩ সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,
     </div>
 
     <div class="test-line">
@@ -109,6 +126,12 @@
     <div class="test-line">
       রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।<br>
       নির্ণয়, নির্ণয়, নির্ণয়ে, নির্ধারণ, নির্বাচন
+    </div>
+
+    <!-- SINGLE LINE TEST -->
+
+    <div class="test-line nowrap">
+      রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।
     </div>
 
   </div>
