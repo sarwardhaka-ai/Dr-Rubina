@@ -11,23 +11,94 @@
 
   <link rel="canonical" href="https://drrubinasultana.com/bn/cervical-cancer-symptoms">
 
-   <!-- ✅ Optimized Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ✅ Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<!-- ✅ Desktop Font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+<!-- ✅ Playfair Display -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
+
+/* =========================
+   SHURJO FONT (Mobile Only)
+   Self-hosted
+========================= */
+
+@font-face{
+  font-family:"Shurjo";
+
+  src:
+    url("/fonts/ShurjoWeb_400_v5_1.woff2") format("woff2"),
+    url("/fonts/ShurjoWeb_400_v5_1.woff") format("woff");
+
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+
+@font-face{
+  font-family:"Shurjo";
+
+  src:
+    url("/fonts/ShurjoWeb_700_v5_1.woff2") format("woff2"),
+    url("/fonts/ShurjoWeb_700_v5_1.woff") format("woff");
+
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+html{
+  -webkit-text-size-adjust:100%;
+}
+
 body{
   margin:0;
-  font-family:"Noto Sans Bengali",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+  /* ✅ Desktop font */
+  font-family:
+    "Noto Sans Bengali",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    system-ui,
+    sans-serif;
+
   font-size:17px;
+  font-weight:400;
   line-height:1.75;
   color:#222;
   background:#f7f7f7;
+
+  /* ✅ Better Bengali rendering */
+  font-synthesis:none;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+
+  font-kerning:normal;
+
+  font-feature-settings:
+    "kern" 1,
+    "liga" 1,
+    "clig" 1;
+
+  word-break:normal;
+  overflow-wrap:break-word;
+  hyphens:none;
 }
+
+/* =========================
+   LAYOUT
+========================= */
 
 main{
   max-width:900px;
@@ -36,35 +107,63 @@ main{
   padding:26px 22px;
 }
 
+/* =========================
+   HEADINGS
+========================= */
+
 h1{
   color:#1b5e20;
   font-size:28px;
   margin-top:0;
+  margin-bottom:16px;
   font-weight:600;
   line-height:1.3;
+
+  text-rendering:optimizeLegibility;
 }
 
 h2{
   color:#2e7d32;
   margin-top:30px;
+  margin-bottom:14px;
   font-size:22px;
   font-weight:600;
   line-height:1.35;
+
+  text-rendering:optimizeLegibility;
 }
+
+/* =========================
+   TEXT CONTENT
+========================= */
 
 p{
   margin:14px 0;
   text-align:justify;
+  text-justify:inter-word;
 }
 
 ul{
   padding-left:22px;
-  margin:12px 0;
+  margin:14px 0;
 }
 
 li{
   margin:8px 0;
+  text-align:justify;
+  text-justify:inter-word;
 }
+
+/* ✅ Prevent fake bold rendering */
+
+strong,
+b{
+  font-weight:700;
+}
+
+/* =========================
+   LINKS
+========================= */
 
 a{
   color:#0066cc;
@@ -75,7 +174,10 @@ a:hover{
   text-decoration:underline;
 }
 
-/* ✅ Expert box — exact Script-1 match */
+/* =========================
+   EXPERT BOX
+========================= */
+
 .expert-box{
   background:#eef7f0;
   border-left:4px solid #2e7d32;
@@ -83,9 +185,10 @@ a:hover{
   margin:18px 0 26px;
   font-size:20px;
   line-height:1.65;
+
+  text-rendering:optimizeLegibility;
 }
 
-/* Doctor name */
 .expert-box .doctor-name{
   display:block;
   font-size:26px;
@@ -95,13 +198,17 @@ a:hover{
   margin-bottom:6px;
 }
 
-/* Remove underline inside expert box */
 .expert-box a{
   text-decoration:none;
 }
+
 .expert-box a:hover{
   text-decoration:none;
 }
+
+/* =========================
+   KEY TAKEAWAYS
+========================= */
 
 .key-takeaways{
   background:#f3f9ff;
@@ -109,7 +216,13 @@ a:hover{
   padding:16px 18px;
   margin:22px 0;
   line-height:1.65;
+
+  text-rendering:optimizeLegibility;
 }
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
   text-align:center;
@@ -118,7 +231,10 @@ footer{
   padding:16px 10px;
 }
 
-/* CTA */
+/* =========================
+   CTA BUTTON
+========================= */
+
 .appointment-cta{
   margin:16px 0 24px;
   display:flex;
@@ -130,12 +246,14 @@ footer{
   padding:8px 20px;
   background-color:#2E7D32;
   color:#FFD700;
-  font-weight:600;
+  font-weight:700;
   font-size:15px;
   line-height:1.3;
   border-radius:6px;
   text-decoration:none;
   text-align:center;
+
+  -webkit-font-smoothing:antialiased;
 }
 
 .appointment-btn:hover,
@@ -144,33 +262,84 @@ footer{
   color:#FFD700;
 }
 
-/* ✅ Mobile (critical for consistency) */
+/* =========================
+   MOBILE + iPHONE FIX
+========================= */
+
 @media (max-width:600px){
+
   body{
-    font-size:16px;
+
+    /* ✅ Mobile uses self-hosted Shurjo */
+    font-family:
+      "Shurjo",
+      Arial,
+      sans-serif;
+
+    /* ✅ Balanced mobile typography */
+    font-size:17px;
+    line-height:1.72;
+
+    /* ✅ Reduce English dominance slightly */
+    letter-spacing:-0.01em;
+  }
+
+  main{
+    padding:22px 16px;
   }
 
   h1{
-    font-size:24px;
-    line-height:1.3;
+    font-size:26px;
+    line-height:1.32;
+    margin-bottom:16px;
   }
 
   h2{
-    font-size:20px;
-    line-height:1.35;
+    font-size:22px;
+    line-height:1.36;
+    margin-top:28px;
+    margin-bottom:12px;
+  }
+
+  p{
+    margin:13px 0;
+  }
+
+  li{
+    margin:7px 0;
   }
 
   .expert-box{
-    font-size:17px;
-    line-height:1.6;
+    font-size:18px;
+    line-height:1.62;
+    padding:16px;
   }
 
   .expert-box .doctor-name{
-    font-size:22px;
-    line-height:1.3;
+    font-size:23px;
+    line-height:1.32;
   }
+
+  .key-takeaways{
+    line-height:1.64;
+  }
+
+  .appointment-btn{
+    font-size:16px;
+    line-height:1.4;
+    padding:10px 20px;
+  }
+
+  p,
+  li{
+    text-align:justify;
+    text-justify:inter-word;
+  }
+
 }
+
 </style>
+
 
 <script type="application/ld+json">
 {
