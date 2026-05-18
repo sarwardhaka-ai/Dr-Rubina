@@ -2,18 +2,19 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
   <title>iPhone Bengali Font Test</title>
 
   <style>
-    /* =========================
+
+    /* =========================================
        SELF-HOSTED NOTO SANS BENGALI
-       ========================= */
+       ========================================= */
 
     @font-face {
       font-family: "NotoBangla";
-      src: url("/fonts/NotoSansBengali-Regular.ttf") format("truetype");
+      src: url("/fonts/NotoSansBengali-Regular.ttf?v=1") format("truetype");
       font-weight: 400;
       font-style: normal;
       font-display: swap;
@@ -21,20 +22,20 @@
 
     @font-face {
       font-family: "NotoBangla";
-      src: url("/fonts/NotoSansBengali-SemiBold.ttf") format("truetype");
+      src: url("/fonts/NotoSansBengali-SemiBold.ttf?v=1") format("truetype");
       font-weight: 600;
       font-style: normal;
       font-display: swap;
     }
 
-    /* =========================
-       GLOBAL RESET
-       ========================= */
+    /* =========================================
+       RESET
+       ========================================= */
 
-    * {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     html {
@@ -42,6 +43,9 @@
     }
 
     body {
+      margin: 0;
+      padding: 28px 18px;
+
       background: #ffffff;
       color: #111111;
 
@@ -55,13 +59,12 @@
 
       text-align: left;
 
-      padding: 28px 18px;
-
-      /* iPhone Bengali rendering fixes */
+      /* iPhone Bengali fixes */
 
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
 
-      text-rendering: auto;
+      text-rendering: optimizeLegibility;
 
       font-feature-settings: normal;
       font-kerning: normal;
@@ -69,17 +72,17 @@
       letter-spacing: normal;
       word-spacing: normal;
 
-      word-break: normal;
-      overflow-wrap: normal;
+      word-break: keep-all;
+      overflow-wrap: break-word;
 
       white-space: normal;
 
       max-width: 100%;
     }
 
-    /* =========================
+    /* =========================================
        CONTAINER
-       ========================= */
+       ========================================= */
 
     .test-box {
       width: 100%;
@@ -87,36 +90,39 @@
       margin: 0 auto;
     }
 
-    /* =========================
+    /* =========================================
+       HEADING
+       ========================================= */
+
+    h1 {
+      margin: 0 0 48px;
+
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    /* =========================================
        TEXT BLOCKS
-       ========================= */
+       ========================================= */
 
     .test-line {
       margin-bottom: 42px;
     }
 
-    /* SINGLE LINE TEST */
+    /* =========================================
+       SINGLE LINE TEST
+       ========================================= */
 
     .nowrap {
       white-space: nowrap;
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
-    /* =========================
-       HEADING
-       ========================= */
-
-    h1 {
-      font-size: 34px;
-      font-weight: 600;
-      line-height: 1.4;
-
-      margin-bottom: 48px;
-    }
-
-    /* =========================
-       MOBILE OPTIMIZATION
-       ========================= */
+    /* =========================================
+       MOBILE
+       ========================================= */
 
     @media (max-width: 768px) {
 
@@ -129,8 +135,6 @@
 
       h1 {
         font-size: 28px;
-        line-height: 1.45;
-
         margin-bottom: 40px;
       }
 
@@ -139,9 +143,9 @@
       }
     }
 
-    /* =========================
-       SMALL MOBILE DEVICES
-       ========================= */
+    /* =========================================
+       SMALL MOBILE
+       ========================================= */
 
     @media (max-width: 480px) {
 
@@ -169,7 +173,7 @@
     </h1>
 
     <div class="test-line">
-      ৩২ সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,
+      ৩৩ সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,
     </div>
 
     <div class="test-line">
@@ -199,8 +203,6 @@
       রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।<br>
       নির্ণয়, নির্ণয়, নির্ণয়ে, নির্ধারণ, নির্বাচন
     </div>
-
-    <!-- SINGLE LINE TEST -->
 
     <div class="test-line nowrap">
       রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।
