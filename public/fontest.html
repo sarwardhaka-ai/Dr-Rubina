@@ -7,11 +7,13 @@
   <title>iPhone Bengali Font Test</title>
 
   <style>
-    /* SELF-HOSTED NOTO SANS BENGALI */
+    /* =========================
+       SELF-HOSTED NOTO SANS BENGALI
+       ========================= */
 
     @font-face {
       font-family: "NotoBangla";
-      src: url("./fonts/NotoSansBengali-Regular.woff2") format("woff2");
+      src: url("/fonts/NotoSansBengali-Regular.ttf") format("truetype");
       font-weight: 400;
       font-style: normal;
       font-display: swap;
@@ -19,10 +21,20 @@
 
     @font-face {
       font-family: "NotoBangla";
-      src: url("./fonts/NotoSansBengali-SemiBold.woff2") format("woff2");
+      src: url("/fonts/NotoSansBengali-SemiBold.ttf") format("truetype");
       font-weight: 600;
       font-style: normal;
       font-display: swap;
+    }
+
+    /* =========================
+       GLOBAL RESET
+       ========================= */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     html {
@@ -30,13 +42,12 @@
     }
 
     body {
-      margin: 0;
-      padding: 24px 18px;
-
       background: #ffffff;
       color: #111111;
 
-      font-family: "NotoBangla", sans-serif;
+      font-family:
+        "NotoBangla",
+        sans-serif;
 
       font-size: 24px;
       font-weight: 400;
@@ -44,7 +55,9 @@
 
       text-align: left;
 
-      /* iPhone rendering stabilization */
+      padding: 28px 18px;
+
+      /* iPhone Bengali rendering fixes */
 
       -webkit-font-smoothing: antialiased;
 
@@ -64,31 +77,86 @@
       max-width: 100%;
     }
 
+    /* =========================
+       CONTAINER
+       ========================= */
+
     .test-box {
       width: 100%;
-      max-width: 900px;
+      max-width: 920px;
       margin: 0 auto;
     }
+
+    /* =========================
+       TEXT BLOCKS
+       ========================= */
 
     .test-line {
       margin-bottom: 42px;
     }
 
+    /* SINGLE LINE TEST */
+
     .nowrap {
       white-space: nowrap;
+      overflow-x: auto;
     }
 
+    /* =========================
+       HEADING
+       ========================= */
+
+    h1 {
+      font-size: 34px;
+      font-weight: 600;
+      line-height: 1.4;
+
+      margin-bottom: 48px;
+    }
+
+    /* =========================
+       MOBILE OPTIMIZATION
+       ========================= */
+
     @media (max-width: 768px) {
+
       body {
         font-size: 22px;
         line-height: 1.85;
-        padding: 20px 16px;
+
+        padding: 22px 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+        line-height: 1.45;
+
+        margin-bottom: 40px;
       }
 
       .test-line {
         margin-bottom: 34px;
       }
     }
+
+    /* =========================
+       SMALL MOBILE DEVICES
+       ========================= */
+
+    @media (max-width: 480px) {
+
+      body {
+        font-size: 21px;
+        line-height: 1.82;
+
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+    }
+
   </style>
 </head>
 
@@ -96,8 +164,12 @@
 
   <div class="test-box">
 
+    <h1>
+      iPhone Bengali Font Rendering Test
+    </h1>
+
     <div class="test-line">
-      ৩ সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,
+      ৩২ সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,
     </div>
 
     <div class="test-line">
