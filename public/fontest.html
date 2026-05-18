@@ -3,56 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>iPhone Bengali Font Test</title>
 
-  <!-- Noto Sans Bengali -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
     body {
       margin: 0;
-      padding: 30px 20px;
+      padding: 24px 18px;
 
-      font-family: "Noto Sans Bengali", system-ui, sans-serif;
+      background: #ffffff;
+      color: #111111;
+
+      font-family:
+        "Noto Sans Bengali",
+        sans-serif;
+
       font-size: 24px;
+      font-weight: 400;
       line-height: 1.9;
 
-      color: #111;
-      background: #ffffff;
+      text-align: left;
 
-      /* iPhone/Safari rendering improvements */
+      /* iPhone Bengali rendering fixes */
       -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-      font-feature-settings: "kern";
-      word-break: normal;
-      overflow-wrap: break-word;
+      text-rendering: geometricPrecision;
+
+      font-feature-settings: normal;
+      font-kerning: normal;
+
+      letter-spacing: normal;
+      word-spacing: normal;
+
+      word-break: keep-all;
+      overflow-wrap: normal;
+      white-space: normal;
+
+      max-width: 100%;
     }
 
     .test-box {
+      width: 100%;
       max-width: 800px;
-      margin: auto;
+      margin: 0 auto;
+    }
+
+    .test-line {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 22px;
+        line-height: 1.85;
+        padding: 20px 16px;
+      }
+
+      .test-line {
+        margin-bottom: 34px;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="test-box">
-    সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,<br><br>
-	সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন<br>
-	নির্বাচন, নির্বাচন<br>
-	
-    উপযুক্ত ডোজ নির্ধারণ, নির্ধারণ, নির্ধারণ<br><br>
-	উপযুক্ত ডোজ নির্ধারণ, নির্ধারণ, নির্ধারণ<br>
-	নির্ধারণ, নির্ধারণ<br>
-	
-    সহনীয় গুরুত্বপূর্ণ।<br><br>
-	সহনীয় গুরুত্বপূর্ণ।<br> 
 
-    রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।<br><br>
-	রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।<br>
-	নির্ণয়, নির্ণয়, নির্ণয়ে, নির্ধারণ, নির্বাচন<br>
+    <div class="test-line">
+      সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন,
+    </div>
 
- </div>
+    <div class="test-line">
+      সঠিক ড্রাগ নির্বাচন, নির্বাচন, নির্বাচন<br>
+      নির্বাচন, নির্বাচন
+    </div>
+
+    <div class="test-line">
+      উপযুক্ত ডোজ নির্ধারণ, নির্ধারণ, নির্ধারণ
+    </div>
+
+    <div class="test-line">
+      উপযুক্ত ডোজ নির্ধারণ, নির্ধারণ, নির্ধারণ<br>
+      নির্ধারণ, নির্ধারণ
+    </div>
+
+    <div class="test-line">
+      সহনীয় গুরুত্বপূর্ণ।
+    </div>
+
+    <div class="test-line">
+      সহনীয় গুরুত্বপূর্ণ।<br>
+      রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।
+    </div>
+
+    <div class="test-line">
+      রোগ নির্ণয়ে নির্ণয় করা যেতে পারে।<br>
+      নির্ণয়, নির্ণয়, নির্ণয়ে, নির্ধারণ, নির্বাচন
+    </div>
+
+  </div>
 
 </body>
 </html>
