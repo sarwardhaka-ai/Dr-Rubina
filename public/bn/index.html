@@ -38,9 +38,12 @@
 
 <!-- ✅ PRELOAD LCP IMAGE -->
 <link rel="preload"
-      href="/assets/Dr-Mosammat-Rubina-Sultana.webp"
+      href="/assets/Dr-Mosammat-Rubina-Sultana-400w.webp"
       as="image"
-      fetchpriority="high">
+      fetchpriority="high"
+      imagesrcset="/assets/Dr-Mosammat-Rubina-Sultana-400w.webp 400w,
+                   /assets/Dr-Mosammat-Rubina-Sultana-800w.webp 800w"
+      imagesizes="(max-width:768px) 220px, 280px">
 
 <!-- ✅ CANONICAL + HREFLANG -->
 <link rel="canonical" href="https://drrubinasultana.com/bn">
@@ -61,16 +64,20 @@
 <meta property="og:description" content="বাংলাদেশের প্রখ্যাত ক্যান্সার বিশেষজ্ঞ ও রেডিয়েশন অনকোলজিস্ট।">
 <meta property="og:url" content="https://drrubinasultana.com/bn">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="bn">
+<meta property="og:locale" content="bn_BD">
 <meta property="og:site_name" content="ডাঃ রুবিনা সুলতানা">
-<meta property="og:image" content="https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp">
+<meta property="og:image" content="https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/webp">
 <meta property="og:image:alt" content="ডাঃ রুবিনা সুলতানা">
 
 <!-- ✅ TWITTER -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ডাঃ রুবিনা সুলতানা | ক্যান্সার বিশেষজ্ঞ ঢাকা">
 <meta name="twitter:description" content="২২+ বছরের অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ">
-<meta name="twitter:image" content="https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp">
+<meta name="twitter:image" content="https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp">
+<meta name="twitter:image:alt" content="ডাঃ রুবিনা সুলতানা">
 
 <!-- ✅ OPTIONAL PERFORMANCE (KEEP ONLY IF USING GTM) -->
 <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -96,7 +103,13 @@
 	  "jobTitle": "Associate Professor, Department of Radiation Oncology",
       "description": "ডাঃ মোসাম্মাৎ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ এবং ক্লিনিক্যাল ও রেডিয়েশন অনকোলজিস্ট, যিনি রেডিওথেরাপি, কেমোথেরাপি, টার্গেটেড থেরাপি ও ব্র্যাকিথেরাপিতে ২২ বছরের বেশি অভিজ্ঞ।",
       "url": "https://drrubinasultana.com/",
-      "image":{"@type":"ImageObject","@id":"https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp","url":"https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"},
+     "image": {
+  "@type": "ImageObject",
+  "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
+  "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
+  "width": 800,
+  "height": 800
+},
       "telephone": "+8801868592848",
       "gender": "Female",
       "nationality": { "@type": "Country", "name": "Bangladesh" },
@@ -250,7 +263,10 @@
       "@id": "https://drrubinasultana.com/bn#organization",
       "name": "Dr. Mosammat Rubina Sultana",
       "url": "https://drrubinasultana.com/bn",
-      "logo": "https://drrubinasultana.com/assets/logo.webp"
+      "logo": {
+  "@type": "ImageObject",
+  "url": "https://drrubinasultana.com/assets/logo.webp"
+}
     }
 
   ]
@@ -274,82 +290,91 @@
   }
   </script>
 
-  <!-- WebSite (bn) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://drrubinasultana.com/bn#website",
-    "inLanguage": "bn",
-    "url": "https://drrubinasultana.com/bn",
-    "name": "ডাঃ রুবিনা সুলতানা | ক্যান্সার বিশেষজ্ঞ ঢাকা",
-    "alternateName": "Dr. Mosammat Rubina Sultana | Cancer Specialist in Dhaka",
-    "about": { "@id": "https://drrubinasultana.com/bn#person" },
-    "publisher": {
-    "@id": "https://drrubinasultana.com/bn#person"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://drrubinasultana.com/bn?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <!-- WebPage (bn) -->
+<!-- WebSite (bn) -->
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": ["WebPage","MedicalWebPage"],
- "@id": "https://drrubinasultana.com/bn#webpage",
- "url": "https://drrubinasultana.com/bn",
- "inLanguage": "bn",
- "name": "ডাঃ রুবিনা সুলতানা | ক্যান্সার বিশেষজ্ঞ ঢাকা | ২২+ বছর অভিজ্ঞতা",
- "description": "ডাঃ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ, যিনি রেডিওথেরাপি, কেমোথেরাপি, টার্গেটেড থেরাপি ও আধুনিক ক্যান্সার চিকিৎসা প্রদান করেন।",
- "datePublished": "2025-10-01",
- "dateModified": "2026-06-28",
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://drrubinasultana.com/bn#website",
+  "url": "https://drrubinasultana.com/bn",
+  "inLanguage": "bn-BD",
+  "name": "ডাঃ রুবিনা সুলতানা | ক্যান্সার বিশেষজ্ঞ ঢাকা",
+  "alternateName": "Dr. Mosammat Rubina Sultana | Cancer Specialist in Dhaka",
 
- "isPartOf": {
-   "@id": "https://drrubinasultana.com/bn#website"
- },
+  "about": {
+    "@id": "https://drrubinasultana.com/bn#person"
+  },
 
- "about": [
-   { "@id": "https://drrubinasultana.com/bn#person" },
-   { "@id": "https://drrubinasultana.com/bn#tumor" },
-   { "@id": "https://drrubinasultana.com/bn#breast-cancer" },
-   { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
-   { "@id": "https://drrubinasultana.com/bn#female-cancer" },
-   { "@id": "https://drrubinasultana.com/bn#chemotherapy" },
-   { "@id": "https://drrubinasultana.com/bn#lung-cancer" }
- ],
+  "publisher": {
+    "@id": "https://drrubinasultana.com/bn#person"
+  },
 
- "mainEntity": {
-   "@id": "https://drrubinasultana.com/bn#person"
- },
+  "image": {
+    "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp"
+  },
 
- "author": {
-   "@id": "https://drrubinasultana.com/bn#person"
- },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://drrubinasultana.com/bn?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
- "publisher": {
-   "@id": "https://drrubinasultana.com/bn#organization"
- },
+<!-- WebPage (bn) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["WebPage","MedicalWebPage"],
+  "@id": "https://drrubinasultana.com/bn#webpage",
+  "url": "https://drrubinasultana.com/bn",
+  "inLanguage": "bn",
+  "name": "ডাঃ রুবিনা সুলতানা | ক্যান্সার বিশেষজ্ঞ ঢাকা | ২২+ বছর অভিজ্ঞতা",
+  "description": "ডাঃ রুবিনা সুলতানা ঢাকার একজন অভিজ্ঞ ক্যান্সার বিশেষজ্ঞ, যিনি রেডিওথেরাপি, কেমোথেরাপি, টার্গেটেড থেরাপি ও আধুনিক ক্যান্সার চিকিৎসা প্রদান করেন।",
+  "datePublished": "2025-10-01",
+  "dateModified": "2026-06-28",
 
- "breadcrumb": {
-   "@id": "https://drrubinasultana.com/bn#breadcrumb"
- },
+  "isPartOf": {
+    "@id": "https://drrubinasultana.com/bn#website"
+  },
 
- "primaryImageOfPage": {
-   "@type": "ImageObject",
-   "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
-   "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
-   "width": 800,
-   "height": 800
- },
+  "about": [
+    { "@id": "https://drrubinasultana.com/bn#person" },
+    { "@id": "https://drrubinasultana.com/bn#tumor" },
+    { "@id": "https://drrubinasultana.com/bn#breast-cancer" },
+    { "@id": "https://drrubinasultana.com/bn#cervical-cancer" },
+    { "@id": "https://drrubinasultana.com/bn#female-cancer" },
+    { "@id": "https://drrubinasultana.com/bn#chemotherapy" },
+    { "@id": "https://drrubinasultana.com/bn#lung-cancer" }
+  ],
 
- "image": {
-   "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp"
- }
+  "mainEntity": {
+    "@id": "https://drrubinasultana.com/bn#person"
+  },
+
+  "author": {
+    "@id": "https://drrubinasultana.com/bn#person"
+  },
+
+  "publisher": {
+    "@id": "https://drrubinasultana.com/bn#organization"
+  },
+
+  "breadcrumb": {
+    "@id": "https://drrubinasultana.com/bn#breadcrumb"
+  },
+
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp",
+    "url": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp",
+    "width": 1200,
+    "height": 630
+  },
+
+  "image": {
+    "@id": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-1200x630.webp"
+  }
 }
 </script>
 
@@ -441,7 +466,7 @@
       "publisher": {
         "@id": "https://drrubinasultana.com/bn#person",
         "url": "https://drrubinasultana.com/bn",
-        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
         "jobTitle": "Associate Professor (Radiotherapy)",
         "worksFor": {
           "@type": "MedicalOrganization",
@@ -462,7 +487,7 @@
       "publisher": {
         "@id": "https://drrubinasultana.com/bn#person",
         "url": "https://drrubinasultana.com/bn",
-        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
         "jobTitle": "Associate Professor (Radiotherapy)",
         "worksFor": {
           "@type": "MedicalOrganization",
@@ -483,7 +508,7 @@
       "publisher": {
       "@id": "https://drrubinasultana.com/bn#person",
         "url": "https://drrubinasultana.com/bn",
-        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
         "jobTitle": "Associate Professor (Radiotherapy)",
         "worksFor": {
           "@type": "MedicalOrganization",
@@ -504,7 +529,7 @@
       "publisher": {
       "@id": "https://drrubinasultana.com/bn#person",
         "url": "https://drrubinasultana.com/bn",
-        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
         "jobTitle": "Associate Professor (Radiotherapy)",
         "worksFor": {
           "@type": "MedicalOrganization",
@@ -524,7 +549,7 @@
      "creator": { "@type": "Organization", "name": "Nexus TV" },
       "publisher": {
         "@id": "https://drrubinasultana.com/bn#person",
-        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
         "jobTitle": "Associate Professor (Radiotherapy)",
         "worksFor": {
           "@type": "MedicalOrganization",
@@ -545,7 +570,7 @@
       "publisher": {
       "@id": "https://drrubinasultana.com/bn#person",
         "url": "https://drrubinasultana.com/bn",
-        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+        "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
         "jobTitle": "Associate Professor (Radiotherapy)",
         "worksFor": {
           "@type": "MedicalOrganization",
@@ -616,7 +641,7 @@
   "@id": "https://drrubinasultana.com/bn#medicalbusiness",
   "name": "ডাঃ রুবিনা সুলতানা",
   "url": "https://drrubinasultana.com/bn",
-  "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana.webp",
+  "image": "https://drrubinasultana.com/assets/Dr-Mosammat-Rubina-Sultana-800w.webp",
   "telephone": "+8801868592848",
   "priceRange": "Affordable",
 
@@ -2720,15 +2745,19 @@ color: #ffffff;
 <section id="about">
 
 <figure class="figure-centered">
-<img 
-  src="/assets/Dr-Mosammat-Rubina-Sultana.webp"
+<img
+  src="/assets/Dr-Mosammat-Rubina-Sultana-800w.webp"
+  srcset="
+    /assets/Dr-Mosammat-Rubina-Sultana-400w.webp 400w,
+    /assets/Dr-Mosammat-Rubina-Sultana-800w.webp 800w"
+  sizes="(max-width:768px) 220px, 280px"
   width="330"
-  height="400"
+  height="330"
   loading="eager"
+  fetchpriority="high"
   decoding="async"
   alt="ডাঃ রুবিনা সুলতানা – ক্লিনিক্যাল ও রেডিয়েশন অনকোলজিস্ট, ঢাকা"
-  class="profile-img"
-  style="width:100%;height:auto;max-width:330px;">
+  class="profile-img">
 
 <figcaption class="figure-caption">
 ডাঃ রুবিনা সুলতানা – সহযোগী অধ্যাপক, NICRH, ঢাকা
