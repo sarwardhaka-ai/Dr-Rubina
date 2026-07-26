@@ -461,13 +461,17 @@ th{
     object-fit:cover;
     border-radius:10px;
 
-    /* Softer border */
-    border:1px solid #edf2ed;
+    /* Ultra-thin, ultra-soft border */
+    border:0.5px solid rgba(0,0,0,.05);
 
-    /* Soft professional shadow */
+    /* Very subtle shadow */
     box-shadow:
-        0 1px 2px rgba(0,0,0,.04),
-        0 2px 8px rgba(0,0,0,.03);
+        0 1px 2px rgba(0,0,0,.02),
+        0 2px 5px rgba(0,0,0,.015);
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease;
 }
 
 /* ==========================================================
