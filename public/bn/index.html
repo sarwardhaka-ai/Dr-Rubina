@@ -2658,13 +2658,26 @@ color: #ffffff;
   .navbar {
     /* 120px is the declared logo width, so both edge columns are equal. */
     grid-template-columns: 120px minmax(0, 1fr) 120px;
-    max-width: none;
+    max-width: 1260px;
     margin: 0 auto !important;
   }
 
   .navbar > .nav-links:not(.mobile-only-menu) {
     width: 100%;
     min-width: 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  .navbar > .nav-links:not(.mobile-only-menu) {
+    width: max-content;
+    max-width: none;
+    justify-self: center;
+    gap: 14px;
+  }
+
+  .navbar > .nav-links:not(.mobile-only-menu) li a {
+    white-space: nowrap;
   }
 }
 
