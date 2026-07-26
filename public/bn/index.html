@@ -2633,7 +2633,7 @@ color: #ffffff;
 /* Header alignment: equal side tracks keep the desktop navigation on the viewport centre. */
 .navbar {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
 }
 
@@ -2652,6 +2652,20 @@ color: #ffffff;
   grid-column: 3;
   justify-self: end;
   margin-left: 0 !important;
+}
+
+@media (min-width: 1025px) {
+  .navbar {
+    /* 120px is the declared logo width, so both edge columns are equal. */
+    grid-template-columns: 120px minmax(0, 1fr) 120px;
+    max-width: none;
+    margin: 0 auto !important;
+  }
+
+  .navbar > .nav-links:not(.mobile-only-menu) {
+    width: 100%;
+    min-width: 0;
+  }
 }
 
 @media (max-width: 1024px) {
