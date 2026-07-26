@@ -874,6 +874,45 @@ color: #FFD700;
   text-align: left;
   display: block;
 }
+
+/* Header alignment: equal side tracks keep the desktop navigation on the viewport centre. */
+.navbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+}
+
+.navbar > .logo {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.navbar > .nav-links:not(.mobile-only-menu) {
+  grid-column: 2;
+  justify-self: center;
+  flex: none;
+}
+
+.navbar-end {
+  grid-column: 3;
+  justify-self: end;
+}
+
+@media (max-width: 1024px) {
+  .navbar > .navbar-center.mobile-only {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .navbar > .menu-toggle {
+    grid-column: 3;
+    justify-self: end;
+  }
+
+  .navbar-end {
+    display: none;
+  }
+}
     </style>
 </head>
 
@@ -902,6 +941,9 @@ color: #FFD700;
       <li><a href="#faq">প্রশ্নোত্তর</a></li>
       <li><a href="https://www.facebook.com/profile.php?id=61560782793009" target="_blank">ফেসবুক</a></li>
     </ul>
+
+    <!-- Balances the logo column when this page has no language switch. -->
+    <div class="navbar-end" aria-hidden="true"></div>
 
     <!-- Mobile menu (unchanged structure) -->
     <ul class="nav-links mobile-only-menu">
