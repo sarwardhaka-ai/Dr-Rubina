@@ -891,9 +891,15 @@ color: #FFD700;
 
   .navbar > .nav-links:not(.mobile-only-menu) {
     grid-column: 2;
-    width: 100%;
+    width: max-content;
+    max-width: none;
     min-width: 0;
+    justify-self: center;
     justify-content: center;
+  }
+
+  .navbar > .nav-links:not(.mobile-only-menu) li a {
+    white-space: nowrap;
   }
 }
     </style>
