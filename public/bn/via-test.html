@@ -450,7 +450,7 @@ th{
 }
 
 .author-figure{
-    margin:0;
+    margin:4px 0 0;
     flex-shrink:0;
 }
 
@@ -459,12 +459,12 @@ th{
     width:120px;
     height:120px;
     object-fit:cover;
-    border-radius:10px;
 
-    /* Ultra-thin, soft border */
-    border:0.5px solid rgba(0,0,0,.05);
+    /* Match the card */
+    border-radius:8px;
 
-    /* No shadow */
+    /* No border or shadow */
+    border:none;
     box-shadow:none;
 }
 
@@ -483,6 +483,7 @@ th{
 
     .author-figure{
         order:-1;
+        margin:0;
     }
 
     .author-photo{
