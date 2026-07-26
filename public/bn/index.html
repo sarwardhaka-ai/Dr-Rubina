@@ -2697,6 +2697,122 @@ color: #ffffff;
     justify-self: end;
   }
 }
+
+/* Match the service pages: a slide-out mobile menu with a dimmed backdrop. */
+@media (max-width: 1024px) {
+  .menu-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 80;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .menu-backdrop.active {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links.mobile-only-menu {
+    display: none !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 280px;
+    max-width: none;
+    height: 100vh;
+    margin: 0;
+    padding: 24px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-y: auto;
+    background: linear-gradient(135deg, #007b3a, #00a067);
+    box-shadow: -6px 0 24px rgba(0, 0, 0, 0.08);
+    transform: translateX(100%);
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 90;
+    transition: transform 0.22s ease;
+  }
+
+  .nav-links.mobile-only-menu.active {
+    display: flex !important;
+    transform: translateX(0);
+  }
+
+  .nav-links.mobile-only-menu li {
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .nav-links.mobile-only-menu li a {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    min-height: 58px;
+    height: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent !important;
+    box-shadow: none;
+    color: #fff;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links.mobile-only-menu {
+    width: 100%;
+    max-width: 100%;
+    padding: 2px 5vw;
+    gap: 2px;
+    overflow-x: hidden;
+  }
+
+  .nav-links.mobile-only-menu li {
+    margin: 1px 0;
+    text-align: center;
+  }
+
+  .nav-links.mobile-only-menu li a {
+    width: 85%;
+    height: 43px;
+    min-height: 0;
+    margin: 0 auto;
+    padding: 0;
+    border: 1.5px solid #d4af37;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #00a67a, #00c28a) !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  .nav-links.mobile-only-menu li a:hover {
+    background: linear-gradient(135deg, #027a60, #009e77) !important;
+    border-color: gold;
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar::after {
+    display: none !important;
+  }
+}
   </style>
 
 
@@ -2759,6 +2875,8 @@ color: #ffffff;
       <li><a href="#faq">প্রশ্নোত্তর</a></li>
       <li><a href="https://www.facebook.com/profile.php?id=61560782793009" target="_blank">ফলো অন ফেসবুক</a></li>
     </ul>
+
+    <div class="menu-backdrop" aria-hidden="true"></div>
 
       <!-- English switch -->
     <a href="/" hreflang="en" class="lang-btn en">English</a>
