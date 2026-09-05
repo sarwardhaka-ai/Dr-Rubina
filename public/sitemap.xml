@@ -3,316 +3,324 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-<!-- ========================= ENGLISH HOMEPAGE ========================= -->
-<url>
-  <loc>https://drrubinasultana.com</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>1.0</priority>
+  <!-- ========================= ENGLISH HOMEPAGE ========================= -->
+  <url>
+    <loc>https://drrubinasultana.com</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
 
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com"/>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com"/>
-</url>
-<!-- ========================= BANGLA HOMEPAGE ========================= -->
-<url>
-  <loc>https://drrubinasultana.com/bn</loc>
-  <lastmod>2026-06-28T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com"/>
+  </url>
 
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com"/>
-</url>
+  <!-- ========================= BANGLA HOMEPAGE ========================= -->
+  <url>
+    <loc>https://drrubinasultana.com/bn</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
 
-<!-- ========================= ENGLISH SERVICES ========================= -->
-
-<url>
-  <loc>https://drrubinasultana.com/best-female-cancer-specialist-dhaka</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/best-breast-cancer-specialist-dhaka</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/best-tumor-specialist-dhaka</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/best-chemotherapist-dhaka</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/best-lung-cancer-specialist-dhaka</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-</url>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com"/>
+  </url>
 
 
+  <!-- ========================= ENGLISH SERVICES ========================= -->
 
-<!-- ========================= BANGLA SERVICES ========================= -->
+  <url>
+    <loc>https://drrubinasultana.com/best-female-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka</loc>
-  <lastmod>2026-06-28T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/best-breast-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka</loc>
-  <lastmod>2026-07-11T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka</loc>
-  <lastmod>2026-07-11T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/best-tumor-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/best-tumor-specialist-dhaka</loc>
-  <lastmod>2026-07-11T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/best-chemotherapist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/best-chemotherapist-dhaka</loc>
-  <lastmod>2026-06-03T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka</loc>
-  <lastmod>2026-03-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-  <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
-</url>
-
-<!-- ========================= BANGLA RADIOTHERAPY GUIDE ========================= -->
-
-<url>
-  <loc>https://drrubinasultana.com/bn/radiotherapy</loc>
-  <lastmod>2026-06-17T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/radiotherapy"/>
-</url>
-
-<!-- ========================= BANGLA FAQ PAGE (TUMOR) ========================= -->
-<url>
-  <loc>https://drrubinasultana.com/bn/faq-tumor</loc>
-  <lastmod>2026-01-20T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.75</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/faq-tumor"/>
-</url>
-
-<!-- ========================= BANGLA FAQ PAGE (BREAST) ========================= -->
-<url>
-  <loc>https://drrubinasultana.com/bn/faq-breast-cancer</loc>
-  <lastmod>2026-03-14T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.75</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/faq-breast-cancer"/>
-</url>
-
-<!-- ========================= BANGLA CERVICAL CLUSTER ========================= -->
-
-<url>
-  <loc>https://drrubinasultana.com/bn/cervical-cancer-symptoms</loc>
-  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-symptoms"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/cervical-cancer-screening</loc>
-  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-screening"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/pap-smear-test</loc>
-  <lastmod>2026-07-19T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/pap-smear-test"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/hpv-dna-test</loc>
-  <lastmod>2026-08-03T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/hpv-dna-test"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/via-test</loc>
-  <lastmod>2026-06-22T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/via-test"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/colposcopy</loc>
-  <lastmod>2026-08-09T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/colposcopy"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/biopsy</loc>
-  <lastmod>2026-08-02T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/biopsy"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/cervical-cancer-treatment-stages</loc>
-  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-treatment-stages"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/cervical-cancer-brachytherapy-guide</loc>
-  <lastmod>2026-06-04T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-brachytherapy-guide"/>
-</url>
-
-<url>
-  <loc>https://drrubinasultana.com/bn/cervical-cancer-radiotherapy-side-effects</loc>
-  <lastmod>2026-06-18T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-radiotherapy-side-effects"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/best-lung-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
+  </url>
 
 
-<!-- ========================= BANGLA BREAST CLUSTER ========================= -->
+  <!-- ========================= BANGLA SERVICES ========================= -->
 
-<url>
-  <loc>https://drrubinasultana.com/bn/breast-cancer-symptoms</loc>
-  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-symptoms"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-female-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/breast-lump-cancer-or-not</loc>
-  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-lump-cancer-or-not"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-breast-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/breast-cancer-screening</loc>
-  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-screening"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-cervical-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-cervical-cancer-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/breast-cancer-treatment-stages</loc>
-  <lastmod>2026-04-15T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.85</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-treatment-stages"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-tumor-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-tumor-specialist-dhaka"/>
+  </url>
 
-<url>
-  <loc>https://drrubinasultana.com/bn/breast-cancer-chemotherapy-side-effects</loc>
-  <lastmod>2026-06-17T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.75</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-chemotherapy-side-effects"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-chemotherapist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-chemotherapist-dhaka"/>
+  </url>
 
-<!-- ========================= BANGLA CANCER SYMPTOMS HUB ========================= -->
-<url>
-  <loc>https://drrubinasultana.com/bn/cancer-symptoms</loc>
-  <lastmod>2026-04-29T12:00:00+06:00</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.70</priority>
-  <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cancer-symptoms"/>
-</url>
+  <url>
+    <loc>https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drrubinasultana.com/best-lung-cancer-specialist-dhaka"/>
+  </url>
 
+
+  <!-- ========================= BANGLA RADIOTHERAPY GUIDE ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/radiotherapy</loc>
+    <lastmod>2026-06-17T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/radiotherapy"/>
+  </url>
+
+
+  <!-- ========================= BANGLA FAQ PAGE (TUMOR) ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/faq-tumor</loc>
+    <lastmod>2026-01-20T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/faq-tumor"/>
+  </url>
+
+
+  <!-- ========================= BANGLA FAQ PAGE (BREAST) ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/faq-breast-cancer</loc>
+    <lastmod>2026-03-14T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/faq-breast-cancer"/>
+  </url>
+
+
+  <!-- ========================= BANGLA CERVICAL CLUSTER ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/cervical-cancer-symptoms</loc>
+    <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-symptoms"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/cervical-cancer-screening</loc>
+    <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-screening"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/pap-smear-test</loc>
+    <lastmod>2026-07-19T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/pap-smear-test"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/hpv-dna-test</loc>
+    <lastmod>2026-08-03T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/hpv-dna-test"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/via-test</loc>
+    <lastmod>2026-06-22T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/via-test"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/colposcopy</loc>
+    <lastmod>2026-08-09T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/colposcopy"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/biopsy</loc>
+    <lastmod>2026-09-05T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/biopsy"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/cervical-cancer-treatment-stages</loc>
+    <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-treatment-stages"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/cervical-cancer-brachytherapy-guide</loc>
+    <lastmod>2026-06-04T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-brachytherapy-guide"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/cervical-cancer-radiotherapy-side-effects</loc>
+    <lastmod>2026-06-18T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cervical-cancer-radiotherapy-side-effects"/>
+  </url>
+
+
+  <!-- ========================= BANGLA BREAST CLUSTER ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/breast-cancer-symptoms</loc>
+    <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-symptoms"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/breast-lump-cancer-or-not</loc>
+    <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-lump-cancer-or-not"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/breast-cancer-screening</loc>
+    <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-screening"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/breast-cancer-treatment-stages</loc>
+    <lastmod>2026-04-15T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-treatment-stages"/>
+  </url>
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/breast-cancer-chemotherapy-side-effects</loc>
+    <lastmod>2026-06-17T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/breast-cancer-chemotherapy-side-effects"/>
+  </url>
+
+
+  <!-- ========================= BANGLA CANCER SYMPTOMS HUB ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/cancer-symptoms</loc>
+    <lastmod>2026-04-29T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/cancer-symptoms"/>
+  </url>
 
 </urlset>
