@@ -165,6 +165,17 @@
   </url>
 
 
+  <!-- ========================= BANGLA CHEMOTHERAPY GUIDE ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/chemotherapy</loc>
+    <lastmod>2026-09-24T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/chemotherapy"/>
+  </url>
+
+
   <!-- ========================= BANGLA FAQ PAGE (TUMOR) ========================= -->
 
   <url>
