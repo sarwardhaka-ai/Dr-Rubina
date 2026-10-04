@@ -176,6 +176,17 @@
   </url>
 
 
+  <!-- ========================= BANGLA IMMUNOTHERAPY GUIDE ========================= -->
+
+  <url>
+    <loc>https://drrubinasultana.com/bn/immunotherapy</loc>
+    <lastmod>2026-10-04T12:00:00+06:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+    <xhtml:link rel="alternate" hreflang="bn" href="https://drrubinasultana.com/bn/immunotherapy"/>
+  </url>
+
+
   <!-- ========================= BANGLA FAQ PAGE (TUMOR) ========================= -->
 
   <url>
